@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - xiaohe
+- name: 🇺🇸 美国 (United States) 01 (家宽) - fish
   type: vless
-  server: getwww.restaurantcloud.ir
-  port: 5001
-  uuid: 7058ebbd-96af-43f2-ba81-d8e289cb4358
+  server: 172.64.154.8
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: lest.zivaroid.ir
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: getwww.restaurantcloud.ir
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - fish
 rules:
 - MATCH,PROXIES

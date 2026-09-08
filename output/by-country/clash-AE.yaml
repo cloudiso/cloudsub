@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇭 TH 01 - fish
+- name: 🇦🇪 阿联酋 (UAE) 01 - fish
   type: vless
-  server: 43.133.110.81
-  port: 443
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
+    path: /
     headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇭 TH 01 - fish
+  - 🇦🇪 阿联酋 (UAE) 01 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇭 TH 01 - fish
+  - 🇦🇪 阿联酋 (UAE) 01 - fish
 rules:
 - MATCH,PROXIES

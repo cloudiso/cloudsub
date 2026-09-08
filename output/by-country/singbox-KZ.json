@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 RO 01 - xiaohe",
-        "🇷🇴 RO 02 - xiaohe"
+        "🇰🇿 KZ 01 - fish",
+        "🇰🇿 KZ 02 - fish"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 RO 01 - xiaohe",
-        "🇷🇴 RO 02 - xiaohe"
+        "🇰🇿 KZ 01 - fish",
+        "🇰🇿 KZ 02 - fish"
       ],
       "url": "https://www.google.com/generate_204"
     },

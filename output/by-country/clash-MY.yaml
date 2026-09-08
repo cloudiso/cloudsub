@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇾 MY 01 - xiaohe
+- name: 🇲🇾 MY 01 - fish
   type: vless
   server: 38.60.168.98
   port: 2087
@@ -17,7 +17,7 @@ proxies:
     path: /db55c40bbc75
     headers:
       Host: 38.60.168.98
-- name: 🇲🇾 MY 02 - xiaohe
+- name: 🇲🇾 MY 02 - fish
   type: vless
   server: 38.60.168.98
   port: 2087
@@ -35,14 +35,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇲🇾 MY 01 - xiaohe
-  - 🇲🇾 MY 02 - xiaohe
+  - 🇲🇾 MY 01 - fish
+  - 🇲🇾 MY 02 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇾 MY 01 - xiaohe
-  - 🇲🇾 MY 02 - xiaohe
+  - 🇲🇾 MY 01 - fish
+  - 🇲🇾 MY 02 - fish
 rules:
 - MATCH,PROXIES

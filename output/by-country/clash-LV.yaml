@@ -4,20 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇻 LV 01 - xiaohe
-  type: vless
-  server: 89.36.161.222
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: laoye.in-gect.fun
-- name: 🇱🇻 LV 02 - xiaohe
+- name: 🇱🇻 LV 01 - fish
   type: vless
   server: 89.36.161.222
   port: 2096
@@ -30,7 +17,7 @@ proxies:
     path: /
     headers:
       Host: 89.36.161.222
-- name: 🇱🇻 LV 03 - xiaohe
+- name: 🇱🇻 LV 02 - fish
   type: vless
   server: 89.36.161.222
   port: 2096
@@ -43,7 +30,7 @@ proxies:
     path: /
     headers:
       Host: laoye.in-gect.fun
-- name: 🇱🇻 LV 04 - xiaohe
+- name: 🇱🇻 LV 03 - fish
   type: vless
   server: 89.36.161.222
   port: 2096
@@ -56,7 +43,7 @@ proxies:
     path: /
     headers:
       Host: laoye.in-gect.fun
-- name: 🇱🇻 LV 05 - xiaohe
+- name: 🇱🇻 LV 04 - fish
   type: vless
   server: 89.36.161.222
   port: 2096
@@ -69,25 +56,38 @@ proxies:
     path: /
     headers:
       Host: 89.36.161.222
+- name: 🇱🇻 LV 05 - fish
+  type: vless
+  server: 89.36.161.222
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: laoye.in-gect.fun
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇻 LV 01 - xiaohe
-  - 🇱🇻 LV 02 - xiaohe
-  - 🇱🇻 LV 03 - xiaohe
-  - 🇱🇻 LV 04 - xiaohe
-  - 🇱🇻 LV 05 - xiaohe
+  - 🇱🇻 LV 01 - fish
+  - 🇱🇻 LV 02 - fish
+  - 🇱🇻 LV 03 - fish
+  - 🇱🇻 LV 04 - fish
+  - 🇱🇻 LV 05 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇻 LV 01 - xiaohe
-  - 🇱🇻 LV 02 - xiaohe
-  - 🇱🇻 LV 03 - xiaohe
-  - 🇱🇻 LV 04 - xiaohe
-  - 🇱🇻 LV 05 - xiaohe
+  - 🇱🇻 LV 01 - fish
+  - 🇱🇻 LV 02 - fish
+  - 🇱🇻 LV 03 - fish
+  - 🇱🇻 LV 04 - fish
+  - 🇱🇻 LV 05 - fish
 rules:
 - MATCH,PROXIES
