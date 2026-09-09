@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 RO 01 - fish",
-        "🇷🇴 RO 02 - fish"
+        "🇪🇬 EG 01 - fish",
+        "🇪🇬 EG 02 - fish"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 RO 01 - fish",
-        "🇷🇴 RO 02 - fish"
+        "🇪🇬 EG 01 - fish",
+        "🇪🇬 EG 02 - fish"
       ],
       "url": "https://www.google.com/generate_204"
     },
