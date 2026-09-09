@@ -24,40 +24,7 @@ proxies:
   reality-opts:
     public-key: k5COjpopVNGzEuMb457zCrrZegSdBX-d8bg0G6HDsE4
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 03 - fish
-  type: vmess
-  server: pori.cjlife.ir
-  port: 110
-  uuid: 0accd97e-a16c-4d4f-b19a-883f7ea0f484
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 04 - fish
-  type: vless
-  server: 162.159.91.222
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-723a643df685
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: n3zaxce7u0es.crzl48eiuses.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/723a643df685/loc-0
-    headers:
-      Host: n3zaxce7u0es.crzl48eiuses.workers.dev
-- name: 🇹🇷 土耳其 (Turkey) 05 - fish
-  type: vless
-  server: 195.162.69.203
-  port: 8443
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 195-162-69-203.sslip.io
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,9 +32,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - fish
   - 🇹🇷 土耳其 (Turkey) 02 - fish
-  - 🇹🇷 土耳其 (Turkey) 03 - fish
-  - 🇹🇷 土耳其 (Turkey) 04 - fish
-  - 🇹🇷 土耳其 (Turkey) 05 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -75,8 +39,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - fish
   - 🇹🇷 土耳其 (Turkey) 02 - fish
-  - 🇹🇷 土耳其 (Turkey) 03 - fish
-  - 🇹🇷 土耳其 (Turkey) 04 - fish
-  - 🇹🇷 土耳其 (Turkey) 05 - fish
 rules:
 - MATCH,PROXIES
