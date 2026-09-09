@@ -6,24 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 KZ 01 - fish",
-        "🇰🇿 KZ 02 - fish",
-        "🇰🇿 KZ 03 - fish",
-        "🇰🇿 KZ 04 - fish",
-        "🇰🇿 KZ 05 - fish",
-        "🇰🇿 KZ 06 - fish"
+        "🇷🇴 RO 01 - fish",
+        "🇷🇴 RO 02 - fish"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 KZ 01 - fish",
-        "🇰🇿 KZ 02 - fish",
-        "🇰🇿 KZ 03 - fish",
-        "🇰🇿 KZ 04 - fish",
-        "🇰🇿 KZ 05 - fish",
-        "🇰🇿 KZ 06 - fish"
+        "🇷🇴 RO 01 - fish",
+        "🇷🇴 RO 02 - fish"
       ],
       "url": "https://www.google.com/generate_204"
     },

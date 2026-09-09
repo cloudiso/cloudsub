@@ -5,15 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - fish
-  type: ss
-  server: glance.asuscomm.com
-  port: 10099
-  cipher: chacha20-ietf-poly1305
-  password: '12242'
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - fish
   type: vless
-  server: 188.114.97.6
+  server: www.shopify.com
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
@@ -25,10 +18,24 @@ proxies:
     path: /?ed=2560
     headers:
       Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - fish
+  type: vless
+  server: 172.64.149.209
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
 - name: 🇰🇷 韩国 (South Korea) 03 (家宽) - fish
   type: vless
   server: 188.114.97.6
-  port: 443
+  port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
   tls: true

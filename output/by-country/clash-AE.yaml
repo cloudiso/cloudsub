@@ -32,7 +32,27 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 03 - fish
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - fish
+  type: ss
+  server: 188.208.110.58
+  port: 8444
+  cipher: chacha20-ietf-poly1305
+  password: tunnel-astrovpn_official
+  udp: true
+- name: 🇦🇪 阿联酋 (UAE) 05 - fish
+  type: vless
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -51,6 +71,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - fish
   - 🇦🇪 阿联酋 (UAE) 02 - fish
   - 🇦🇪 阿联酋 (UAE) 03 - fish
+  - 🇦🇪 阿联酋 (UAE) 04 - fish
+  - 🇦🇪 阿联酋 (UAE) 05 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,5 +81,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - fish
   - 🇦🇪 阿联酋 (UAE) 02 - fish
   - 🇦🇪 阿联酋 (UAE) 03 - fish
+  - 🇦🇪 阿联酋 (UAE) 04 - fish
+  - 🇦🇪 阿联酋 (UAE) 05 - fish
 rules:
 - MATCH,PROXIES
