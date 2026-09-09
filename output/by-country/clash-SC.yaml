@@ -6,277 +6,82 @@ log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - fish
   type: vless
-  server: 162.159.0.169
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 45.130.125.73
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-cea58e4acf49
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: web-app-aug8yr.app-f1qsy1.workers.dev
   network: ws
   ws-opts:
-    path: /?ed=2560security=tlssecurity=tls
+    path: /api/ws
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: web-app-aug8yr.app-f1qsy1.workers.dev
 - name: 🇸🇨 SC 02 - fish
   type: vless
-  server: 104.18.46.46
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 172.67.148.26
+  port: 2053
+  uuid: 95de071f-747c-dc07-36ac-5c0854a9e50e
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: restless-boat-ebf2.moha102030.workers.dev
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /sync
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: restless-boat-ebf2.moha102030.workers.dev
 - name: 🇸🇨 SC 03 - fish
   type: vless
-  server: 104.18.39.218
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 45.130.125.201
+  port: 80
+  uuid: dc8a9493-c54a-459e-d060-81a700000001
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /sync
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: nahan-core.netizo09.workers.dev
 - name: 🇸🇨 SC 04 - fish
   type: vless
-  server: 172.64.52.6
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 104.18.0.1
+  port: 443
+  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: all.speedtest03.ccwu.cc
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: all.speedtest03.ccwu.cc
 - name: 🇸🇨 SC 05 - fish
-  type: vless
-  server: 172.64.52.6
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇨 SC 06 - fish
   type: vless
-  server: 162.159.24.131
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 07 - fish
-  type: vless
-  server: 172.64.53.55
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 08 - fish
-  type: vless
-  server: 162.159.43.187
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 09 - fish
-  type: vless
-  server: 162.159.0.169
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 10 - fish
-  type: vless
-  server: 104.18.47.113
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 11 - fish
-  type: vless
-  server: 172.64.154.8
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 12 - fish
-  type: vless
-  server: 162.159.38.127
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 13 - fish
-  type: vless
-  server: 104.18.46.234
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 14 - fish
-  type: vless
-  server: 162.159.43.187
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 15 - fish
-  type: vless
-  server: 162.159.48.32
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 16 - fish
-  type: vless
-  server: 108.162.198.178
+  server: 45.130.125.201
   port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: dc8a9493-c54a-459e-d060-81a700000001
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /sync
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 17 - fish
-  type: vless
-  server: 104.18.39.218
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 18 - fish
-  type: vless
-  server: 172.64.158.146
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 19 - fish
-  type: vless
-  server: 162.159.48.32
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 20 - fish
-  type: vless
-  server: 104.18.46.46
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 21 - fish
-  type: vless
-  server: 172.64.53.55
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: nahan-core.netizo09.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -288,21 +93,6 @@ proxy-groups:
   - 🇸🇨 SC 04 - fish
   - 🇸🇨 SC 05 - fish
   - 🇸🇨 SC 06 - fish
-  - 🇸🇨 SC 07 - fish
-  - 🇸🇨 SC 08 - fish
-  - 🇸🇨 SC 09 - fish
-  - 🇸🇨 SC 10 - fish
-  - 🇸🇨 SC 11 - fish
-  - 🇸🇨 SC 12 - fish
-  - 🇸🇨 SC 13 - fish
-  - 🇸🇨 SC 14 - fish
-  - 🇸🇨 SC 15 - fish
-  - 🇸🇨 SC 16 - fish
-  - 🇸🇨 SC 17 - fish
-  - 🇸🇨 SC 18 - fish
-  - 🇸🇨 SC 19 - fish
-  - 🇸🇨 SC 20 - fish
-  - 🇸🇨 SC 21 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -314,20 +104,5 @@ proxy-groups:
   - 🇸🇨 SC 04 - fish
   - 🇸🇨 SC 05 - fish
   - 🇸🇨 SC 06 - fish
-  - 🇸🇨 SC 07 - fish
-  - 🇸🇨 SC 08 - fish
-  - 🇸🇨 SC 09 - fish
-  - 🇸🇨 SC 10 - fish
-  - 🇸🇨 SC 11 - fish
-  - 🇸🇨 SC 12 - fish
-  - 🇸🇨 SC 13 - fish
-  - 🇸🇨 SC 14 - fish
-  - 🇸🇨 SC 15 - fish
-  - 🇸🇨 SC 16 - fish
-  - 🇸🇨 SC 17 - fish
-  - 🇸🇨 SC 18 - fish
-  - 🇸🇨 SC 19 - fish
-  - 🇸🇨 SC 20 - fish
-  - 🇸🇨 SC 21 - fish
 rules:
 - MATCH,PROXIES

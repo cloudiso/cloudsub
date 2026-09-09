@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - fish
   type: vless
-  server: k2.cloud--vpn.site
+  server: 151.101.56.6
   port: 443
   uuid: f54c98ce-ac44-4984-db61-ccca1fdbbf72
   udp: true
@@ -15,10 +15,31 @@ proxies:
   servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /
+    path: /?CHANNEL---madshopx---madshopx---madshopx---madshopx---madshopx---madshopx---madshopx
     headers:
       Host: c12.com
 - name: 🇫🇮 FI 02 - fish
+  type: ss
+  server: 138.124.15.120
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: ZjQ1N
+  udp: true
+- name: 🇫🇮 FI 03 - fish
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: f54c98ce-ac44-4984-db61-ccca1fdbbf72
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 04 - fish
   type: vless
   server: k2.cloud--vpn.site
   port: 443
@@ -32,7 +53,35 @@ proxies:
     path: /
     headers:
       Host: c12.com
-- name: 🇫🇮 FI 03 - fish
+- name: 🇫🇮 FI 05 - fish
+  type: vless
+  server: a2.arshia-nova.ir
+  port: 443
+  uuid: f54c98ce-ac44-4984-db61-ccca1fdbbf72
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 06 - fish
+  type: vless
+  server: k2.cloud--vpn.site
+  port: 443
+  uuid: f54c98ce-ac44-4984-db61-ccca1fdbbf72
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 07 - fish
   type: vless
   server: 185.79.138.71
   port: 448
@@ -52,6 +101,10 @@ proxy-groups:
   - 🇫🇮 FI 01 - fish
   - 🇫🇮 FI 02 - fish
   - 🇫🇮 FI 03 - fish
+  - 🇫🇮 FI 04 - fish
+  - 🇫🇮 FI 05 - fish
+  - 🇫🇮 FI 06 - fish
+  - 🇫🇮 FI 07 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,5 +113,9 @@ proxy-groups:
   - 🇫🇮 FI 01 - fish
   - 🇫🇮 FI 02 - fish
   - 🇫🇮 FI 03 - fish
+  - 🇫🇮 FI 04 - fish
+  - 🇫🇮 FI 05 - fish
+  - 🇫🇮 FI 06 - fish
+  - 🇫🇮 FI 07 - fish
 rules:
 - MATCH,PROXIES

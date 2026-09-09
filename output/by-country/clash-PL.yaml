@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - fish
+  type: ss
+  server: 194.61.121.93
+  port: 7538
+  cipher: chacha20-ietf-poly1305
+  password: U9YAoqBgg5VyGBc6vQv1sN
+  udp: true
+- name: 🇵🇱 PL 02 - fish
   type: vless
   server: 94.183.209.43
   port: 443
@@ -17,27 +24,7 @@ proxies:
     path: /
     headers:
       Host: 94.183.209.43
-- name: 🇵🇱 PL 02 - fish
-  type: vless
-  server: 94.183.209.58
-  port: 443
-  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: pl2.lckdwn.ru
 - name: 🇵🇱 PL 03 - fish
-  type: ss
-  server: 194.61.121.93
-  port: 7538
-  cipher: chacha20-ietf-poly1305
-  password: U9YAoqBgg5VyGBc6vQv1sN
-  udp: true
-- name: 🇵🇱 PL 04 - fish
   type: vless
   server: 2.26.224.233
   port: 8443
@@ -49,6 +36,19 @@ proxies:
     public-key: NI5Rkfn6zO_gF-UC1nuvJwu4SDakCXh3ygJOKU1EITU
   servername: cdn.shopify.com
   client-fingerprint: firefox
+- name: 🇵🇱 PL 04 - fish
+  type: vless
+  server: 94.183.209.59
+  port: 443
+  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.209.59
 - name: 🇵🇱 PL 05 - fish
   type: vless
   server: 94.183.209.58
@@ -64,19 +64,6 @@ proxies:
       Host: pl2.lckdwn.ru
 - name: 🇵🇱 PL 06 - fish
   type: vless
-  server: 178.95.170.115
-  port: 2087
-  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /4bc027a44532
-    headers:
-      Host: Telegram-Leviko_v2ray
-- name: 🇵🇱 PL 07 - fish
-  type: vless
   server: 94.183.209.59
   port: 443
   uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
@@ -88,31 +75,33 @@ proxies:
     path: /
     headers:
       Host: 94.183.209.59
-- name: 🇵🇱 PL 08 - fish
+- name: 🇵🇱 PL 07 - fish
   type: vless
-  server: plll.banibus.ir
-  port: 8118
-  uuid: 8b54a46a-e66b-48cc-bf5a-88f0855a3598
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LjAkLizwkZf35ObrUMFZ22UHXTEJzpgcTvHk9AuzcUM
-  servername: play.googleapis.com
-  client-fingerprint: chrome
-- name: 🇵🇱 PL 09 - fish
-  type: vless
-  server: 178.95.170.83
-  port: 2087
-  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+  server: 94.183.209.58
+  port: 443
+  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /4bc027a44532
+    path: /
     headers:
-      Host: 178.95.170.83
+      Host: pl2.lckdwn.ru
+- name: 🇵🇱 PL 08 - fish
+  type: vless
+  server: 172.67.67.178
+  port: 443
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -126,7 +115,6 @@ proxy-groups:
   - 🇵🇱 PL 06 - fish
   - 🇵🇱 PL 07 - fish
   - 🇵🇱 PL 08 - fish
-  - 🇵🇱 PL 09 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -140,6 +128,5 @@ proxy-groups:
   - 🇵🇱 PL 06 - fish
   - 🇵🇱 PL 07 - fish
   - 🇵🇱 PL 08 - fish
-  - 🇵🇱 PL 09 - fish
 rules:
 - MATCH,PROXIES
