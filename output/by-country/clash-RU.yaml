@@ -5,6 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - fish
+  type: ss
+  server: 46.17.42.166
+  port: 10661
+  cipher: aes-256-gcm
+  password: 6b39ae3234dfd68b
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 02 - fish
+  type: ss
+  server: 46.17.40.234
+  port: 2011
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 - fish
+  type: ss
+  server: 195.133.23.200
+  port: 20111
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - fish
   type: vless
   server: 46.8.200.91
   port: 443
@@ -18,41 +39,6 @@ proxies:
     path: /casc
     headers:
       Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 02 - fish
-  type: ss
-  server: 217.25.90.102
-  port: 3
-  cipher: chacha20-ietf-poly1305
-  password: 816Efx8yiCSDDpvvpxXL8Q
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - fish
-  type: ss
-  server: 195.133.23.200
-  port: 20111
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - fish
-  type: ss
-  server: 46.17.40.234
-  port: 2011
-  cipher: aes-256-gcm
-  password: bdb313adf74c2ede
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - fish
-  type: ss
-  server: 194.87.196.13
-  port: 20111
-  cipher: aes-256-gcm
-  password: 4938e975724d0ed1
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - fish
-  type: ss
-  server: 195.58.48.137
-  port: 20111
-  cipher: aes-256-gcm
-  password: 8ad9d72a5571df86
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,8 +48,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - fish
   - 🇷🇺 俄罗斯 (Russia) 03 - fish
   - 🇷🇺 俄罗斯 (Russia) 04 - fish
-  - 🇷🇺 俄罗斯 (Russia) 05 - fish
-  - 🇷🇺 俄罗斯 (Russia) 06 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -73,7 +57,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - fish
   - 🇷🇺 俄罗斯 (Russia) 03 - fish
   - 🇷🇺 俄罗斯 (Russia) 04 - fish
-  - 🇷🇺 俄罗斯 (Russia) 05 - fish
-  - 🇷🇺 俄罗斯 (Russia) 06 - fish
 rules:
 - MATCH,PROXIES

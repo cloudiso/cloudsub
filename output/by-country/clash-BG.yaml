@@ -34,16 +34,20 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: neth9.lunariai.ru
+  servername: 192.145.31.5
 - name: 🇧🇬 BG 04 - fish
   type: vless
   server: 192.145.31.5
-  port: 8443
+  port: 443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: neth9.lunariai.ru
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: neth9.lunariai.ru
 - name: 🇧🇬 BG 05 - fish
   type: vless
   server: 192.145.31.5
@@ -56,6 +60,33 @@ proxies:
 - name: 🇧🇬 BG 06 - fish
   type: vless
   server: 192.145.31.5
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: neth9.lunariai.ru
+- name: 🇧🇬 BG 07 - fish
+  type: vless
+  server: 192.145.31.5
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: neth9.lunariai.ru
+- name: 🇧🇬 BG 08 - fish
+  type: vless
+  server: 192.145.31.5
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: neth9.lunariai.ru
+- name: 🇧🇬 BG 09 - fish
+  type: vless
+  server: 192.145.31.5
   port: 443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
@@ -66,16 +97,20 @@ proxies:
     path: /
     headers:
       Host: 192.145.31.5
-- name: 🇧🇬 BG 07 - fish
+- name: 🇧🇬 BG 10 - fish
   type: vless
   server: 192.145.31.5
-  port: 8443
+  port: 443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 192.145.31.5
-- name: 🇧🇬 BG 08 - fish
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 192.145.31.5
+- name: 🇧🇬 BG 11 - fish
   type: vless
   server: 192.145.31.5
   port: 8443
@@ -97,6 +132,9 @@ proxy-groups:
   - 🇧🇬 BG 06 - fish
   - 🇧🇬 BG 07 - fish
   - 🇧🇬 BG 08 - fish
+  - 🇧🇬 BG 09 - fish
+  - 🇧🇬 BG 10 - fish
+  - 🇧🇬 BG 11 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -110,5 +148,8 @@ proxy-groups:
   - 🇧🇬 BG 06 - fish
   - 🇧🇬 BG 07 - fish
   - 🇧🇬 BG 08 - fish
+  - 🇧🇬 BG 09 - fish
+  - 🇧🇬 BG 10 - fish
+  - 🇧🇬 BG 11 - fish
 rules:
 - MATCH,PROXIES
