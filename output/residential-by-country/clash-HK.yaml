@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - fish
   type: vless
-  server: 186b6f53-tla000-tvb36r-1qwom.hk3.hyhuawei.com
+  server: 220.246.184.228
   port: 443
   uuid: 8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9
   udp: true
@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
   servername: updates.cdn-apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

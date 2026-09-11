@@ -4,26 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 EE 01 - fish
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+- name: 🇨🇱 CL 01 - fish
+  type: ss
+  server: 64.176.2.21
+  port: 8388
+  cipher: aes-256-gcm
+  password: xBStBEVqvGwHPocc
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇪🇪 EE 01 - fish
+  - 🇨🇱 CL 01 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 EE 01 - fish
+  - 🇨🇱 CL 01 - fish
 rules:
 - MATCH,PROXIES

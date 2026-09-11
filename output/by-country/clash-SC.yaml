@@ -14,60 +14,17 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇨 SC 02 - fish
-  type: vless
-  server: 45.130.125.96
-  port: 443
-  uuid: 28607fa7-db30-47d6-942a-f5744e4be9ad
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: dfsuporte.garena.com.ex33r.eu.cc
-  network: ws
-  ws-opts:
-    path: /id-pusat
-    headers:
-      Host: dfsuporte.garena.com.ex33r.eu.cc
-- name: 🇸🇨 SC 03 - fish
-  type: vless
-  server: 172.67.179.98
-  port: 8880
-  uuid: 86d998bc-a5a2-45d5-8169-b906259110a6
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: muddy-art-8cda.197-0c6.workers.dev
-- name: 🇸🇨 SC 04 - fish
-  type: vmess
-  server: 156.226.183.181
-  port: 54321
-  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇨 SC 01 - fish
-  - 🇸🇨 SC 02 - fish
-  - 🇸🇨 SC 03 - fish
-  - 🇸🇨 SC 04 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 SC 01 - fish
-  - 🇸🇨 SC 02 - fish
-  - 🇸🇨 SC 03 - fish
-  - 🇸🇨 SC 04 - fish
 rules:
 - MATCH,PROXIES

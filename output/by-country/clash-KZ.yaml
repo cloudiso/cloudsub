@@ -5,37 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - fish
-  type: vless
-  server: 178.236.16.98
-  port: 35728
-  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇰🇿 KZ 02 - fish
-  type: vless
-  server: 109.248.170.119
-  port: 13447
-  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
-  servername: yahoo.com
-  client-fingerprint: edge
-- name: 🇰🇿 KZ 03 - fish
   type: ss
   server: 94.198.220.183
   port: 64674
   cipher: chacha20-ietf-poly1305
   password: s8LbJCgUiGXeCKVc63tHJP
   udp: true
-- name: 🇰🇿 KZ 04 - fish
+- name: 🇰🇿 KZ 02 - fish
   type: vless
   server: 194.59.5.46
   port: 2096
@@ -49,6 +25,18 @@ proxies:
     path: /
     headers:
       Host: wild-sky-f384.alvlirm3737.workers.dev
+- name: 🇰🇿 KZ 03 - fish
+  type: vless
+  server: 111.88.143.139
+  port: 51940
+  uuid: 03464802-b517-404b-b15c-7750ffc5e78f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: uPHvFb_vZ3DKL-8Et_e9OliZskdSV5U1NZ66tHfC-2Y
+  servername: yahoo.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,7 +45,6 @@ proxy-groups:
   - 🇰🇿 KZ 01 - fish
   - 🇰🇿 KZ 02 - fish
   - 🇰🇿 KZ 03 - fish
-  - 🇰🇿 KZ 04 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -66,6 +53,5 @@ proxy-groups:
   - 🇰🇿 KZ 01 - fish
   - 🇰🇿 KZ 02 - fish
   - 🇰🇿 KZ 03 - fish
-  - 🇰🇿 KZ 04 - fish
 rules:
 - MATCH,PROXIES
