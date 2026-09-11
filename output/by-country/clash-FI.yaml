@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - fish
+- name: 🇫🇮 FI 01 - fish
   type: vless
   server: 172.64.52.230
   port: 2087
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - fish
+  - 🇫🇮 FI 01 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - fish
+  - 🇫🇮 FI 01 - fish
 rules:
 - MATCH,PROXIES

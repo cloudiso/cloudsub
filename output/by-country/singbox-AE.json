@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇪 阿联酋 (UAE) 01 - fish"
+        "🇦🇪 阿联酋 (UAE) 01 - fish",
+        "🇦🇪 阿联酋 (UAE) 02 - fish"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 阿联酋 (UAE) 01 - fish"
+        "🇦🇪 阿联酋 (UAE) 01 - fish",
+        "🇦🇪 阿联酋 (UAE) 02 - fish"
       ],
       "url": "https://www.google.com/generate_204"
     },
