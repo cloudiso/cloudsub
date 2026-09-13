@@ -6,14 +6,44 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 SC 01 - fish"
+        "🇸🇨 SC 01 - fish",
+        "🇸🇨 SC 02 - fish",
+        "🇸🇨 SC 03 - fish",
+        "🇸🇨 SC 04 - fish",
+        "🇸🇨 SC 05 - fish",
+        "🇸🇨 SC 06 - fish",
+        "🇸🇨 SC 07 - fish",
+        "🇸🇨 SC 08 - fish",
+        "🇸🇨 SC 09 - fish",
+        "🇸🇨 SC 10 - fish",
+        "🇸🇨 SC 11 - fish",
+        "🇸🇨 SC 12 - fish",
+        "🇸🇨 SC 13 - fish",
+        "🇸🇨 SC 14 - fish",
+        "🇸🇨 SC 15 - fish",
+        "🇸🇨 SC 16 - fish"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 SC 01 - fish"
+        "🇸🇨 SC 01 - fish",
+        "🇸🇨 SC 02 - fish",
+        "🇸🇨 SC 03 - fish",
+        "🇸🇨 SC 04 - fish",
+        "🇸🇨 SC 05 - fish",
+        "🇸🇨 SC 06 - fish",
+        "🇸🇨 SC 07 - fish",
+        "🇸🇨 SC 08 - fish",
+        "🇸🇨 SC 09 - fish",
+        "🇸🇨 SC 10 - fish",
+        "🇸🇨 SC 11 - fish",
+        "🇸🇨 SC 12 - fish",
+        "🇸🇨 SC 13 - fish",
+        "🇸🇨 SC 14 - fish",
+        "🇸🇨 SC 15 - fish",
+        "🇸🇨 SC 16 - fish"
       ],
       "url": "https://www.google.com/generate_204"
     },

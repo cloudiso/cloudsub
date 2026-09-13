@@ -4,29 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇦 SA 01 - fish
+- name: 🇦🇿 AZ 01 - fish
   type: vless
-  server: 81.208.170.142
-  port: 1500
-  uuid: e332f028-d343-5b44-8016-b3130f39e133
+  server: basalam.horqen.ir
+  port: 21289
+  uuid: c12db015-a63c-43e5-a744-6398a90373b5
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE
-  servername: www.ebay.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇦 SA 01 - fish
+  - 🇦🇿 AZ 01 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇦 SA 01 - fish
+  - 🇦🇿 AZ 01 - fish
 rules:
 - MATCH,PROXIES

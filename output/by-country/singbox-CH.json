@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - fish"
+        "🇨🇭 CH 01 - fish",
+        "🇨🇭 CH 02 - fish",
+        "🇨🇭 CH 03 - fish",
+        "🇨🇭 CH 04 - fish"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - fish"
+        "🇨🇭 CH 01 - fish",
+        "🇨🇭 CH 02 - fish",
+        "🇨🇭 CH 03 - fish",
+        "🇨🇭 CH 04 - fish"
       ],
       "url": "https://www.google.com/generate_204"
     },
