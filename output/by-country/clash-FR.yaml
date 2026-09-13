@@ -5,48 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - fish
-  type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  type: ss
+  server: 83.171.225.55
+  port: 1443
+  cipher: chacha20-ietf-poly1305
+  password: ZjAxZ
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: 149.202.58.99
 - name: 🇫🇷 法国 (France) 02 - fish
-  type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 03 - fish
-  type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 04 - fish
   type: vless
   server: 51.38.82.1
   port: 443
@@ -58,31 +23,7 @@ proxies:
     public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
   servername: play.google.com
   client-fingerprint: random
-- name: 🇫🇷 法国 (France) 05 - fish
-  type: vmess
-  server: 51.103.28.247
-  port: 54555
-  uuid: e57e9bb4-a442-44dd-a4bb-2aac72cfd1f2
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 06 - fish
-  type: ss
-  server: 51.83.192.80
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇫🇷 法国 (France) 07 - fish
-  type: ss
-  server: 51.83.192.80
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇫🇷 法国 (France) 08 - fish
+- name: 🇫🇷 法国 (France) 03 - fish
   type: vmess
   server: 162.19.204.71
   port: 1234
@@ -93,7 +34,41 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 09 - fish
+- name: 🇫🇷 法国 (France) 04 - fish
+  type: vless
+  server: 108.162.198.178
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇫🇷 法国 (France) 05 - fish
+  type: ss
+  server: 51.83.192.80
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: 🇫🇷 法国 (France) 06 - fish
+  type: ss
+  server: 51.83.192.80
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: 🇫🇷 法国 (France) 07 - fish
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+  udp: true
+- name: 🇫🇷 法国 (France) 08 - fish
   type: vless
   server: 45.144.28.39
   port: 2096
@@ -106,38 +81,123 @@ proxies:
     path: /
     headers:
       Host: usejh2.neobo-tooth.ru
+- name: 🇫🇷 法国 (France) 09 - fish
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 - name: 🇫🇷 法国 (France) 10 - fish
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: 149.202.58.99
+- name: 🇫🇷 法国 (France) 11 - fish
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+  udp: true
+- name: 🇫🇷 法国 (France) 12 - fish
   type: ss
   server: 20.111.9.76
   port: 59380
   cipher: chacha20-ietf-poly1305
   password: DdhrBvEX2dHRjaakWHBZUa
   udp: true
-- name: 🇫🇷 法国 (France) 11 - fish
+- name: 🇫🇷 法国 (France) 13 - fish
   type: vless
-  server: 45.144.28.39
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: 149.202.58.99
+- name: 🇫🇷 法国 (France) 14 - fish
+  type: vless
+  server: 172.64.229.2
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls+
     headers:
-      Host: 45.144.28.39
-- name: 🇫🇷 法国 (France) 12 - fish
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇫🇷 法国 (France) 15 - fish
   type: vless
-  server: 51.38.82.1
+  server: 149.202.58.99
   port: 443
-  uuid: 9343f183-7a16-4bdd-9c65-b0c21feca40b
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
-  servername: play.google.com
-  client-fingerprint: firefox
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: 149.202.58.99
+- name: 🇫🇷 法国 (France) 16 - fish
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 17 - fish
+  type: vless
+  server: 104.21.70.21
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇫🇷 法国 (France) 18 - fish
+  type: vless
+  server: 162.159.0.169
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -155,6 +215,12 @@ proxy-groups:
   - 🇫🇷 法国 (France) 10 - fish
   - 🇫🇷 法国 (France) 11 - fish
   - 🇫🇷 法国 (France) 12 - fish
+  - 🇫🇷 法国 (France) 13 - fish
+  - 🇫🇷 法国 (France) 14 - fish
+  - 🇫🇷 法国 (France) 15 - fish
+  - 🇫🇷 法国 (France) 16 - fish
+  - 🇫🇷 法国 (France) 17 - fish
+  - 🇫🇷 法国 (France) 18 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -172,5 +238,11 @@ proxy-groups:
   - 🇫🇷 法国 (France) 10 - fish
   - 🇫🇷 法国 (France) 11 - fish
   - 🇫🇷 法国 (France) 12 - fish
+  - 🇫🇷 法国 (France) 13 - fish
+  - 🇫🇷 法国 (France) 14 - fish
+  - 🇫🇷 法国 (France) 15 - fish
+  - 🇫🇷 法国 (France) 16 - fish
+  - 🇫🇷 法国 (France) 17 - fish
+  - 🇫🇷 法国 (France) 18 - fish
 rules:
 - MATCH,PROXIES
