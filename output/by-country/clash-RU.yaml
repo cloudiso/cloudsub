@@ -5,33 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - fish
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - fish
-  type: ss
-  server: 46.17.40.234
-  port: 50111
-  cipher: aes-256-gcm
-  password: bdb313adf74c2ede
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - fish
   type: vless
   server: 108.162.198.178
-  port: 2086
+  port: 2052
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls+
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 04 - fish
+- name: 🇷🇺 俄罗斯 (Russia) 02 - fish
   type: vless
   server: 78.159.247.246
   port: 443
@@ -45,6 +31,13 @@ proxies:
     path: /ws
     headers:
       Host: sb2.hat.onl
+- name: 🇷🇺 俄罗斯 (Russia) 03 - fish
+  type: ss
+  server: 195.58.48.137
+  port: 60111
+  cipher: aes-256-gcm
+  password: 8ad9d72a5571df86
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,7 +46,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - fish
   - 🇷🇺 俄罗斯 (Russia) 02 - fish
   - 🇷🇺 俄罗斯 (Russia) 03 - fish
-  - 🇷🇺 俄罗斯 (Russia) 04 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,6 +54,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - fish
   - 🇷🇺 俄罗斯 (Russia) 02 - fish
   - 🇷🇺 俄罗斯 (Russia) 03 - fish
-  - 🇷🇺 俄罗斯 (Russia) 04 - fish
 rules:
 - MATCH,PROXIES

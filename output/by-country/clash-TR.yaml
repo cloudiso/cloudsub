@@ -1,0 +1,37 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇹🇷 土耳其 (Turkey) 01 - fish
+  type: ss
+  server: 188.132.174.236
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 02 - fish
+  type: vless
+  server: 188.132.237.20
+  port: 2095
+  uuid: 3b9e513e-30d9-4ca8-8340-8f33fc6710de
+  udp: true
+  tls: false
+  skip-cert-verify: true
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇹🇷 土耳其 (Turkey) 01 - fish
+  - 🇹🇷 土耳其 (Turkey) 02 - fish
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇹🇷 土耳其 (Turkey) 01 - fish
+  - 🇹🇷 土耳其 (Turkey) 02 - fish
+rules:
+- MATCH,PROXIES
