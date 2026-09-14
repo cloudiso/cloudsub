@@ -17,17 +17,33 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 02 - fish
+  type: vless
+  server: 104.24.219.225
+  port: 443
+  uuid: c2c3de71-5ec5-430c-b096-81969b16ff8d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdnfree.abdollahvand2.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdnfree.abdollahvand2.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - fish
+  - 🇦🇪 阿联酋 (UAE) 02 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - fish
+  - 🇦🇪 阿联酋 (UAE) 02 - fish
 rules:
 - MATCH,PROXIES

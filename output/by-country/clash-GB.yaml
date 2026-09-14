@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - fish
+  type: ss
+  server: 149.102.149.207
+  port: 80
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 02 - fish
+  type: ss
+  server: 82.38.31.164
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 03 - fish
   type: vless
   server: 51.38.70.192
   port: 443
@@ -16,48 +30,7 @@ proxies:
     public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
   servername: play.google.com
   client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 02 - fish
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
-- name: 🇬🇧 英国 (United Kingdom) 03 - fish
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 93fa8bdb-9cca-4a3e-8355-b7c12e4f595e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fornewiran.ade-1000.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/yLWNcuUuw1jlJpkDhGy?ed=2560
-    headers:
-      Host: fornewiran.ade-1000.workers.dev
 - name: 🇬🇧 英国 (United Kingdom) 04 - fish
-  type: ss
-  server: 149.102.149.207
-  port: 443
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 05 - fish
-  type: ss
-  server: 87.86.252.153
-  port: 30126
-  cipher: chacha20-ietf-poly1305
-  password: ce680bff12723187
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 06 - fish
   type: vmess
   server: 66.163.117.58
   port: 22324
@@ -67,56 +40,32 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 07 - fish
-  type: vless
-  server: 91.193.58.195
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+- name: 🇬🇧 英国 (United Kingdom) 05 - fish
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: jamph131-1228.pages.dev
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 08 - fish
-  type: vless
-  server: 91.193.58.117
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jamph131-1228.pages.dev
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 09 - fish
-  type: vless
-  server: 91.193.58.93
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jamph131-1228.pages.dev
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 10 - fish
-  type: ss
-  server: 149.102.149.207
+- name: 🇬🇧 英国 (United Kingdom) 06 - fish
+  type: vmess
+  server: 57.129.132.223
   port: 80
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 11 - fish
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 07 - fish
   type: vless
   server: 91.193.59.255
   port: 2096
@@ -130,24 +79,14 @@ proxies:
     path: /proxyip=154.17.22.207,69.63.210.157,134.195.211.13,172.236.245.153,209.146.115.209,64.186.224.194,149.28.94.52,107.151.188.57
     headers:
       Host: fq.jp188.dpdns.org
-- name: 🇬🇧 英国 (United Kingdom) 12 - fish
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 13 - fish
+- name: 🇬🇧 英国 (United Kingdom) 08 - fish
   type: ss
   server: 158.173.221.214
   port: 11001
   cipher: chacha20-ietf-poly1305
   password: c58d16e593d44f42
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 14 - fish
+- name: 🇬🇧 英国 (United Kingdom) 09 - fish
   type: vless
   server: 46.250.250.149
   port: 2053
@@ -159,6 +98,47 @@ proxies:
     public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
   servername: www.apple.com
   client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 10 - fish
+  type: ss
+  server: 149.102.149.207
+  port: 443
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 11 - fish
+  type: vless
+  server: 57.129.132.223
+  port: 80
+  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 12 - fish
+  type: ss
+  server: 158.173.24.73
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 13 - fish
+  type: ss
+  server: 94.156.250.148
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 14 - fish
+  type: ss
+  server: 82.38.31.199
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
 - name: 🇬🇧 英国 (United Kingdom) 15 - fish
   type: vmess
   server: 66.163.117.58
@@ -178,93 +158,40 @@ proxies:
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 17 - fish
   type: ss
-  server: 149.102.132.184
+  server: 141.98.101.181
   port: 443
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 18 - fish
   type: vless
-  server: 63.141.128.22
+  server: 91.193.58.117
   port: 443
-  uuid: b8b01773-36b1-4b49-9bd0-6249f52345b4
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
+  servername: jamph131-1228.pages.dev
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: Telegram-WangCai2🇨🇳
     headers:
-      Host: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
+      Host: jamph131-1228.pages.dev
 - name: 🇬🇧 英国 (United Kingdom) 19 - fish
-  type: vmess
-  server: 57.129.132.223
+  type: ss
+  server: 149.102.132.184
   port: 80
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: google.com
 - name: 🇬🇧 英国 (United Kingdom) 20 - fish
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 21 - fish
   type: ss
   server: 158.173.221.214
   port: 11001
   cipher: chacha20-ietf-poly1305
   password: c58d16e593d44f42
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 22 - fish
-  type: vless
-  server: 129.151.64.169
-  port: 31867
-  uuid: bd01efed-f999-41a5-bbb1-3d2357647f11
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 23 - fish
-  type: ss
-  server: 129.151.95.27
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: etWHWAsjCiGbHaessIM5QuQfSZ8qjOUGlo0fyhpFkDw=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 24 - fish
-  type: ss
-  server: 149.102.132.184
-  port: 80
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 25 - fish
-  type: ss
-  server: 141.98.101.181
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 26 - fish
+- name: 🇬🇧 英国 (United Kingdom) 21 - fish
   type: vless
   server: 91.193.58.141
   port: 443
@@ -278,42 +205,72 @@ proxies:
     path: Telegram-WangCai2🇨🇳
     headers:
       Host: jamph131-1228.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 27 - fish
-  type: vless
-  server: 188.114.97.6
+- name: 🇬🇧 英国 (United Kingdom) 22 - fish
+  type: ss
+  server: 141.98.101.181
   port: 443
-  uuid: 893096ae-ed76-4440-bc34-f77c4872540f
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 23 - fish
+  type: vless
+  server: 91.193.58.195
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: masterserver1-vsh.kalleh.workers.dev
+  servername: jamph131-1228.pages.dev
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoieE1zSFhYR2hkcHZGUHI3cSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: /Telegram-WangCai2🇨🇳
     headers:
-      Host: masterserver1-vsh.kalleh.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 28 - fish
+      Host: jamph131-1228.pages.dev
+- name: 🇬🇧 英国 (United Kingdom) 24 - fish
+  type: ss
+  server: 149.102.132.184
+  port: 443
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 25 - fish
+  type: vless
+  server: 129.121.95.159
+  port: 443
+  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 129.121.95.159
+  network: ws
+  ws-opts:
+    path: /connect
+    headers:
+      Host: 129.121.95.159
+- name: 🇬🇧 英国 (United Kingdom) 26 - fish
+  type: vless
+  server: 91.193.58.93
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jamph131-1228.pages.dev
+  network: ws
+  ws-opts:
+    path: /Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
+- name: 🇬🇧 英国 (United Kingdom) 27 - fish
   type: vmess
-  server: 57.129.132.223
-  port: 80
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 29 - fish
-  type: ss
-  server: 94.156.250.148
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -346,8 +303,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 25 - fish
   - 🇬🇧 英国 (United Kingdom) 26 - fish
   - 🇬🇧 英国 (United Kingdom) 27 - fish
-  - 🇬🇧 英国 (United Kingdom) 28 - fish
-  - 🇬🇧 英国 (United Kingdom) 29 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -380,7 +335,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 25 - fish
   - 🇬🇧 英国 (United Kingdom) 26 - fish
   - 🇬🇧 英国 (United Kingdom) 27 - fish
-  - 🇬🇧 英国 (United Kingdom) 28 - fish
-  - 🇬🇧 英国 (United Kingdom) 29 - fish
 rules:
 - MATCH,PROXIES
