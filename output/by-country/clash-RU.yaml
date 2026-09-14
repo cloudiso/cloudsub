@@ -5,21 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - fish
-  type: vmess
-  server: 80.240.252.241
+  type: vless
+  server: 78.159.247.246
   port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
+  uuid: 1852b02c-1828-40eb-81ff-4de3d097cb35
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: renderer-stream-2-62.mirra.now
+  servername: sb2.hat.onl
   network: ws
   ws-opts:
-    path: /api/v1/gpu-stream/socket
+    path: /ws
     headers:
-      Host: renderer-stream-2-62.mirra.now
+      Host: sb2.hat.onl
 - name: 🇷🇺 俄罗斯 (Russia) 02 - fish
   type: vless
   server: 78.159.247.246
@@ -35,20 +33,6 @@ proxies:
     headers:
       Host: sb2.hat.onl
 - name: 🇷🇺 俄罗斯 (Russia) 03 - fish
-  type: vless
-  server: 78.159.247.246
-  port: 443
-  uuid: 1852b02c-1828-40eb-81ff-4de3d097cb35
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sb2.hat.onl
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: sb2.hat.onl
-- name: 🇷🇺 俄罗斯 (Russia) 04 - fish
   type: ss
   server: 46.17.42.166
   port: 50111
@@ -63,7 +47,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - fish
   - 🇷🇺 俄罗斯 (Russia) 02 - fish
   - 🇷🇺 俄罗斯 (Russia) 03 - fish
-  - 🇷🇺 俄罗斯 (Russia) 04 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -72,6 +55,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - fish
   - 🇷🇺 俄罗斯 (Russia) 02 - fish
   - 🇷🇺 俄罗斯 (Russia) 03 - fish
-  - 🇷🇺 俄罗斯 (Russia) 04 - fish
 rules:
 - MATCH,PROXIES
