@@ -6,6 +6,30 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - fish
   type: vless
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 02 - fish
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 94f1b60a-7786-4ab4-a1f6-eb5591c3d645
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 03 - fish
+  type: vless
   server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
@@ -17,31 +41,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 02 - fish
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 70bd60b1-f399-4df4-ad32-9adc40ae5f2c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 03 - fish
-  type: vless
-  server: cdn.snobvpn.online
-  port: 80
-  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /snob-ws
-    headers:
-      Host: cdn.snobvpn.online
 - name: 🇦🇪 阿联酋 (UAE) 04 - fish
   type: vless
   server: 89.125.147.199
@@ -56,28 +55,42 @@ proxies:
   client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 05 - fish
   type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 434df5d7-fbfa-4761-9cba-f102c0a3f149
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: random
 - name: 🇦🇪 阿联酋 (UAE) 06 - fish
   type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: f62a8f0e-f8db-48a6-8f52-84922aa63368
+  server: cdn.snobvpn.online
+  port: 80
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /snob-ws
+    headers:
+      Host: cdn.snobvpn.online
+- name: 🇦🇪 阿联酋 (UAE) 07 - fish
+  type: vless
+  server: cdn.snobvpn.online
+  port: 80
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /snob-ws
+    headers:
+      Host: cdn.snobvpn.online
 proxy-groups:
 - name: PROXIES
   type: select
@@ -89,6 +102,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - fish
   - 🇦🇪 阿联酋 (UAE) 05 - fish
   - 🇦🇪 阿联酋 (UAE) 06 - fish
+  - 🇦🇪 阿联酋 (UAE) 07 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -100,5 +114,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - fish
   - 🇦🇪 阿联酋 (UAE) 05 - fish
   - 🇦🇪 阿联酋 (UAE) 06 - fish
+  - 🇦🇪 阿联酋 (UAE) 07 - fish
 rules:
 - MATCH,PROXIES
