@@ -6,15 +6,21 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - fish
   type: vless
-  server: 2.29.42.188
+  server: 151.101.56.6
   port: 443
-  uuid: 2713d763-325f-4dcb-8656-cca54cbea4d9
+  uuid: bd5bbbac-adc3-4b23-d3ac-8506694c0ef9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /?RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS
+    headers:
+      Host: c12.com
 - name: 🇫🇮 FI 02 - fish
   type: vless
-  server: 172.64.53.87
+  server: 104.18.38.47
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
@@ -40,32 +46,6 @@ proxies:
     path: /
     headers:
       Host: c12.com
-- name: 🇫🇮 FI 04 - fish
-  type: vless
-  server: 104.19.215.97
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: ?ed=2560
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇫🇮 FI 05 - fish
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,8 +54,6 @@ proxy-groups:
   - 🇫🇮 FI 01 - fish
   - 🇫🇮 FI 02 - fish
   - 🇫🇮 FI 03 - fish
-  - 🇫🇮 FI 04 - fish
-  - 🇫🇮 FI 05 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -84,7 +62,5 @@ proxy-groups:
   - 🇫🇮 FI 01 - fish
   - 🇫🇮 FI 02 - fish
   - 🇫🇮 FI 03 - fish
-  - 🇫🇮 FI 04 - fish
-  - 🇫🇮 FI 05 - fish
 rules:
 - MATCH,PROXIES
