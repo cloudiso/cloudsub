@@ -19,30 +19,6 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇹🇭 TH 02 - fish
-  type: vless
-  server: 103.137.22.71
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /register?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇹🇭 TH 03 - fish
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇭 TH 04 - fish
   type: vmess
   server: 118.193.57.167
   port: 49667
@@ -57,7 +33,7 @@ proxies:
     path: /d46bf492
     headers:
       Host: ''
-- name: 🇹🇭 TH 05 - fish
+- name: 🇹🇭 TH 03 - fish
   type: vmess
   server: 118.193.57.167
   port: 49667
@@ -80,8 +56,6 @@ proxy-groups:
   - 🇹🇭 TH 01 - fish
   - 🇹🇭 TH 02 - fish
   - 🇹🇭 TH 03 - fish
-  - 🇹🇭 TH 04 - fish
-  - 🇹🇭 TH 05 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -90,7 +64,5 @@ proxy-groups:
   - 🇹🇭 TH 01 - fish
   - 🇹🇭 TH 02 - fish
   - 🇹🇭 TH 03 - fish
-  - 🇹🇭 TH 04 - fish
-  - 🇹🇭 TH 05 - fish
 rules:
 - MATCH,PROXIES
