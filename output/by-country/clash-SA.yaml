@@ -4,9 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 CZ 01 - fish
+- name: 🇸🇦 SA 01 - fish
   type: vless
-  server: 195.85.23.45
+  server: 91.209.253.25
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 02 - fish
+  type: vless
+  server: 91.209.253.42
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -18,9 +32,23 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 02 - fish
+- name: 🇸🇦 SA 03 - fish
   type: vless
-  server: 195.85.23.75
+  server: 91.209.253.244
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 04 - fish
+  type: vless
+  server: 91.209.253.109
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -32,9 +60,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 03 - fish
+- name: 🇸🇦 SA 05 - fish
   type: vless
-  server: 195.85.23.88
+  server: 91.209.253.244
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -46,9 +74,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 04 - fish
+- name: 🇸🇦 SA 06 - fish
   type: vless
-  server: 195.85.23.47
+  server: 91.209.253.243
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -60,9 +88,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 05 - fish
+- name: 🇸🇦 SA 07 - fish
   type: vless
-  server: 195.85.23.219
+  server: 91.209.253.250
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -74,9 +102,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 06 - fish
+- name: 🇸🇦 SA 08 - fish
   type: vless
-  server: 195.85.23.217
+  server: 91.209.253.109
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -88,9 +116,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 07 - fish
+- name: 🇸🇦 SA 09 - fish
   type: vless
-  server: 195.85.23.29
+  server: 91.209.253.68
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -102,9 +130,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 08 - fish
+- name: 🇸🇦 SA 10 - fish
   type: vless
-  server: 195.85.23.248
+  server: 91.209.253.119
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -116,9 +144,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 09 - fish
+- name: 🇸🇦 SA 11 - fish
   type: vless
-  server: 195.85.23.111
+  server: 91.209.253.216
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -130,9 +158,23 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 10 - fish
+- name: 🇸🇦 SA 12 - fish
   type: vless
-  server: 195.85.23.252
+  server: 91.209.253.25
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 13 - fish
+  type: vless
+  server: 91.209.253.229
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -149,30 +191,36 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 CZ 01 - fish
-  - 🇨🇿 CZ 02 - fish
-  - 🇨🇿 CZ 03 - fish
-  - 🇨🇿 CZ 04 - fish
-  - 🇨🇿 CZ 05 - fish
-  - 🇨🇿 CZ 06 - fish
-  - 🇨🇿 CZ 07 - fish
-  - 🇨🇿 CZ 08 - fish
-  - 🇨🇿 CZ 09 - fish
-  - 🇨🇿 CZ 10 - fish
+  - 🇸🇦 SA 01 - fish
+  - 🇸🇦 SA 02 - fish
+  - 🇸🇦 SA 03 - fish
+  - 🇸🇦 SA 04 - fish
+  - 🇸🇦 SA 05 - fish
+  - 🇸🇦 SA 06 - fish
+  - 🇸🇦 SA 07 - fish
+  - 🇸🇦 SA 08 - fish
+  - 🇸🇦 SA 09 - fish
+  - 🇸🇦 SA 10 - fish
+  - 🇸🇦 SA 11 - fish
+  - 🇸🇦 SA 12 - fish
+  - 🇸🇦 SA 13 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 CZ 01 - fish
-  - 🇨🇿 CZ 02 - fish
-  - 🇨🇿 CZ 03 - fish
-  - 🇨🇿 CZ 04 - fish
-  - 🇨🇿 CZ 05 - fish
-  - 🇨🇿 CZ 06 - fish
-  - 🇨🇿 CZ 07 - fish
-  - 🇨🇿 CZ 08 - fish
-  - 🇨🇿 CZ 09 - fish
-  - 🇨🇿 CZ 10 - fish
+  - 🇸🇦 SA 01 - fish
+  - 🇸🇦 SA 02 - fish
+  - 🇸🇦 SA 03 - fish
+  - 🇸🇦 SA 04 - fish
+  - 🇸🇦 SA 05 - fish
+  - 🇸🇦 SA 06 - fish
+  - 🇸🇦 SA 07 - fish
+  - 🇸🇦 SA 08 - fish
+  - 🇸🇦 SA 09 - fish
+  - 🇸🇦 SA 10 - fish
+  - 🇸🇦 SA 11 - fish
+  - 🇸🇦 SA 12 - fish
+  - 🇸🇦 SA 13 - fish
 rules:
 - MATCH,PROXIES
