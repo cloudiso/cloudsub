@@ -6,31 +6,32 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - fish
   type: vless
-  server: 43.133.110.81
+  server: 45.202.247.152
   port: 443
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
+    path: /jump.html/star
     headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+      Host: cdn8848.776676.xyz
 - name: 🇹🇭 TH 02 - fish
   type: vless
-  server: 103.86.49.57
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  server: 209.33.167.234
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /ws
+    path: /
     headers:
-      Host: aIs.SpEeDtEsT.nEt
+      Host: cdn8848.776676.xyz
 - name: 🇹🇭 TH 03 - fish
   type: vmess
   server: 118.193.57.167
