@@ -4,23 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇦 SA 01 - fish
+- name: 🇨🇿 CZ 01 - fish
   type: vless
-  server: 91.209.253.25
+  server: 172.67.174.249
   port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  uuid: 26b35808-f1e1-4b97-8c69-46796f058d8b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
+  servername: ezaccess-project-9138d4.5f6on.workers.dev
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /eyJqdW5rIjoicG9pMkt4TDY2TVNtRSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 02 - fish
+      Host: ezaccess-project-9138d4.5f6on.workers.dev
+- name: 🇨🇿 CZ 02 - fish
   type: vless
-  server: sa1.zuoai.cf
+  server: cz1.zuoai.cf
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -37,14 +37,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇸🇦 SA 01 - fish
-  - 🇸🇦 SA 02 - fish
+  - 🇨🇿 CZ 01 - fish
+  - 🇨🇿 CZ 02 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇦 SA 01 - fish
-  - 🇸🇦 SA 02 - fish
+  - 🇨🇿 CZ 01 - fish
+  - 🇨🇿 CZ 02 - fish
 rules:
 - MATCH,PROXIES
