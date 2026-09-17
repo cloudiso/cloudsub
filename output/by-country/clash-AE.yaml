@@ -15,21 +15,58 @@ proxies:
   reality-opts:
     public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
   servername: maps.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 02 - fish
   type: vless
-  server: 207.148.112.220
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 03 - fish
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - fish
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - fish
+  type: vless
+  server: 89.125.147.199
   port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /discuss?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +74,9 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - fish
   - 🇦🇪 阿联酋 (UAE) 02 - fish
+  - 🇦🇪 阿联酋 (UAE) 03 - fish
+  - 🇦🇪 阿联酋 (UAE) 04 - fish
+  - 🇦🇪 阿联酋 (UAE) 05 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +84,8 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - fish
   - 🇦🇪 阿联酋 (UAE) 02 - fish
+  - 🇦🇪 阿联酋 (UAE) 03 - fish
+  - 🇦🇪 阿联酋 (UAE) 04 - fish
+  - 🇦🇪 阿联酋 (UAE) 05 - fish
 rules:
 - MATCH,PROXIES

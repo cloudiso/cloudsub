@@ -5,27 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - fish
-  type: ss
-  server: 82.47.186.18
-  port: 19290
-  cipher: aes-128-gcm
-  password: o2rw2hICwu1blrr_gZAl2Q
-  udp: true
-- name: 🇫🇮 FI 02 - fish
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: bd5bbbac-adc3-4b23-d3ac-8506694c0ef9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 03 - fish
   type: vless
   server: 212.104.128.68
   port: 443
@@ -39,9 +18,9 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 04 - fish
+- name: 🇫🇮 FI 02 - fish
   type: vless
-  server: a2.arshia-nova.ir
+  server: k2.cloud--vpn.site
   port: 443
   uuid: bd5bbbac-adc3-4b23-d3ac-8506694c0ef9
   udp: true
@@ -53,7 +32,49 @@ proxies:
     path: /
     headers:
       Host: c12.com
+- name: 🇫🇮 FI 03 - fish
+  type: vless
+  server: 212.104.128.106
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 04 - fish
+  type: vless
+  server: 212.104.128.27
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 05 - fish
+  type: vless
+  server: 212.104.128.244
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 06 - fish
   type: vless
   server: 185.79.138.71
   port: 448
@@ -65,7 +86,7 @@ proxies:
     public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 06 - fish
+- name: 🇫🇮 FI 07 - fish
   type: vless
   server: 185.79.138.71
   port: 448
@@ -88,6 +109,7 @@ proxy-groups:
   - 🇫🇮 FI 04 - fish
   - 🇫🇮 FI 05 - fish
   - 🇫🇮 FI 06 - fish
+  - 🇫🇮 FI 07 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -99,5 +121,6 @@ proxy-groups:
   - 🇫🇮 FI 04 - fish
   - 🇫🇮 FI 05 - fish
   - 🇫🇮 FI 06 - fish
+  - 🇫🇮 FI 07 - fish
 rules:
 - MATCH,PROXIES
