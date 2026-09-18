@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - fish
+  type: ss
+  server: 181.215.18.196
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: manm1wouaeic9db3
+  udp: true
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - fish
   type: vmess
   server: 156.245.232.239
   port: 35043
@@ -19,7 +26,23 @@ proxies:
     path: /
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - fish
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - fish
+  type: vmess
+  server: 47.83.19.148
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - fish
   type: vless
   server: 47.238.210.5
   port: 13779
@@ -31,13 +54,22 @@ proxies:
     public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
   servername: tesla.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - fish
-  type: ss
-  server: 181.215.18.196
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: manm1wouaeic9db3
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - fish
+  type: vmess
+  server: 47.76.44.32
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 93ucrn4i0PffUAbk.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 93ucrn4i0PffUAbk.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +78,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - fish
   - 🇭🇰 中国香港 (Hong Kong) 02 - fish
   - 🇭🇰 中国香港 (Hong Kong) 03 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 04 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 05 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,5 +88,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - fish
   - 🇭🇰 中国香港 (Hong Kong) 02 - fish
   - 🇭🇰 中国香港 (Hong Kong) 03 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 04 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 05 - fish
 rules:
 - MATCH,PROXIES
