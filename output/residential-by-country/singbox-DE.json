@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 西班牙 (Spain) 01 - fish"
+        "🇩🇪 德国 (Germany) 01 (家宽) - fish"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 西班牙 (Spain) 01 - fish"
+        "🇩🇪 德国 (Germany) 01 (家宽) - fish"
       ],
       "url": "https://www.google.com/generate_204"
     },
