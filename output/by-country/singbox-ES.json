@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL 01 - fish"
+        "🇪🇸 西班牙 (Spain) 01 - fish",
+        "🇪🇸 西班牙 (Spain) 02 - fish",
+        "🇪🇸 西班牙 (Spain) 03 - fish"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL 01 - fish"
+        "🇪🇸 西班牙 (Spain) 01 - fish",
+        "🇪🇸 西班牙 (Spain) 02 - fish",
+        "🇪🇸 西班牙 (Spain) 03 - fish"
       ],
       "url": "https://www.google.com/generate_204"
     },

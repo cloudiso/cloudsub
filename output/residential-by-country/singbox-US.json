@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - fish"
+        "🇺🇸 美国 (United States) 01 (家宽) - fish",
+        "🇺🇸 美国 (United States) 02 (家宽) - fish"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - fish"
+        "🇺🇸 美国 (United States) 01 (家宽) - fish",
+        "🇺🇸 美国 (United States) 02 (家宽) - fish"
       ],
       "url": "https://www.google.com/generate_204"
     },
