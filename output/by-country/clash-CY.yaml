@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇨🇾 CY 01 - fish
   type: vless
-  server: 195.26.229.86
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇨🇾 CY 02 - fish
-  type: vless
   server: 195.26.229.235
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
@@ -32,9 +18,33 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
+- name: 🇨🇾 CY 02 - fish
+  type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+  servername: deepl.com
+  client-fingerprint: random
 - name: 🇨🇾 CY 03 - fish
   type: vless
-  server: 195.26.229.156
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+  servername: deepl.com
+  client-fingerprint: firefox
+- name: 🇨🇾 CY 04 - fish
+  type: vless
+  server: 195.26.229.86
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -46,19 +56,40 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇨🇾 CY 04 - fish
+- name: 🇨🇾 CY 05 - fish
   type: vless
-  server: 194.59.245.250
+  server: 194.76.154.31
   port: 40443
-  uuid: e4371581-c418-4770-b09a-d630f18290a6
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: WFvn-RRJzpt2qV4xwj_R93gDr6dduIjkQKO3De3Y2Hc
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+  servername: deepl.com
+  client-fingerprint: qq
+- name: 🇨🇾 CY 06 - fish
+  type: vless
+  server: 45.9.2.171
+  port: 8443
+  uuid: 167610e4-bcaf-4074-bc2d-0c08dc4ea294
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: torr.wlrus.cfd
+- name: 🇨🇾 CY 07 - fish
+  type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
   client-fingerprint: chrome
-- name: 🇨🇾 CY 05 - fish
+- name: 🇨🇾 CY 08 - fish
   type: vless
   server: 195.26.229.32
   port: 443
@@ -72,39 +103,20 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇨🇾 CY 06 - fish
+- name: 🇨🇾 CY 09 - fish
   type: vless
-  server: 194.76.154.31
-  port: 40443
-  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  server: 195.26.229.157
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
-  servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇨🇾 CY 07 - fish
-  type: vless
-  server: 194.76.154.31
-  port: 40443
-  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
-  servername: deepl.com
-  client-fingerprint: qq
-- name: 🇨🇾 CY 08 - fish
-  type: vless
-  server: 45.9.2.171
-  port: 8443
-  uuid: 167610e4-bcaf-4074-bc2d-0c08dc4ea294
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: torr.wlrus.cfd
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -118,6 +130,7 @@ proxy-groups:
   - 🇨🇾 CY 06 - fish
   - 🇨🇾 CY 07 - fish
   - 🇨🇾 CY 08 - fish
+  - 🇨🇾 CY 09 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -131,5 +144,6 @@ proxy-groups:
   - 🇨🇾 CY 06 - fish
   - 🇨🇾 CY 07 - fish
   - 🇨🇾 CY 08 - fish
+  - 🇨🇾 CY 09 - fish
 rules:
 - MATCH,PROXIES

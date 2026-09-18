@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - fish
-  type: ss
-  server: 36.224.185.173
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - fish
   type: vmess
   server: 165.154.195.38
   port: 35034
@@ -21,7 +14,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - fish
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - fish
   type: vless
   server: 60.248.219.78
   port: 443
@@ -35,6 +28,20 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 60.248.219.78
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - fish
+  type: vless
+  server: 60.248.219.53
+  port: 443
+  uuid: f1d247db-d7ce-4eb8-9c0d-7b10603cd0b4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: 60.248.219.53
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - fish
   type: vless
   server: 59.125.69.19
@@ -50,19 +57,15 @@ proxies:
     headers:
       Host: 59.125.69.19
 - name: 🇹🇼 中国台湾 (Taiwan) 05 - fish
-  type: vless
-  server: 60.248.219.52
-  port: 443
-  uuid: f265b49a-70a3-407a-b17b-e45dfb9f255c
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: 60.248.219.52
 - name: 🇹🇼 中国台湾 (Taiwan) 06 - fish
   type: vmess
   server: 165.154.195.38
@@ -74,6 +77,16 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 07 - fish
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 08 - fish
   type: vmess
   server: 165.154.195.38
   port: 35034
@@ -95,6 +108,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 05 - fish
   - 🇹🇼 中国台湾 (Taiwan) 06 - fish
   - 🇹🇼 中国台湾 (Taiwan) 07 - fish
+  - 🇹🇼 中国台湾 (Taiwan) 08 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -107,5 +121,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 05 - fish
   - 🇹🇼 中国台湾 (Taiwan) 06 - fish
   - 🇹🇼 中国台湾 (Taiwan) 07 - fish
+  - 🇹🇼 中国台湾 (Taiwan) 08 - fish
 rules:
 - MATCH,PROXIES
