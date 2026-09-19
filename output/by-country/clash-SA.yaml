@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇸🇦 SA 01 - fish
   type: vless
-  server: 91.209.253.68
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 02 - fish
-  type: vless
   server: 91.209.253.229
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
@@ -32,9 +18,23 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 02 - fish
+  type: vless
+  server: 91.209.253.68
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 03 - fish
   type: vless
-  server: 91.209.253.243
+  server: 91.209.253.109
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -47,20 +47,6 @@ proxies:
     headers:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 04 - fish
-  type: vless
-  server: 91.209.253.25
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 05 - fish
   type: vless
   server: 91.209.253.250
   port: 443
@@ -83,7 +69,6 @@ proxy-groups:
   - 🇸🇦 SA 02 - fish
   - 🇸🇦 SA 03 - fish
   - 🇸🇦 SA 04 - fish
-  - 🇸🇦 SA 05 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -93,6 +78,5 @@ proxy-groups:
   - 🇸🇦 SA 02 - fish
   - 🇸🇦 SA 03 - fish
   - 🇸🇦 SA 04 - fish
-  - 🇸🇦 SA 05 - fish
 rules:
 - MATCH,PROXIES

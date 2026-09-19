@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇿 BZ 01 - fish
+- name: 🇮🇶 IQ 01 - fish
   type: vless
-  server: 202.181.177.8
+  server: 45.130.125.207
   port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 31aa0950-eb19-45ff-94a2-af416deb3b90
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: SquarE-saLaD-EbDe.ZDFGVcCfgUUYgGG.wOrKeRS.DEV
   network: ws
   ws-opts:
-    path: /channels/act
+    path: /eyJqdW5rIjoiZm5INktPV0lGcHI1NjNSOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
     headers:
-      Host: cdn8848.776676.xyz
+      Host: square-salad-ebde.zdfgvccfguuyggg.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇿 BZ 01 - fish
+  - 🇮🇶 IQ 01 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇿 BZ 01 - fish
+  - 🇮🇶 IQ 01 - fish
 rules:
 - MATCH,PROXIES

@@ -29,6 +29,50 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 03 - fish
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇮🇳 印度 (India) 04 - fish
+  type: vless
+  server: 104.21.69.118
+  port: 443
+  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: odd-violet-5440.asdgrweeee13.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: odd-violet-5440.asdgrweeee13.workers.dev
+- name: 🇮🇳 印度 (India) 05 - fish
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: 🇮🇳 印度 (India) 06 - fish
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -40,7 +84,22 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 04 - fish
+- name: 🇮🇳 印度 (India) 07 - fish
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇮🇳 印度 (India) 08 - fish
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -64,6 +123,10 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - fish
   - 🇮🇳 印度 (India) 03 - fish
   - 🇮🇳 印度 (India) 04 - fish
+  - 🇮🇳 印度 (India) 05 - fish
+  - 🇮🇳 印度 (India) 06 - fish
+  - 🇮🇳 印度 (India) 07 - fish
+  - 🇮🇳 印度 (India) 08 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -73,5 +136,9 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - fish
   - 🇮🇳 印度 (India) 03 - fish
   - 🇮🇳 印度 (India) 04 - fish
+  - 🇮🇳 印度 (India) 05 - fish
+  - 🇮🇳 印度 (India) 06 - fish
+  - 🇮🇳 印度 (India) 07 - fish
+  - 🇮🇳 印度 (India) 08 - fish
 rules:
 - MATCH,PROXIES
