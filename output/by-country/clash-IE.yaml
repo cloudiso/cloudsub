@@ -11,17 +11,26 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: LB2J8MvTt2SBgD6o
   udp: true
+- name: 🇮🇪 IE 02 - fish
+  type: ss
+  server: 20.238.35.153
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: LB2J8MvTt2SBgD6o
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇪 IE 01 - fish
+  - 🇮🇪 IE 02 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇪 IE 01 - fish
+  - 🇮🇪 IE 02 - fish
 rules:
 - MATCH,PROXIES

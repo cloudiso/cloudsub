@@ -6,34 +6,6 @@ log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - fish
   type: vless
-  server: 31.43.179.106
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇰🇿 KZ 02 - fish
-  type: vless
-  server: 31.43.179.137
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇰🇿 KZ 03 - fish
-  type: vless
   server: 31.43.179.36
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
@@ -46,23 +18,9 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇰🇿 KZ 04 - fish
+- name: 🇰🇿 KZ 02 - fish
   type: vless
-  server: 31.43.179.200
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇰🇿 KZ 05 - fish
-  type: vless
-  server: 31.43.179.36
+  server: kz3.zuoai.cf
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -81,9 +39,6 @@ proxy-groups:
   - AUTO
   - 🇰🇿 KZ 01 - fish
   - 🇰🇿 KZ 02 - fish
-  - 🇰🇿 KZ 03 - fish
-  - 🇰🇿 KZ 04 - fish
-  - 🇰🇿 KZ 05 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -91,8 +46,5 @@ proxy-groups:
   proxies:
   - 🇰🇿 KZ 01 - fish
   - 🇰🇿 KZ 02 - fish
-  - 🇰🇿 KZ 03 - fish
-  - 🇰🇿 KZ 04 - fish
-  - 🇰🇿 KZ 05 - fish
 rules:
 - MATCH,PROXIES
