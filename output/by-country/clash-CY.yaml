@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇾 CY 01 - fish
   type: vless
-  server: 195.26.229.120
+  server: 195.26.229.157
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -15,7 +15,7 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /proxyip=us.xiabibi.cffp=chrome
     headers:
       Host: xi.tbv.ccwu.cc
 - name: 🇨🇾 CY 02 - fish
@@ -34,7 +34,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇨🇾 CY 03 - fish
   type: vless
-  server: 195.26.229.32
+  server: 195.26.229.120
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -43,26 +43,26 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: xi.tbv.ccwu.cc
 - name: 🇨🇾 CY 04 - fish
   type: vless
-  server: 195.26.229.86
+  server: 213.111.177.107
   port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /proxyip
+    path: /
     headers:
-      Host: xi.tbv.ccwu.cc
+      Host: shuma.ccwu.cc
 - name: 🇨🇾 CY 05 - fish
   type: vless
-  server: 195.26.229.157
+  server: 195.26.229.156
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -76,7 +76,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇨🇾 CY 06 - fish
   type: vless
-  server: 195.26.229.148
+  server: 195.26.229.86
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -85,24 +85,10 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cffp=chrome
+    path: /proxyip
     headers:
       Host: xi.tbv.ccwu.cc
 - name: 🇨🇾 CY 07 - fish
-  type: vless
-  server: 195.26.229.131
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cffp=chrome
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇨🇾 CY 08 - fish
   type: vless
   server: 195.26.229.86
   port: 443
@@ -116,7 +102,7 @@ proxies:
     path: /proxyip=us.xiabibi.cffp=chrome
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇨🇾 CY 09 - fish
+- name: 🇨🇾 CY 08 - fish
   type: vless
   server: 195.26.229.235
   port: 443
@@ -130,9 +116,9 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇨🇾 CY 10 - fish
+- name: 🇨🇾 CY 09 - fish
   type: vless
-  server: 195.26.229.127
+  server: 195.26.229.157
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -141,22 +127,10 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇨🇾 CY 11 - fish
-  type: vless
-  server: 194.76.154.31
-  port: 40443
-  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
-  servername: deepl.com
-  client-fingerprint: firefox
-- name: 🇨🇾 CY 12 - fish
+- name: 🇨🇾 CY 10 - fish
   type: vless
   server: 195.26.229.32
   port: 443
@@ -170,9 +144,37 @@ proxies:
     path: /proxyip=us.xiabibi.cffp=chrome
     headers:
       Host: xi.tbv.ccwu.cc
+- name: 🇨🇾 CY 11 - fish
+  type: vless
+  server: 195.26.229.127
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇨🇾 CY 12 - fish
+  type: vless
+  server: 195.26.229.32
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
 - name: 🇨🇾 CY 13 - fish
   type: vless
-  server: 195.26.229.222
+  server: 195.26.229.127
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -186,7 +188,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇨🇾 CY 14 - fish
   type: vless
-  server: 195.26.229.120
+  server: 195.26.229.131
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -200,7 +202,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇨🇾 CY 15 - fish
   type: vless
-  server: 195.26.229.235
+  server: 195.26.229.148
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -214,7 +216,33 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇨🇾 CY 16 - fish
   type: vless
-  server: 195.26.229.157
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+  servername: deepl.com
+  client-fingerprint: firefox
+- name: 🇨🇾 CY 17 - fish
+  type: vless
+  server: 213.111.177.107
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇨🇾 CY 18 - fish
+  type: vless
+  server: 195.26.229.120
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -226,9 +254,23 @@ proxies:
     path: /proxyip=us.xiabibi.cffp=chrome
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇨🇾 CY 17 - fish
+- name: 🇨🇾 CY 19 - fish
   type: vless
-  server: 195.26.229.127
+  server: 195.26.229.235
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cffp=chrome
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇨🇾 CY 20 - fish
+  type: vless
+  server: 195.26.229.222
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -262,6 +304,9 @@ proxy-groups:
   - 🇨🇾 CY 15 - fish
   - 🇨🇾 CY 16 - fish
   - 🇨🇾 CY 17 - fish
+  - 🇨🇾 CY 18 - fish
+  - 🇨🇾 CY 19 - fish
+  - 🇨🇾 CY 20 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -284,5 +329,8 @@ proxy-groups:
   - 🇨🇾 CY 15 - fish
   - 🇨🇾 CY 16 - fish
   - 🇨🇾 CY 17 - fish
+  - 🇨🇾 CY 18 - fish
+  - 🇨🇾 CY 19 - fish
+  - 🇨🇾 CY 20 - fish
 rules:
 - MATCH,PROXIES

@@ -6,6 +6,34 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - fish
   type: vless
+  server: 138.68.142.165
+  port: 2053
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /resource/channel
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇷🇺 俄罗斯 (Russia) 02 - fish
+  type: vless
+  server: 132.243.203.207
+  port: 8443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: '%2Flives%3Fed%3D2560'
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇷🇺 俄罗斯 (Russia) 03 - fish
+  type: vless
   server: 46.8.200.91
   port: 443
   uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
@@ -18,9 +46,9 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 02 - fish
+- name: 🇷🇺 俄罗斯 (Russia) 04 - fish
   type: vless
-  server: 5.101.115.117
+  server: 202.181.177.8
   port: 8443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
@@ -29,21 +57,7 @@ proxies:
   servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /magnet/thread?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇷🇺 俄罗斯 (Russia) 03 - fish
-  type: vless
-  server: 103.251.167.112
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /library/lang
+    path: /channels/act
     headers:
       Host: cdn8848.776676.xyz
 proxy-groups:
@@ -54,6 +68,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - fish
   - 🇷🇺 俄罗斯 (Russia) 02 - fish
   - 🇷🇺 俄罗斯 (Russia) 03 - fish
+  - 🇷🇺 俄罗斯 (Russia) 04 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +77,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - fish
   - 🇷🇺 俄罗斯 (Russia) 02 - fish
   - 🇷🇺 俄罗斯 (Russia) 03 - fish
+  - 🇷🇺 俄罗斯 (Russia) 04 - fish
 rules:
 - MATCH,PROXIES
