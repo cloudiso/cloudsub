@@ -7,7 +7,9 @@
       "outbounds": [
         "auto",
         "🇦🇹 AT 01 - fish",
-        "🇦🇹 AT 02 - fish"
+        "🇦🇹 AT 02 - fish",
+        "🇦🇹 AT 03 - fish",
+        "🇦🇹 AT 04 - fish"
       ]
     },
     {
@@ -15,7 +17,9 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇹 AT 01 - fish",
-        "🇦🇹 AT 02 - fish"
+        "🇦🇹 AT 02 - fish",
+        "🇦🇹 AT 03 - fish",
+        "🇦🇹 AT 04 - fish"
       ],
       "url": "https://www.google.com/generate_204"
     },
