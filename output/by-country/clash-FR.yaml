@@ -6,55 +6,38 @@ log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - fish
   type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  server: 45.38.228.237
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 02 - fish
-  type: vmess
-  server: 188.114.96.19
-  port: 80
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇫🇷 法国 (France) 03 - fish
+      Host: shuma.ccwu.cc
+- name: 🇫🇷 法国 (France) 02 - fish
   type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  server: 51.44.119.98
+  port: 22222
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 03 - fish
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: 149.202.58.99
+  servername: ''
 - name: 🇫🇷 法国 (France) 04 - fish
-  type: ss
-  server: 51.255.13.232
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-  udp: true
-- name: 🇫🇷 法国 (France) 05 - fish
   type: vmess
   server: 188.114.96.19
   port: 80
@@ -69,59 +52,45 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+- name: 🇫🇷 法国 (France) 05 - fish
+  type: vless
+  server: 45.155.169.170
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
 - name: 🇫🇷 法国 (France) 06 - fish
   type: vless
-  server: 45.131.4.45
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-56a63c8d27cf
+  server: 51.44.119.98
+  port: 22224
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: z-e-u-s-panel-h28k80.amipeito.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/56a63c8d27cf
-    headers:
-      Host: z-e-u-s-panel-h28k80.amipeito.workers.dev
 - name: 🇫🇷 法国 (France) 07 - fish
   type: vless
-  server: 34.155.10.226
-  port: 443
-  uuid: d619964d-26d6-452d-9860-6f058f03ba8e
+  server: 13.39.211.208
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 6tH_NDFcxWn60B3s-MgrkBTU2yUUBY42ZG1av50Ywhk
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 08 - fish
   type: vless
-  server: 81.95.4.189
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  server: 13.39.211.208
+  port: 22222
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
 - name: 🇫🇷 法国 (France) 09 - fish
-  type: vless
-  server: 34.155.10.226
-  port: 443
-  uuid: d619964d-26d6-452d-9860-6f058f03ba8e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 6tH_NDFcxWn60B3s-MgrkBTU2yUUBY42ZG1av50Ywhk
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 10 - fish
   type: vmess
   server: 162.19.204.71
   port: 1234
@@ -132,7 +101,27 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
+- name: 🇫🇷 法国 (France) 10 - fish
+  type: vless
+  server: 34.155.10.226
+  port: 443
+  uuid: d619964d-26d6-452d-9860-6f058f03ba8e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 6tH_NDFcxWn60B3s-MgrkBTU2yUUBY42ZG1av50Ywhk
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 11 - fish
+  type: vless
+  server: 13.39.211.208
+  port: 22224
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 12 - fish
   type: vless
   server: 149.202.58.99
   port: 443
@@ -146,13 +135,132 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
-- name: 🇫🇷 法国 (France) 12 - fish
-  type: ss
-  server: 54.36.174.140
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: mrs2e9a
+- name: 🇫🇷 法国 (France) 13 - fish
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 14 - fish
+  type: vless
+  server: 91.107.252.248
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇫🇷 法国 (France) 15 - fish
+  type: vless
+  server: 34.155.10.226
+  port: 443
+  uuid: d619964d-26d6-452d-9860-6f058f03ba8e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 6tH_NDFcxWn60B3s-MgrkBTU2yUUBY42ZG1av50Ywhk
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 16 - fish
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+  udp: true
+- name: 🇫🇷 法国 (France) 17 - fish
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 18 - fish
+  type: vless
+  server: 51.44.119.98
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 19 - fish
+  type: vless
+  server: 51.44.119.98
+  port: 22224
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 20 - fish
+  type: vless
+  server: 147.90.26.57
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇫🇷 法国 (France) 21 - fish
+  type: vless
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇫🇷 法国 (France) 22 - fish
+  type: vless
+  server: 51.44.119.98
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 23 - fish
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 24 - fish
+  type: vless
+  server: 51.44.119.98
+  port: 22222
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -170,6 +278,18 @@ proxy-groups:
   - 🇫🇷 法国 (France) 10 - fish
   - 🇫🇷 法国 (France) 11 - fish
   - 🇫🇷 法国 (France) 12 - fish
+  - 🇫🇷 法国 (France) 13 - fish
+  - 🇫🇷 法国 (France) 14 - fish
+  - 🇫🇷 法国 (France) 15 - fish
+  - 🇫🇷 法国 (France) 16 - fish
+  - 🇫🇷 法国 (France) 17 - fish
+  - 🇫🇷 法国 (France) 18 - fish
+  - 🇫🇷 法国 (France) 19 - fish
+  - 🇫🇷 法国 (France) 20 - fish
+  - 🇫🇷 法国 (France) 21 - fish
+  - 🇫🇷 法国 (France) 22 - fish
+  - 🇫🇷 法国 (France) 23 - fish
+  - 🇫🇷 法国 (France) 24 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -187,5 +307,17 @@ proxy-groups:
   - 🇫🇷 法国 (France) 10 - fish
   - 🇫🇷 法国 (France) 11 - fish
   - 🇫🇷 法国 (France) 12 - fish
+  - 🇫🇷 法国 (France) 13 - fish
+  - 🇫🇷 法国 (France) 14 - fish
+  - 🇫🇷 法国 (France) 15 - fish
+  - 🇫🇷 法国 (France) 16 - fish
+  - 🇫🇷 法国 (France) 17 - fish
+  - 🇫🇷 法国 (France) 18 - fish
+  - 🇫🇷 法国 (France) 19 - fish
+  - 🇫🇷 法国 (France) 20 - fish
+  - 🇫🇷 法国 (France) 21 - fish
+  - 🇫🇷 法国 (France) 22 - fish
+  - 🇫🇷 法国 (France) 23 - fish
+  - 🇫🇷 法国 (France) 24 - fish
 rules:
 - MATCH,PROXIES
