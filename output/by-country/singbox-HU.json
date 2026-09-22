@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇸 IS 01 - fish"
+        "🇭🇺 HU 01 - fish",
+        "🇭🇺 HU 02 - fish"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇸 IS 01 - fish"
+        "🇭🇺 HU 01 - fish",
+        "🇭🇺 HU 02 - fish"
       ],
       "url": "https://www.google.com/generate_204"
     },

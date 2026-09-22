@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇸 RS 01 - fish"
+        "🇹🇷 土耳其 (Turkey) 01 - fish",
+        "🇹🇷 土耳其 (Turkey) 02 - fish",
+        "🇹🇷 土耳其 (Turkey) 03 - fish",
+        "🇹🇷 土耳其 (Turkey) 04 - fish"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇸 RS 01 - fish"
+        "🇹🇷 土耳其 (Turkey) 01 - fish",
+        "🇹🇷 土耳其 (Turkey) 02 - fish",
+        "🇹🇷 土耳其 (Turkey) 03 - fish",
+        "🇹🇷 土耳其 (Turkey) 04 - fish"
       ],
       "url": "https://www.google.com/generate_204"
     },
