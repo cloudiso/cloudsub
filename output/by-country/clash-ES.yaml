@@ -6,8 +6,8 @@ log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - fish
   type: vless
-  server: 195.133.92.20
-  port: 443
+  server: 152.114.195.163
+  port: 8443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
@@ -15,10 +15,17 @@ proxies:
   servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: shuma.ccwu.cc
 - name: 🇪🇸 西班牙 (Spain) 02 - fish
+  type: ss
+  server: 140.174.184.5
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
+  udp: true
+- name: 🇪🇸 西班牙 (Spain) 03 - fish
   type: vless
   server: 152.114.195.163
   port: 8443
@@ -32,7 +39,21 @@ proxies:
     path: /fp=chrome
     headers:
       Host: shuma.ccwu.cc
-- name: 🇪🇸 西班牙 (Spain) 03 - fish
+- name: 🇪🇸 西班牙 (Spain) 04 - fish
+  type: vless
+  server: 195.133.92.20
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇪🇸 西班牙 (Spain) 05 - fish
   type: vless
   server: 152.114.195.163
   port: 8443
@@ -46,22 +67,27 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇪🇸 西班牙 (Spain) 04 - fish
-  type: vmess
-  server: mygptagent.org
+- name: 🇪🇸 西班牙 (Spain) 06 - fish
+  type: vless
+  server: 195.133.92.20
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: mygptagent.org
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /fp=chrome
     headers:
-      Host: mygptagent.org
+      Host: shuma.ccwu.cc
+- name: 🇪🇸 西班牙 (Spain) 07 - fish
+  type: ss
+  server: 108.181.121.226
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -71,6 +97,9 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - fish
   - 🇪🇸 西班牙 (Spain) 03 - fish
   - 🇪🇸 西班牙 (Spain) 04 - fish
+  - 🇪🇸 西班牙 (Spain) 05 - fish
+  - 🇪🇸 西班牙 (Spain) 06 - fish
+  - 🇪🇸 西班牙 (Spain) 07 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -80,5 +109,8 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - fish
   - 🇪🇸 西班牙 (Spain) 03 - fish
   - 🇪🇸 西班牙 (Spain) 04 - fish
+  - 🇪🇸 西班牙 (Spain) 05 - fish
+  - 🇪🇸 西班牙 (Spain) 06 - fish
+  - 🇪🇸 西班牙 (Spain) 07 - fish
 rules:
 - MATCH,PROXIES
