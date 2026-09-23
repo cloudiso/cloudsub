@@ -15,8 +15,20 @@ proxies:
   reality-opts:
     public-key: kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇰🇷 韩国 (South Korea) 02 - fish
+  type: vless
+  server: 34.22.64.72
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: edge
+- name: 🇰🇷 韩国 (South Korea) 03 - fish
   type: vless
   server: 34.64.149.137
   port: 443
@@ -28,7 +40,43 @@ proxies:
     public-key: kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 03 - fish
+- name: 🇰🇷 韩国 (South Korea) 04 - fish
+  type: vless
+  server: 34.22.64.72
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 05 - fish
+  type: vless
+  server: 34.64.149.137
+  port: 443
+  uuid: 700a7a0e-3f27-406c-81d1-aa1abe411af8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 06 - fish
+  type: vless
+  server: 34.22.64.72
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 07 - fish
   type: vless
   server: 47.80.57.116
   port: 443
@@ -42,67 +90,7 @@ proxies:
     path: /TG:@MiaChatChannel
     headers:
       Host: mia6.pages.dev
-- name: 🇰🇷 韩国 (South Korea) 04 - fish
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0ed342c3-eb45-4d63-83a1-697252636ca9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: yellow-hall-d482.260-d22.workers.dev
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: yellow-hall-d482.260-d22.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 05 - fish
-  type: vless
-  server: 172.64.88.251
-  port: 8880
-  uuid: 7e3cd2f1-0de5-4717-9002-64d8597bc577
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: dry-credit-fc26.203-d8c.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 06 - fish
-  type: vless
-  server: 13.124.169.29
-  port: 443
-  uuid: c92e12ca-ea66-4785-8675-652b35134117
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: thus-k.netnode.cc.cd
-  network: ws
-  ws-opts:
-    path: /t.me/daily_free_vpn
-    headers:
-      Host: thus-k.netnode.cc.cd
-- name: 🇰🇷 韩国 (South Korea) 07 - fish
-  type: vless
-  server: 34.64.149.137
-  port: 443
-  uuid: 700a7a0e-3f27-406c-81d1-aa1abe411af8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 08 - fish
-  type: ss
-  server: 141.164.45.187
-  port: 6679
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 09 - fish
   type: vless
   server: 34.22.64.72
   port: 443
@@ -114,46 +102,49 @@ proxies:
     public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 10 - fish
+- name: 🇰🇷 韩国 (South Korea) 09 - fish
   type: vless
-  server: 172.64.88.251
-  port: 8880
-  uuid: 87a5d3eb-afd4-4193-9787-c54ef7c26c8c
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: patient-cake-39c7.44-e7a.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 11 - fish
-  type: vless
-  server: 123.111.169.70
-  port: 2083
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 12 - fish
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇰🇷 韩国 (South Korea) 10 - fish
   type: vless
-  server: black-wildflower-dd92.72-1e8.workers.dev
-  port: 8880
-  uuid: 17b2ed22-5fd0-47ad-b5f0-658379379ced
+  server: 34.22.64.72
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: black-wildflower-dd92.72-1e8.workers.dev
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 11 - fish
+  type: vless
+  server: 34.22.64.72
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: edge
+- name: 🇰🇷 韩国 (South Korea) 12 - fish
+  type: ss
+  server: 141.164.45.187
+  port: 9090
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
 - name: 🇰🇷 韩国 (South Korea) 13 - fish
   type: vless
   server: 34.22.64.72
@@ -165,7 +156,7 @@ proxies:
   reality-opts:
     public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 14 - fish
   type: vless
   server: 34.64.149.137
@@ -178,25 +169,6 @@ proxies:
     public-key: kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 15 - fish
-  type: ss
-  server: 141.164.45.187
-  port: 5498
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 16 - fish
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -216,8 +188,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 12 - fish
   - 🇰🇷 韩国 (South Korea) 13 - fish
   - 🇰🇷 韩国 (South Korea) 14 - fish
-  - 🇰🇷 韩国 (South Korea) 15 - fish
-  - 🇰🇷 韩国 (South Korea) 16 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -237,7 +207,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 12 - fish
   - 🇰🇷 韩国 (South Korea) 13 - fish
   - 🇰🇷 韩国 (South Korea) 14 - fish
-  - 🇰🇷 韩国 (South Korea) 15 - fish
-  - 🇰🇷 韩国 (South Korea) 16 - fish
 rules:
 - MATCH,PROXIES
