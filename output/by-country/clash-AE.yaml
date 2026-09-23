@@ -19,17 +19,17 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - fish
   type: vless
-  server: cdn.snobvpn.online
+  server: 45.130.125.201
   port: 80
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  uuid: dc8a9493-c54a-459e-d060-81a700000001
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /snob-ws
+    path: /sync
     headers:
-      Host: cdn.snobvpn.online
+      Host: nahan-core.netizo09.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 03 - fish
   type: vless
   server: 84.235.244.108
@@ -45,93 +45,16 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - fish
   type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - fish
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - fish
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 07 - fish
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 08 - fish
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 4e32f662-01da-4dad-bf33-ee17f578d118
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 09 - fish
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 39c11784-818b-4e2c-8804-8181abc9c849
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 10 - fish
-  type: vless
-  server: cdn.snobvpn.online
-  port: 80
+  server: 89.125.147.199
+  port: 443
   uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /snob-ws
-    headers:
-      Host: cdn.snobvpn.online
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -141,12 +64,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - fish
   - 🇦🇪 阿联酋 (UAE) 03 - fish
   - 🇦🇪 阿联酋 (UAE) 04 - fish
-  - 🇦🇪 阿联酋 (UAE) 05 - fish
-  - 🇦🇪 阿联酋 (UAE) 06 - fish
-  - 🇦🇪 阿联酋 (UAE) 07 - fish
-  - 🇦🇪 阿联酋 (UAE) 08 - fish
-  - 🇦🇪 阿联酋 (UAE) 09 - fish
-  - 🇦🇪 阿联酋 (UAE) 10 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -156,11 +73,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - fish
   - 🇦🇪 阿联酋 (UAE) 03 - fish
   - 🇦🇪 阿联酋 (UAE) 04 - fish
-  - 🇦🇪 阿联酋 (UAE) 05 - fish
-  - 🇦🇪 阿联酋 (UAE) 06 - fish
-  - 🇦🇪 阿联酋 (UAE) 07 - fish
-  - 🇦🇪 阿联酋 (UAE) 08 - fish
-  - 🇦🇪 阿联酋 (UAE) 09 - fish
-  - 🇦🇪 阿联酋 (UAE) 10 - fish
 rules:
 - MATCH,PROXIES
