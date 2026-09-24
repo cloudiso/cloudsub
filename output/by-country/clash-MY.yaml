@@ -4,11 +4,13 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇳 CN 01 - fish
-  type: vless
-  server: us22.sofast.live
-  port: 58011
-  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+- name: 🇲🇾 MY 01 - fish
+  type: vmess
+  server: 47.250.135.244
+  port: 10000
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
@@ -17,12 +19,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇳 CN 01 - fish
+  - 🇲🇾 MY 01 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN 01 - fish
+  - 🇲🇾 MY 01 - fish
 rules:
 - MATCH,PROXIES
