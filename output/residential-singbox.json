@@ -6,20 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 (家宽) - fish",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - fish",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - fish",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - fish"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - fish",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - fish",
+        "🇺🇸 美国 (United States) 03 (家宽) - fish"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 (家宽) - fish",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - fish",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - fish",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - fish"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - fish",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - fish",
+        "🇺🇸 美国 (United States) 03 (家宽) - fish"
       ],
       "url": "https://www.google.com/generate_204"
     },

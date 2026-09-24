@@ -4,33 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 日本 (Japan) 01 (家宽) - fish
-  type: vless
-  server: 116.204.164.60
-  port: 7443
-  uuid: c676be7d-b481-4bba-88d0-65855e09dc67
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - fish
-  type: vless
-  server: 118.167.206.152
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - fish
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - fish
   type: vless
   server: 60.248.219.78
   port: 443
@@ -44,30 +18,47 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - fish
-  type: ss
-  server: 36.224.141.124
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - fish
+  type: vless
+  server: 172.67.152.71
+  port: 8880
+  uuid: 5bbf0601-8431-45f6-a4e9-a1e8b44c0055
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: misty-mouse-141d.177-f18.workers.dev
+- name: 🇺🇸 美国 (United States) 03 (家宽) - fish
+  type: vless
+  server: 162.159.39.218
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 日本 (Japan) 01 (家宽) - fish
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - fish
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - fish
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - fish
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - fish
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - fish
+  - 🇺🇸 美国 (United States) 03 (家宽) - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 (Japan) 01 (家宽) - fish
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - fish
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - fish
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - fish
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - fish
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - fish
+  - 🇺🇸 美国 (United States) 03 (家宽) - fish
 rules:
 - MATCH,PROXIES
