@@ -5,48 +5,45 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - fish
-  type: vless
-  server: 35.234.143.34
-  port: 443
-  uuid: 9743b4f9-24c3-4e53-8b03-c3b5cd9b71b2
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: bx1ylgNlSmg4i-abKzPcSHGMlIE6gdf66Ysjv25ZrE4
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇬🇧 英国 (United Kingdom) 02 - fish
+  type: ss
+  server: 129.151.78.252
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: g726/IWhhF3bdXPIKc6vbtEUOpBVQU1EHNTFoJJtLsU=
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 03 - fish
   type: ss
   server: 129.151.80.179
   port: 61312
   cipher: 2022-blake3-chacha20-poly1305
   password: Igsmu9RK48BJM4cVZyaLTjq2sCwH660FkdQr/8V4yic=
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 03 - fish
-  type: vless
-  server: 46.250.250.149
-  port: 2053
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-  servername: www.apple.com
-  client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 04 - fish
-  type: vless
-  server: 35.234.143.34
+  type: vmess
+  server: aksai.org
   port: 443
-  uuid: 9743b4f9-24c3-4e53-8b03-c3b5cd9b71b2
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: bx1ylgNlSmg4i-abKzPcSHGMlIE6gdf66Ysjv25ZrE4
-  servername: www.cloudflare.com
-  client-fingerprint: random
+  servername: aksai.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aksai.org
 - name: 🇬🇧 英国 (United Kingdom) 05 - fish
   type: ss
   server: 149.102.132.184
@@ -55,28 +52,13 @@ proxies:
   password: g5h5jleTRSyO3Rk4
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 06 - fish
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 51.38.71.51
+  port: 2083
+  cipher: 2022-blake3-aes-256-gcm
+  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇬🇧 英国 (United Kingdom) 07 - fish
-  type: vless
-  server: 35.234.143.34
-  port: 443
-  uuid: 9743b4f9-24c3-4e53-8b03-c3b5cd9b71b2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bx1ylgNlSmg4i-abKzPcSHGMlIE6gdf66Ysjv25ZrE4
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 08 - fish
   type: vless
   server: 46.250.250.149
   port: 2053
@@ -88,17 +70,84 @@ proxies:
     public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 09 - fish
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+- name: 🇬🇧 英国 (United Kingdom) 08 - fish
+  type: ss
+  server: 149.102.149.207
+  port: 443
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
   udp: true
-  tls: false
-  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 09 - fish
+  type: ss
+  server: 129.151.77.63
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: /pYDD9iRDQlBUa4aL0lBTCSp6ZNStfL6xHNn4mSFqFE=
+  udp: true
 - name: 🇬🇧 英国 (United Kingdom) 10 - fish
+  type: ss
+  server: 149.102.132.184
+  port: 443
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 11 - fish
+  type: vless
+  server: 91.193.58.108
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free-server.techsonic.dev
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇬🇧 英国 (United Kingdom) 12 - fish
+  type: ss
+  server: 82.38.31.201
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 13 - fish
+  type: ss
+  server: 149.102.149.207
+  port: 80
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 14 - fish
+  type: ss
+  server: 141.98.101.181
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 15 - fish
+  type: vless
+  server: 104.21.64.250
+  port: 2053
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: INDEX.Arcane509.Workers.DEV
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: index.arcane509.workers.dev
+- name: 🇬🇧 英国 (United Kingdom) 16 - fish
+  type: ss
+  server: 158.173.221.214
+  port: 11001
+  cipher: chacha20-ietf-poly1305
+  password: c58d16e593d44f42
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 17 - fish
   type: vless
   server: 129.121.95.159
   port: 443
@@ -112,14 +161,33 @@ proxies:
     path: /connect
     headers:
       Host: 129.121.95.159
-- name: 🇬🇧 英国 (United Kingdom) 11 - fish
-  type: ss
-  server: 141.98.101.181
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+- name: 🇬🇧 英国 (United Kingdom) 18 - fish
+  type: vless
+  server: 46.250.250.149
+  port: 2053
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 12 - fish
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 19 - fish
+  type: ss
+  server: 82.38.31.186
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 20 - fish
+  type: ss
+  server: 129.151.66.29
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: ynimyaH7xURtsxq5gIGo/UpaTNIslRReaWGE1btx+4A=
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 21 - fish
   type: vmess
   server: 66.163.117.58
   port: 22324
@@ -129,14 +197,119 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 13 - fish
+- name: 🇬🇧 英国 (United Kingdom) 22 - fish
   type: ss
-  server: 51.77.225.200
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: zRZNBszYyWo5
+  server: 129.151.80.179
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Igsmu9RK48BJM4cVZyaLTjq2sCwH660FkdQr/8V4yic=
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 14 - fish
+- name: 🇬🇧 英国 (United Kingdom) 23 - fish
+  type: vless
+  server: 91.193.58.195
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jamph131-1228.pages.dev
+  network: ws
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
+- name: 🇬🇧 英国 (United Kingdom) 24 - fish
+  type: ss
+  server: 129.151.92.223
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: FIKU8rw44Gdi49OR9KrHVRffn85pphhU/+C3IQucB3g=
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 25 - fish
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 26 - fish
+  type: vless
+  server: 91.193.58.93
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jamph131-1228.pages.dev
+  network: ws
+  ws-opts:
+    path: /Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
+- name: 🇬🇧 英国 (United Kingdom) 27 - fish
+  type: vless
+  server: 91.193.58.141
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jamph131-1228.pages.dev
+  network: ws
+  ws-opts:
+    path: /Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
+- name: 🇬🇧 英国 (United Kingdom) 28 - fish
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 29 - fish
+  type: vmess
+  server: 57.129.132.223
+  port: 80
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 30 - fish
+  type: vless
+  server: 91.193.58.117
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jamph131-1228.pages.dev
+  network: ws
+  ws-opts:
+    path: /Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
+- name: 🇬🇧 英国 (United Kingdom) 31 - fish
+  type: ss
+  server: 129.151.87.182
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: M71eEZD/xLw2gvjF0L5j0F1147HWxss5vBp2Qbdyiy0=
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 32 - fish
   type: vless
   server: 35.234.143.34
   port: 443
@@ -147,7 +320,59 @@ proxies:
   reality-opts:
     public-key: bx1ylgNlSmg4i-abKzPcSHGMlIE6gdf66Ysjv25ZrE4
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 33 - fish
+  type: vless
+  server: 139.59.189.127
+  port: 443
+  uuid: 8525fe74-67e6-4a55-8a26-95f227bd1384
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shy-fog-af06.alvlirm333.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shy-fog-af06.alvlirm333.workers.dev
+- name: 🇬🇧 英国 (United Kingdom) 34 - fish
+  type: ss
+  server: 129.151.83.115
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 7+83lYmtkC1TL9F5THnzEGaaF24mquCQgoT+DqJDrlE=
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 35 - fish
+  type: vless
+  server: 91.193.59.191
+  port: 2087
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vlso5.1d.mom
+  network: ws
+  ws-opts:
+    path: /socks5=888:888@hkip.1d.mom:1080
+    headers:
+      Host: vlso5.1d.mom
+- name: 🇬🇧 英国 (United Kingdom) 36 - fish
+  type: ss
+  server: 129.151.70.225
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: xnkkAmDYAZXCenlvIQqgeFk3Mi2tzia5zk59hXgCPok=
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 37 - fish
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -167,6 +392,29 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 12 - fish
   - 🇬🇧 英国 (United Kingdom) 13 - fish
   - 🇬🇧 英国 (United Kingdom) 14 - fish
+  - 🇬🇧 英国 (United Kingdom) 15 - fish
+  - 🇬🇧 英国 (United Kingdom) 16 - fish
+  - 🇬🇧 英国 (United Kingdom) 17 - fish
+  - 🇬🇧 英国 (United Kingdom) 18 - fish
+  - 🇬🇧 英国 (United Kingdom) 19 - fish
+  - 🇬🇧 英国 (United Kingdom) 20 - fish
+  - 🇬🇧 英国 (United Kingdom) 21 - fish
+  - 🇬🇧 英国 (United Kingdom) 22 - fish
+  - 🇬🇧 英国 (United Kingdom) 23 - fish
+  - 🇬🇧 英国 (United Kingdom) 24 - fish
+  - 🇬🇧 英国 (United Kingdom) 25 - fish
+  - 🇬🇧 英国 (United Kingdom) 26 - fish
+  - 🇬🇧 英国 (United Kingdom) 27 - fish
+  - 🇬🇧 英国 (United Kingdom) 28 - fish
+  - 🇬🇧 英国 (United Kingdom) 29 - fish
+  - 🇬🇧 英国 (United Kingdom) 30 - fish
+  - 🇬🇧 英国 (United Kingdom) 31 - fish
+  - 🇬🇧 英国 (United Kingdom) 32 - fish
+  - 🇬🇧 英国 (United Kingdom) 33 - fish
+  - 🇬🇧 英国 (United Kingdom) 34 - fish
+  - 🇬🇧 英国 (United Kingdom) 35 - fish
+  - 🇬🇧 英国 (United Kingdom) 36 - fish
+  - 🇬🇧 英国 (United Kingdom) 37 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -186,5 +434,28 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 12 - fish
   - 🇬🇧 英国 (United Kingdom) 13 - fish
   - 🇬🇧 英国 (United Kingdom) 14 - fish
+  - 🇬🇧 英国 (United Kingdom) 15 - fish
+  - 🇬🇧 英国 (United Kingdom) 16 - fish
+  - 🇬🇧 英国 (United Kingdom) 17 - fish
+  - 🇬🇧 英国 (United Kingdom) 18 - fish
+  - 🇬🇧 英国 (United Kingdom) 19 - fish
+  - 🇬🇧 英国 (United Kingdom) 20 - fish
+  - 🇬🇧 英国 (United Kingdom) 21 - fish
+  - 🇬🇧 英国 (United Kingdom) 22 - fish
+  - 🇬🇧 英国 (United Kingdom) 23 - fish
+  - 🇬🇧 英国 (United Kingdom) 24 - fish
+  - 🇬🇧 英国 (United Kingdom) 25 - fish
+  - 🇬🇧 英国 (United Kingdom) 26 - fish
+  - 🇬🇧 英国 (United Kingdom) 27 - fish
+  - 🇬🇧 英国 (United Kingdom) 28 - fish
+  - 🇬🇧 英国 (United Kingdom) 29 - fish
+  - 🇬🇧 英国 (United Kingdom) 30 - fish
+  - 🇬🇧 英国 (United Kingdom) 31 - fish
+  - 🇬🇧 英国 (United Kingdom) 32 - fish
+  - 🇬🇧 英国 (United Kingdom) 33 - fish
+  - 🇬🇧 英国 (United Kingdom) 34 - fish
+  - 🇬🇧 英国 (United Kingdom) 35 - fish
+  - 🇬🇧 英国 (United Kingdom) 36 - fish
+  - 🇬🇧 英国 (United Kingdom) 37 - fish
 rules:
 - MATCH,PROXIES
