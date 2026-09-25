@@ -6,33 +6,6 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - fish
   type: vless
-  server: 172.64.158.146
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 02 - fish
-  type: vless
-  server: 104.21.16.109
-  port: 443
-  uuid: cc08d2d0-8a7a-4469-81d2-c43704451271
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/6871nrbnl9WsdAiOUInt
-    headers:
-      Host: 9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 03 - fish
-  type: vless
   server: 46.8.200.91
   port: 443
   uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
@@ -51,15 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - fish
-  - 🇷🇺 俄罗斯 (Russia) 02 - fish
-  - 🇷🇺 俄罗斯 (Russia) 03 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - fish
-  - 🇷🇺 俄罗斯 (Russia) 02 - fish
-  - 🇷🇺 俄罗斯 (Russia) 03 - fish
 rules:
 - MATCH,PROXIES
