@@ -5,18 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - fish
-  type: ss
-  server: sth.free-outline.giize.com
-  port: 1081
-  cipher: chacha20-ietf-poly1305
-  password: ac2jdpwv1zl10jim
+  type: vmess
+  server: 47.83.207.148
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vah4urdzl3jdx5r2.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: vah4urdzl3jdx5r2.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - fish
   type: ss
   server: sth.free-outline.giize.com
   port: 1081
   cipher: chacha20-ietf-poly1305
   password: v7qnj9jvxtnpmj4l
+  udp: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - fish
+  type: ss
+  server: sth.free-outline.giize.com
+  port: 1081
+  cipher: chacha20-ietf-poly1305
+  password: ac2jdpwv1zl10jim
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -25,6 +41,7 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 - fish
   - 🇭🇰 中国香港 (Hong Kong) 02 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 03 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -32,5 +49,6 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 - fish
   - 🇭🇰 中国香港 (Hong Kong) 02 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 03 - fish
 rules:
 - MATCH,PROXIES
