@@ -5,111 +5,172 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01 - fish
-  type: vless
-  server: 8.35.211.114
-  port: 2053
-  uuid: 56e4896e-90a9-4fe0-8480-90d3d68b9928
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: go.iranfree.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: go.iranfree.de5.net
-- name: 🇨🇦 加拿大 (Canada) 02 - fish
-  type: vless
-  server: 172.67.133.170
-  port: 443
-  uuid: 7c6a566b-4c4a-b8f2-1719-a3096b424141
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: peekconfigg.vipserver1-39d.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: peekconfigg.vipserver1-39d.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 03 - fish
-  type: vless
-  server: 139.64.235.123
-  port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: notls.lukongtou.eu.org
-- name: 🇨🇦 加拿大 (Canada) 04 - fish
-  type: vless
-  server: 104.17.28.83
-  port: 2087
-  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: whitecreeper.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: whitecreeper.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 05 - fish
-  type: vless
-  server: 172.67.77.98
-  port: 2053
-  uuid: 73bcd72f-9545-4cb8-8daf-7d004501880d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shanxp.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shanxp.dpdns.org
-- name: 🇨🇦 加拿大 (Canada) 06 - fish
   type: ss
-  server: 51.79.49.116
+  server: 51.222.136.236
   port: 8882
   cipher: aes-256-gcm
   password: kDWvXYZoTBcGkC4
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 07 - fish
-  type: vless
-  server: 185.193.29.123
+- name: 🇨🇦 加拿大 (Canada) 02 - fish
+  type: ss
+  server: 142.4.216.225
   port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  cipher: chacha20-ietf-poly1305
+  password: mrs2e9a
   udp: true
-  tls: true
+- name: 🇨🇦 加拿大 (Canada) 03 - fish
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
   skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: notls.lukongtou.eu.org
+- name: 🇨🇦 加拿大 (Canada) 04 - fish
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 05 - fish
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 06 - fish
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 07 - fish
+  type: vmess
+  server: 158.51.123.42
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 08 - fish
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 09 - fish
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 10 - fish
+  type: vmess
+  server: 158.51.123.42
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 11 - fish
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 12 - fish
   type: vless
-  server: 104.26.12.54
-  port: 2083
-  uuid: fc8a0708-951a-4027-860f-2a154ebc4dd7
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: crimson-king-301d.nexoxnet.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: crimson-king-301d.nexoxnet.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 09 - fish
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 13 - fish
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 14 - fish
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 15 - fish
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 16 - fish
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 17 - fish
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 18 - fish
   type: vless
   server: 66.70.179.198
   port: 2053
@@ -121,70 +182,62 @@ proxies:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇨🇦 加拿大 (Canada) 10 - fish
+- name: 🇨🇦 加拿大 (Canada) 19 - fish
+  type: vmess
+  server: 158.51.123.42
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 20 - fish
   type: ss
-  server: yyz-ca-01.blncvpn4u.cc
-  port: 9443
+  server: 51.222.12.127
+  port: 445
   cipher: aes-256-gcm
-  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
+  password: zDNVedRFPQexG9v
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 11 - fish
-  type: vless
-  server: 104.21.45.213
+- name: 🇨🇦 加拿大 (Canada) 21 - fish
+  type: ss
+  server: 51.79.85.185
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 22 - fish
+  type: ss
+  server: 149.22.95.183
   port: 443
-  uuid: a5b1d1ec-327c-f1c5-5856-b34600000000
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ez-541f9d.ezaccess1d3db24.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: ez-541f9d.ezaccess1d3db24.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 12 - fish
-  type: vless
-  server: pruritus.patiromer.workers.dev
-  port: 443
-  uuid: 0659eac3-137b-4002-ba2e-88da4d071235
+- name: 🇨🇦 加拿大 (Canada) 23 - fish
+  type: ss
+  server: 15.235.75.71
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: FD3rCuOsxOay
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pruritus.patiromer.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: pruritus.patiromer.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 13 - fish
-  type: vless
-  server: 104.18.1.1
-  port: 2083
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+- name: 🇨🇦 加拿大 (Canada) 24 - fish
+  type: ss
+  server: 51.222.200.165
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vlsovip.1d.mom
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vlsovip.1d.mom
-- name: 🇨🇦 加拿大 (Canada) 14 - fish
-  type: vless
-  server: 172.67.219.50
-  port: 443
-  uuid: a5b1d1ec-327c-f1c5-5856-b34600000000
+- name: 🇨🇦 加拿大 (Canada) 25 - fish
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ez-541f9d.ezaccess1d3db24.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: ez-541f9d.ezaccess1d3db24.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 15 - fish
+- name: 🇨🇦 加拿大 (Canada) 26 - fish
   type: vless
   server: 66.70.179.198
   port: 2053
@@ -196,716 +249,66 @@ proxies:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 16 - fish
-  type: vless
-  server: 104.21.66.137
-  port: 2087
-  uuid: 50414e45-4c5f-5a45-5553-05920b4f8f35
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: o5zmxbeoutis.o7zluiebuo8s.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/05920b4f8f35
-    headers:
-      Host: o5zmxbeoutis.o7zluiebuo8s.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 17 - fish
-  type: vless
-  server: 188.164.248.72
-  port: 443
-  uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: d39333476.pages.dev
-  network: ws
-  ws-opts:
-    path: /code/cp/classify
-    headers:
-      Host: d39333476.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 18 - fish
-  type: vless
-  server: 188.164.248.96
-  port: 8443
-  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: whitecreeper.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: whitecreeper.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 19 - fish
-  type: vless
-  server: 91.193.59.32
-  port: 2083
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vlsovip.1d.mom
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vlsovip.1d.mom
-- name: 🇨🇦 加拿大 (Canada) 20 - fish
-  type: vless
-  server: 104.17.125.171
-  port: 2096
-  uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: d39333476.pages.dev
-  network: ws
-  ws-opts:
-    path: /trade
-    headers:
-      Host: d39333476.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 21 - fish
-  type: vless
-  server: 172.67.209.127
-  port: 8880
-  uuid: 1b3ad465-d37e-48a2-bb53-d7fddfc97b11
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: calm-silence-d4a1.217.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 22 - fish
-  type: vmess
-  server: 158.51.123.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 23 - fish
-  type: vmess
-  server: 158.51.123.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 24 - fish
-  type: vmess
-  server: 158.51.123.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 25 - fish
-  type: vless
-  server: 172.66.44.133
-  port: 443
-  uuid: 2cf94f4d-9d5b-49ca-81a3-ddc0529a2dac
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: web-tomcat.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: web-tomcat.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 26 - fish
-  type: vless
-  server: 104.19.50.28
-  port: 443
-  uuid: 2b181a3a-c001-4145-845a-5d43a43837d5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vpn-1fj.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vpn-1fj.pages.dev
 - name: 🇨🇦 加拿大 (Canada) 27 - fish
   type: vless
-  server: 172.66.44.211
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wk1.f1w.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wk1.f1w.de5.net
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇨🇦 加拿大 (Canada) 28 - fish
-  type: vless
-  server: 172.67.75.194
-  port: 2096
-  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
+  type: vmess
+  server: 158.51.123.42
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: whitecreeper.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: whitecreeper.pages.dev
 - name: 🇨🇦 加拿大 (Canada) 29 - fish
-  type: vless
-  server: 8.39.125.152
-  port: 8443
-  uuid: 8525fe74-67e6-4a55-8a26-95f227bd1384
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: bitter-shadow-4fc5.alvlirm852.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: bitter-shadow-4fc5.alvlirm852.workers.dev
 - name: 🇨🇦 加拿大 (Canada) 30 - fish
-  type: vless
-  server: 104.18.13.229
-  port: 8880
-  uuid: 81d55675-8570-4b40-9a77-3125339a0f86
+  type: ss
+  server: yyz-ca-01.blncvpn4u.cc
+  port: 9443
+  cipher: aes-256-gcm
+  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: spring-sound-8d8e.36-9ff.workers.dev
 - name: 🇨🇦 加拿大 (Canada) 31 - fish
-  type: vless
-  server: 188.164.248.81
-  port: 2087
-  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
+  type: vmess
+  server: 134.195.198.214
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: whitecreeper.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: whitecreeper.pages.dev
 - name: 🇨🇦 加拿大 (Canada) 32 - fish
-  type: vless
-  server: 8.35.211.87
-  port: 2096
-  uuid: 56e4896e-90a9-4fe0-8480-90d3d68b9928
+  type: vmess
+  server: 134.195.198.214
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: go.iranfree.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: go.iranfree.de5.net
 - name: 🇨🇦 加拿大 (Canada) 33 - fish
-  type: vless
-  server: 141.101.120.73
-  port: 443
-  uuid: 5d8eb33a-2166-4daf-88fe-4be5799c493b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: noisy-term-e657.airdrop2014aa5168.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: noisy-term-e657.airdrop2014aa5168.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 34 - fish
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 35 - fish
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 36 - fish
-  type: vless
-  server: 8.39.125.139
-  port: 2096
-  uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: d39333476.pages.dev
-  network: ws
-  ws-opts:
-    path: /category
-    headers:
-      Host: d39333476.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 37 - fish
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 38 - fish
-  type: vless
-  server: 172.64.155.209
-  port: 8443
-  uuid: 4ff70740-8c80-48ae-985f-2afe4924e908
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pubb.clnahanpnln.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: pubb.clnahanpnln.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 39 - fish
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 40 - fish
-  type: vless
-  server: 104.17.119.115
-  port: 443
-  uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: d39333476.pages.dev
-  network: ws
-  ws-opts:
-    path: /movie/shop
-    headers:
-      Host: d39333476.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 41 - fish
-  type: vless
-  server: 104.26.12.227
-  port: 2096
-  uuid: 73bcd72f-9545-4cb8-8daf-7d004501880d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shanxp.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shanxp.dpdns.org
-- name: 🇨🇦 加拿大 (Canada) 42 - fish
-  type: vless
-  server: 104.18.0.1
-  port: 443
-  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: all.speedtest03.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: all.speedtest03.ccwu.cc
-- name: 🇨🇦 加拿大 (Canada) 43 - fish
-  type: vless
-  server: 165.215.250.16
-  port: 443
-  uuid: e8d06b09-acd9-448c-9874-3c36151d36ee
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: icy-wildflower-2590.lihuifeng595.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: icy-wildflower-2590.lihuifeng595.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 44 - fish
-  type: ss
-  server: 51.79.85.185
-  port: 8118
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 45 - fish
-  type: vless
-  server: 104.16.98.215
-  port: 8880
-  uuid: 23187ddc-16a5-432d-bf4e-dd42a7ae39f7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: steep-thunder-97fa.108-d10.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 46 - fish
-  type: vless
-  server: 172.66.140.62
-  port: 8880
-  uuid: 160ca353-676d-4b7f-a041-0289e388b865
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: proud-cloud-7bdd.208-a52.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 47 - fish
-  type: vless
-  server: 172.64.146.66
-  port: 443
-  uuid: 30235bbe-f791-4e53-89f9-5d9363af9b0a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sie704.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sie704.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 48 - fish
-  type: vless
-  server: 104.21.14.116
-  port: 443
-  uuid: 566c0473-382e-aabb-c62a-f5bb00000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ez-4b5fd4.appelidmymat.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: ez-4b5fd4.appelidmymat.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 49 - fish
-  type: vless
-  server: 8.35.211.185
-  port: 443
-  uuid: 56e4896e-90a9-4fe0-8480-90d3d68b9928
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: go.iranfree.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: go.iranfree.de5.net
-- name: 🇨🇦 加拿大 (Canada) 50 - fish
-  type: ss
-  server: 51.222.141.125
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 51 - fish
-  type: vless
-  server: 172.66.47.123
-  port: 443
-  uuid: 2cf94f4d-9d5b-49ca-81a3-ddc0529a2dac
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: web-tomcat.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: web-tomcat.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 52 - fish
-  type: vless
-  server: 172.67.151.77
-  port: 443
-  uuid: 73796e63-0000-4000-8000-000000000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nahan-core.fatitelegram.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.fatitelegram.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 53 - fish
-  type: vless
-  server: 104.17.20.214
-  port: 443
-  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: refighehosein.salamdadash123.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: refighehosein.salamdadash123.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 54 - fish
-  type: ss
-  server: 51.222.12.127
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 55 - fish
-  type: vless
-  server: 104.17.213.101
-  port: 2083
-  uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: d39333476.pages.dev
-  network: ws
-  ws-opts:
-    path: /zip/items/ads
-    headers:
-      Host: d39333476.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 56 - fish
-  type: vless
-  server: 104.26.13.54
-  port: 2053
-  uuid: 54502a61-2af6-40e7-8331-2c9fc40e5903
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: old-cloud-a96a.rohamsahh90.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: old-cloud-a96a.rohamsahh90.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 57 - fish
-  type: vless
-  server: 8.35.211.36
-  port: 2087
-  uuid: 56e4896e-90a9-4fe0-8480-90d3d68b9928
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: go.iranfree.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: go.iranfree.de5.net
-- name: 🇨🇦 加拿大 (Canada) 58 - fish
-  type: vless
-  server: 172.64.147.34
-  port: 2096
-  uuid: 56e4896e-90a9-4fe0-8480-90d3d68b9928
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: go.iranfree.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: go.iranfree.de5.net
-- name: 🇨🇦 加拿大 (Canada) 59 - fish
-  type: vless
-  server: 172.67.219.50
-  port: 443
-  uuid: a5b1d1ec-327c-f1c5-5856-b34600000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ez-541f9d.ezaccess1d3db24.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: ez-541f9d.ezaccess1d3db24.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 60 - fish
-  type: vless
-  server: 104.16.174.164
-  port: 443
-  uuid: 73796e63-0000-4000-8000-000000000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wireguard.ahmad-kh5716.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: wireguard.ahmad-kh5716.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 61 - fish
-  type: vless
-  server: 91.193.58.130
-  port: 2053
-  uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: d39333476.pages.dev
-  network: ws
-  ws-opts:
-    path: /activity/play/retrieve
-    headers:
-      Host: d39333476.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 62 - fish
-  type: vless
-  server: 104.19.47.188
-  port: 8443
-  uuid: 56e4896e-90a9-4fe0-8480-90d3d68b9928
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: go.iranfree.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: go.iranfree.de5.net
-- name: 🇨🇦 加拿大 (Canada) 63 - fish
-  type: vless
-  server: 172.67.68.157
-  port: 2053
-  uuid: 54502a61-2af6-40e7-8331-2c9fc40e5903
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: old-cloud-a96a.rohamsahh90.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: old-cloud-a96a.rohamsahh90.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 64 - fish
-  type: vless
-  server: 104.21.88.201
-  port: 443
-  uuid: 07f9bc85-613f-4a33-8da1-191973c43c0a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: app-q0zc4t.user-4gfyh5.workers.dev
-  network: ws
-  ws-opts:
-    path: /cmh
-    headers:
-      Host: app-q0zc4t.user-4gfyh5.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 65 - fish
-  type: vless
-  server: 104.19.44.174
-  port: 2083
-  uuid: 56e4896e-90a9-4fe0-8480-90d3d68b9928
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: go.iranfree.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: go.iranfree.de5.net
-- name: 🇨🇦 加拿大 (Canada) 66 - fish
-  type: vless
-  server: 104.17.57.40
-  port: 443
-  uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: d39333476.pages.dev
-  network: ws
-  ws-opts:
-    path: /qa
-    headers:
-      Host: d39333476.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 67 - fish
-  type: vless
-  server: 104.17.104.80
-  port: 2096
-  uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: d39333476.pages.dev
-  network: ws
-  ws-opts:
-    path: /movies/resource/film
-    headers:
-      Host: d39333476.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 68 - fish
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 69 - fish
-  type: vless
-  server: 8.35.211.161
-  port: 2053
-  uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: d39333476.pages.dev
-  network: ws
-  ws-opts:
-    path: /comics/buy/categories
-    headers:
-      Host: d39333476.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 70 - fish
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 71 - fish
   type: vmess
   server: 66.163.113.176
   port: 22324
@@ -915,101 +318,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 72 - fish
-  type: ss
-  server: 51.222.136.236
-  port: 8882
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 73 - fish
-  type: vless
-  server: 104.17.158.218
-  port: 2087
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: round-art-52ee.eadfgv.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: round-art-52ee.eadfgv.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 74 - fish
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 75 - fish
-  type: vless
-  server: 104.21.78.225
-  port: 443
-  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: curly-night-6928.ggdhchjk.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: curly-night-6928.ggdhchjk.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 76 - fish
-  type: vless
-  server: 104.17.189.34
-  port: 2087
-  uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: d39333476.pages.dev
-  network: ws
-  ws-opts:
-    path: /films/events/documents
-    headers:
-      Host: d39333476.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 77 - fish
-  type: vless
-  server: 104.18.40.152
-  port: 443
-  uuid: 30235bbe-f791-4e53-89f9-5d9363af9b0a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sie704.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sie704.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 78 - fish
-  type: vless
-  server: 172.64.144.162
-  port: 2096
-  uuid: 20a25a96-61df-4a4f-8424-165fc9cfc84e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: empty-band-d17d.raana2710.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: empty-band-d17d.raana2710.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 79 - fish
-  type: ss
-  server: 149.22.95.183
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 80 - fish
+- name: 🇨🇦 加拿大 (Canada) 34 - fish
   type: vmess
   server: 158.51.123.42
   port: 22324
@@ -1019,173 +328,17 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 81 - fish
-  type: vless
-  server: 45.80.108.236
-  port: 443
-  uuid: ef9d2063-0140-472b-8b17-ba02ba4b4435
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lively-resonance-4e12.electrocellco-cf-059.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: lively-resonance-4e12.electrocellco-cf-059.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 82 - fish
+- name: 🇨🇦 加拿大 (Canada) 35 - fish
   type: vmess
-  server: 134.195.198.214
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 83 - fish
-  type: vless
-  server: 91.193.58.125
-  port: 2053
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vlso5.1d.mom
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vlso5.1d.mom
-- name: 🇨🇦 加拿大 (Canada) 84 - fish
-  type: vless
-  server: 104.21.46.14
-  port: 443
-  uuid: ea50b1a3-3a98-4c5e-a150-48ada40d68d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cf-vless-4cf55824.aimall.fr
-  network: ws
-  ws-opts:
-    path: /connect
-    headers:
-      Host: cf-vless-4cf55824.aimall.fr
-- name: 🇨🇦 加拿大 (Canada) 85 - fish
-  type: ss
-  server: 15.235.75.71
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: FD3rCuOsxOay
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 86 - fish
-  type: vless
-  server: 8.39.125.213
-  port: 443
-  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: whitecreeper.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: whitecreeper.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 87 - fish
-  type: vless
-  server: 104.21.48.107
-  port: 443
-  uuid: 29fb68bb-ff05-4fd4-8393-cc6c05d81a79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: purple-butterfly-8496.erfannull36.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: purple-butterfly-8496.erfannull36.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 88 - fish
-  type: vless
-  server: 172.67.214.106
-  port: 443
-  uuid: a8890c1b-3622-3106-c4be-d8671be32d2b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: summer-meadow-af5b.woowoorrrkk.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: summer-meadow-af5b.woowoorrrkk.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 89 - fish
-  type: vless
-  server: 188.114.97.6
-  port: 8880
-  uuid: b19b768d-bc57-4d03-9bea-61129ed5fef9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip
-    headers:
-      Host: new.106-79e.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 90 - fish
-  type: vless
-  server: 104.17.222.14
-  port: 2053
-  uuid: ad40a583-2d59-44ff-88cf-b5db0e1e00a7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel.kalmevebto.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel.kalmevebto.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 91 - fish
-  type: vmess
-  server: 134.195.198.214
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 92 - fish
-  type: vless
-  server: 104.16.157.17
-  port: 8443
-  uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: d39333476.pages.dev
-  network: ws
-  ws-opts:
-    path: /stars
-    headers:
-      Host: d39333476.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 93 - fish
-  type: vless
-  server: 172.67.65.53
-  port: 2087
-  uuid: 73bcd72f-9545-4cb8-8daf-7d004501880d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shanxp.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shanxp.dpdns.org
-- name: 🇨🇦 加拿大 (Canada) 94 - fish
+- name: 🇨🇦 加拿大 (Canada) 36 - fish
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -1195,305 +348,16 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 95 - fish
-  type: vless
-  server: 185.193.29.123
-  port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: notls.lukongtou.eu.org
-- name: 🇨🇦 加拿大 (Canada) 96 - fish
-  type: vless
-  server: 172.67.214.192
-  port: 443
-  uuid: 0659eac3-137b-4002-ba2e-88da4d071235
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pruritus.patiromer.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: pruritus.patiromer.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 97 - fish
-  type: vless
-  server: 188.114.97.7
-  port: 2083
-  uuid: 8525fe74-67e6-4a55-8a26-95f227bd1384
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shy-fog-af06.alvlirm333.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shy-fog-af06.alvlirm333.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 98 - fish
-  type: vless
-  server: 172.64.80.1
-  port: 443
-  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: curly-night-6928.ggdhchjk.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: curly-night-6928.ggdhchjk.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 99 - fish
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 100 - fish
-  type: vless
-  server: 104.17.111.27
-  port: 8443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: round-art-52ee.eadfgv.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: round-art-52ee.eadfgv.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 101 - fish
-  type: vless
-  server: 141.101.114.8
-  port: 443
-  uuid: 5d8eb33a-2166-4daf-88fe-4be5799c493b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: noisy-term-e657.airdrop2014aa5168.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: noisy-term-e657.airdrop2014aa5168.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 102 - fish
-  type: vless
-  server: 8.35.211.188
-  port: 8443
-  uuid: 2b181a3a-c001-4145-845a-5d43a43837d5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vpn-1fj.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vpn-1fj.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 103 - fish
-  type: ss
-  server: 185.156.47.97
-  port: 9443
-  cipher: aes-256-gcm
-  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 104 - fish
-  type: vless
-  server: 104.21.78.225
-  port: 443
-  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: curly-night-6928.ggdhchjk.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: curly-night-6928.ggdhchjk.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 105 - fish
-  type: vless
-  server: 141.101.120.231
-  port: 443
-  uuid: 3bb6fd82-3a15-eaea-6168-4dac2b70079e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nahan-fog-af01.dfghttr2012.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-fog-af01.dfghttr2012.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 106 - fish
-  type: ss
-  server: 142.4.216.225
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: mrs2e9a
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 107 - fish
-  type: vless
-  server: 91.193.58.21
-  port: 2087
-  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: whitecreeper.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: whitecreeper.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 108 - fish
-  type: vless
-  server: 172.67.78.254
-  port: 2083
-  uuid: fc8a0708-951a-4027-860f-2a154ebc4dd7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: crimson-king-301d.nexoxnet.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: crimson-king-301d.nexoxnet.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 109 - fish
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇨🇦 加拿大 (Canada) 110 - fish
-  type: vless
-  server: 104.18.32.47
-  port: 2087
-  uuid: 5a0028f9-c656-cec9-4b61-54678477a408
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
-  network: ws
-  ws-opts:
-    path: /game
-    headers:
-      Host: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 111 - fish
-  type: vless
-  server: 172.67.184.43
-  port: 443
-  uuid: 29fb68bb-ff05-4fd4-8393-cc6c05d81a79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: purple-butterfly-8496.erfannull36.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: purple-butterfly-8496.erfannull36.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 112 - fish
-  type: vless
-  server: 172.67.67.180
-  port: 2087
-  uuid: 73bcd72f-9545-4cb8-8daf-7d004501880d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shanxp.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shanxp.dpdns.org
-- name: 🇨🇦 加拿大 (Canada) 113 - fish
-  type: vless
-  server: 8.35.211.43
-  port: 2053
-  uuid: 56e4896e-90a9-4fe0-8480-90d3d68b9928
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: go.iranfree.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: go.iranfree.de5.net
-- name: 🇨🇦 加拿大 (Canada) 114 - fish
-  type: vless
-  server: 104.16.107.139
-  port: 8880
-  uuid: 24c2a873-4584-4c53-8679-61029682d0bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip
-    headers:
-      Host: soft-thunder-bc22.111-f59.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 115 - fish
-  type: vless
-  server: 172.67.137.223
-  port: 443
-  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: curly-night-6928.ggdhchjk.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: curly-night-6928.ggdhchjk.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 116 - fish
+- name: 🇨🇦 加拿大 (Canada) 37 - fish
   type: vmess
-  server: 134.195.198.214
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 117 - fish
-  type: vless
-  server: 104.18.42.54
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: newwk1.f1w.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: newwk1.f1w.de5.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -1536,86 +400,6 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 35 - fish
   - 🇨🇦 加拿大 (Canada) 36 - fish
   - 🇨🇦 加拿大 (Canada) 37 - fish
-  - 🇨🇦 加拿大 (Canada) 38 - fish
-  - 🇨🇦 加拿大 (Canada) 39 - fish
-  - 🇨🇦 加拿大 (Canada) 40 - fish
-  - 🇨🇦 加拿大 (Canada) 41 - fish
-  - 🇨🇦 加拿大 (Canada) 42 - fish
-  - 🇨🇦 加拿大 (Canada) 43 - fish
-  - 🇨🇦 加拿大 (Canada) 44 - fish
-  - 🇨🇦 加拿大 (Canada) 45 - fish
-  - 🇨🇦 加拿大 (Canada) 46 - fish
-  - 🇨🇦 加拿大 (Canada) 47 - fish
-  - 🇨🇦 加拿大 (Canada) 48 - fish
-  - 🇨🇦 加拿大 (Canada) 49 - fish
-  - 🇨🇦 加拿大 (Canada) 50 - fish
-  - 🇨🇦 加拿大 (Canada) 51 - fish
-  - 🇨🇦 加拿大 (Canada) 52 - fish
-  - 🇨🇦 加拿大 (Canada) 53 - fish
-  - 🇨🇦 加拿大 (Canada) 54 - fish
-  - 🇨🇦 加拿大 (Canada) 55 - fish
-  - 🇨🇦 加拿大 (Canada) 56 - fish
-  - 🇨🇦 加拿大 (Canada) 57 - fish
-  - 🇨🇦 加拿大 (Canada) 58 - fish
-  - 🇨🇦 加拿大 (Canada) 59 - fish
-  - 🇨🇦 加拿大 (Canada) 60 - fish
-  - 🇨🇦 加拿大 (Canada) 61 - fish
-  - 🇨🇦 加拿大 (Canada) 62 - fish
-  - 🇨🇦 加拿大 (Canada) 63 - fish
-  - 🇨🇦 加拿大 (Canada) 64 - fish
-  - 🇨🇦 加拿大 (Canada) 65 - fish
-  - 🇨🇦 加拿大 (Canada) 66 - fish
-  - 🇨🇦 加拿大 (Canada) 67 - fish
-  - 🇨🇦 加拿大 (Canada) 68 - fish
-  - 🇨🇦 加拿大 (Canada) 69 - fish
-  - 🇨🇦 加拿大 (Canada) 70 - fish
-  - 🇨🇦 加拿大 (Canada) 71 - fish
-  - 🇨🇦 加拿大 (Canada) 72 - fish
-  - 🇨🇦 加拿大 (Canada) 73 - fish
-  - 🇨🇦 加拿大 (Canada) 74 - fish
-  - 🇨🇦 加拿大 (Canada) 75 - fish
-  - 🇨🇦 加拿大 (Canada) 76 - fish
-  - 🇨🇦 加拿大 (Canada) 77 - fish
-  - 🇨🇦 加拿大 (Canada) 78 - fish
-  - 🇨🇦 加拿大 (Canada) 79 - fish
-  - 🇨🇦 加拿大 (Canada) 80 - fish
-  - 🇨🇦 加拿大 (Canada) 81 - fish
-  - 🇨🇦 加拿大 (Canada) 82 - fish
-  - 🇨🇦 加拿大 (Canada) 83 - fish
-  - 🇨🇦 加拿大 (Canada) 84 - fish
-  - 🇨🇦 加拿大 (Canada) 85 - fish
-  - 🇨🇦 加拿大 (Canada) 86 - fish
-  - 🇨🇦 加拿大 (Canada) 87 - fish
-  - 🇨🇦 加拿大 (Canada) 88 - fish
-  - 🇨🇦 加拿大 (Canada) 89 - fish
-  - 🇨🇦 加拿大 (Canada) 90 - fish
-  - 🇨🇦 加拿大 (Canada) 91 - fish
-  - 🇨🇦 加拿大 (Canada) 92 - fish
-  - 🇨🇦 加拿大 (Canada) 93 - fish
-  - 🇨🇦 加拿大 (Canada) 94 - fish
-  - 🇨🇦 加拿大 (Canada) 95 - fish
-  - 🇨🇦 加拿大 (Canada) 96 - fish
-  - 🇨🇦 加拿大 (Canada) 97 - fish
-  - 🇨🇦 加拿大 (Canada) 98 - fish
-  - 🇨🇦 加拿大 (Canada) 99 - fish
-  - 🇨🇦 加拿大 (Canada) 100 - fish
-  - 🇨🇦 加拿大 (Canada) 101 - fish
-  - 🇨🇦 加拿大 (Canada) 102 - fish
-  - 🇨🇦 加拿大 (Canada) 103 - fish
-  - 🇨🇦 加拿大 (Canada) 104 - fish
-  - 🇨🇦 加拿大 (Canada) 105 - fish
-  - 🇨🇦 加拿大 (Canada) 106 - fish
-  - 🇨🇦 加拿大 (Canada) 107 - fish
-  - 🇨🇦 加拿大 (Canada) 108 - fish
-  - 🇨🇦 加拿大 (Canada) 109 - fish
-  - 🇨🇦 加拿大 (Canada) 110 - fish
-  - 🇨🇦 加拿大 (Canada) 111 - fish
-  - 🇨🇦 加拿大 (Canada) 112 - fish
-  - 🇨🇦 加拿大 (Canada) 113 - fish
-  - 🇨🇦 加拿大 (Canada) 114 - fish
-  - 🇨🇦 加拿大 (Canada) 115 - fish
-  - 🇨🇦 加拿大 (Canada) 116 - fish
-  - 🇨🇦 加拿大 (Canada) 117 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1658,85 +442,5 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 35 - fish
   - 🇨🇦 加拿大 (Canada) 36 - fish
   - 🇨🇦 加拿大 (Canada) 37 - fish
-  - 🇨🇦 加拿大 (Canada) 38 - fish
-  - 🇨🇦 加拿大 (Canada) 39 - fish
-  - 🇨🇦 加拿大 (Canada) 40 - fish
-  - 🇨🇦 加拿大 (Canada) 41 - fish
-  - 🇨🇦 加拿大 (Canada) 42 - fish
-  - 🇨🇦 加拿大 (Canada) 43 - fish
-  - 🇨🇦 加拿大 (Canada) 44 - fish
-  - 🇨🇦 加拿大 (Canada) 45 - fish
-  - 🇨🇦 加拿大 (Canada) 46 - fish
-  - 🇨🇦 加拿大 (Canada) 47 - fish
-  - 🇨🇦 加拿大 (Canada) 48 - fish
-  - 🇨🇦 加拿大 (Canada) 49 - fish
-  - 🇨🇦 加拿大 (Canada) 50 - fish
-  - 🇨🇦 加拿大 (Canada) 51 - fish
-  - 🇨🇦 加拿大 (Canada) 52 - fish
-  - 🇨🇦 加拿大 (Canada) 53 - fish
-  - 🇨🇦 加拿大 (Canada) 54 - fish
-  - 🇨🇦 加拿大 (Canada) 55 - fish
-  - 🇨🇦 加拿大 (Canada) 56 - fish
-  - 🇨🇦 加拿大 (Canada) 57 - fish
-  - 🇨🇦 加拿大 (Canada) 58 - fish
-  - 🇨🇦 加拿大 (Canada) 59 - fish
-  - 🇨🇦 加拿大 (Canada) 60 - fish
-  - 🇨🇦 加拿大 (Canada) 61 - fish
-  - 🇨🇦 加拿大 (Canada) 62 - fish
-  - 🇨🇦 加拿大 (Canada) 63 - fish
-  - 🇨🇦 加拿大 (Canada) 64 - fish
-  - 🇨🇦 加拿大 (Canada) 65 - fish
-  - 🇨🇦 加拿大 (Canada) 66 - fish
-  - 🇨🇦 加拿大 (Canada) 67 - fish
-  - 🇨🇦 加拿大 (Canada) 68 - fish
-  - 🇨🇦 加拿大 (Canada) 69 - fish
-  - 🇨🇦 加拿大 (Canada) 70 - fish
-  - 🇨🇦 加拿大 (Canada) 71 - fish
-  - 🇨🇦 加拿大 (Canada) 72 - fish
-  - 🇨🇦 加拿大 (Canada) 73 - fish
-  - 🇨🇦 加拿大 (Canada) 74 - fish
-  - 🇨🇦 加拿大 (Canada) 75 - fish
-  - 🇨🇦 加拿大 (Canada) 76 - fish
-  - 🇨🇦 加拿大 (Canada) 77 - fish
-  - 🇨🇦 加拿大 (Canada) 78 - fish
-  - 🇨🇦 加拿大 (Canada) 79 - fish
-  - 🇨🇦 加拿大 (Canada) 80 - fish
-  - 🇨🇦 加拿大 (Canada) 81 - fish
-  - 🇨🇦 加拿大 (Canada) 82 - fish
-  - 🇨🇦 加拿大 (Canada) 83 - fish
-  - 🇨🇦 加拿大 (Canada) 84 - fish
-  - 🇨🇦 加拿大 (Canada) 85 - fish
-  - 🇨🇦 加拿大 (Canada) 86 - fish
-  - 🇨🇦 加拿大 (Canada) 87 - fish
-  - 🇨🇦 加拿大 (Canada) 88 - fish
-  - 🇨🇦 加拿大 (Canada) 89 - fish
-  - 🇨🇦 加拿大 (Canada) 90 - fish
-  - 🇨🇦 加拿大 (Canada) 91 - fish
-  - 🇨🇦 加拿大 (Canada) 92 - fish
-  - 🇨🇦 加拿大 (Canada) 93 - fish
-  - 🇨🇦 加拿大 (Canada) 94 - fish
-  - 🇨🇦 加拿大 (Canada) 95 - fish
-  - 🇨🇦 加拿大 (Canada) 96 - fish
-  - 🇨🇦 加拿大 (Canada) 97 - fish
-  - 🇨🇦 加拿大 (Canada) 98 - fish
-  - 🇨🇦 加拿大 (Canada) 99 - fish
-  - 🇨🇦 加拿大 (Canada) 100 - fish
-  - 🇨🇦 加拿大 (Canada) 101 - fish
-  - 🇨🇦 加拿大 (Canada) 102 - fish
-  - 🇨🇦 加拿大 (Canada) 103 - fish
-  - 🇨🇦 加拿大 (Canada) 104 - fish
-  - 🇨🇦 加拿大 (Canada) 105 - fish
-  - 🇨🇦 加拿大 (Canada) 106 - fish
-  - 🇨🇦 加拿大 (Canada) 107 - fish
-  - 🇨🇦 加拿大 (Canada) 108 - fish
-  - 🇨🇦 加拿大 (Canada) 109 - fish
-  - 🇨🇦 加拿大 (Canada) 110 - fish
-  - 🇨🇦 加拿大 (Canada) 111 - fish
-  - 🇨🇦 加拿大 (Canada) 112 - fish
-  - 🇨🇦 加拿大 (Canada) 113 - fish
-  - 🇨🇦 加拿大 (Canada) 114 - fish
-  - 🇨🇦 加拿大 (Canada) 115 - fish
-  - 🇨🇦 加拿大 (Canada) 116 - fish
-  - 🇨🇦 加拿大 (Canada) 117 - fish
 rules:
 - MATCH,PROXIES
