@@ -17,22 +17,8 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: 60.248.219.78
+      Host: ty986gfazs.cainiaohub.xyz
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - fish
-  type: ss
-  server: 36.224.141.124
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - fish
-  type: ss
-  server: 211.174.113.172
-  port: 49642
-  cipher: aes-256-gcm
-  password: ac9c0a7b
-  udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - fish
   type: vless
   server: 118.167.230.191
   port: 24215
@@ -44,20 +30,34 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: edge
-- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - fish
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - fish
+  type: ss
+  server: 211.174.113.172
+  port: 49642
+  cipher: aes-256-gcm
+  password: ac9c0a7b
+  udp: true
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - fish
+  type: ss
+  server: 36.224.141.124
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇺🇸 美国 (United States) 05 (家宽) - fish
   type: vless
-  server: cf.877774.xyz
+  server: 162.159.91.222
   port: 443
-  uuid: 97532b08-357e-4140-a6f0-8e07f2ed3327
+  uuid: 50414e45-4c5f-5a45-5553-723a643df685
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: yf.962456.xyz
+  servername: n3zaxce7u0es.crzl48eiuses.workers.dev
   network: ws
   ws-opts:
-    path: /proxyip=kr.william.us.ci
+    path: /stream/PANEL_ZEUS/723a643df685/loc-0
     headers:
-      Host: yf.962456.xyz
+      Host: n3zaxce7u0es.crzl48eiuses.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,7 +67,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - fish
   - 🇰🇷 韩国 (South Korea) 03 (家宽) - fish
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - fish
-  - 🇰🇷 韩国 (South Korea) 05 (家宽) - fish
+  - 🇺🇸 美国 (United States) 05 (家宽) - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,6 +77,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - fish
   - 🇰🇷 韩国 (South Korea) 03 (家宽) - fish
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - fish
-  - 🇰🇷 韩国 (South Korea) 05 (家宽) - fish
+  - 🇺🇸 美国 (United States) 05 (家宽) - fish
 rules:
 - MATCH,PROXIES
