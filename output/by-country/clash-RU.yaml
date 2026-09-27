@@ -6,44 +6,6 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - fish
   type: vless
-  server: 185.229.9.160
-  port: 443
-  uuid: 9e4f675b-d6bf-42d1-be55-389f622783af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4Y0QLEasqtkWqfbrRedWqrZSPTnB14FDfI9q1v5SsHs
-  servername: smartcaptcha.yandexcloud.net
-  client-fingerprint: safari
-- name: 🇷🇺 俄罗斯 (Russia) 02 - fish
-  type: vless
-  server: 104.18.46.46
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 03 - fish
-  type: vless
-  server: 104.18.34.14
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 04 - fish
-  type: vless
   server: fbsv6.guardora.pro
   port: 443
   uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
@@ -56,51 +18,14 @@ proxies:
     path: /ws
     headers:
       Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 05 - fish
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: ziOeKejhhw+fmWet+xvuJsVJH7U9DvSWq1hlqtaKv+I=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - fish
+- name: 🇷🇺 俄罗斯 (Russia) 02 - fish
   type: vless
-  server: 162.159.24.131
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 31.130.149.165
+  port: 875
+  uuid: 4a9d6057-985a-4531-851c-5b4db77b0409
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 07 - fish
-  type: vless
-  server: 172.64.32.108
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 08 - fish
-  type: vless
-  server: 62.152.58.182
-  port: 443
-  uuid: 9e4f675b-d6bf-42d1-be55-389f622783af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: JBKJlzuJH1YzDHAoz28wEKbzWTGpDpKjgtSq0oT0a0k
-  servername: 360.yandex.ru
-  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -108,12 +33,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - fish
   - 🇷🇺 俄罗斯 (Russia) 02 - fish
-  - 🇷🇺 俄罗斯 (Russia) 03 - fish
-  - 🇷🇺 俄罗斯 (Russia) 04 - fish
-  - 🇷🇺 俄罗斯 (Russia) 05 - fish
-  - 🇷🇺 俄罗斯 (Russia) 06 - fish
-  - 🇷🇺 俄罗斯 (Russia) 07 - fish
-  - 🇷🇺 俄罗斯 (Russia) 08 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -121,11 +40,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - fish
   - 🇷🇺 俄罗斯 (Russia) 02 - fish
-  - 🇷🇺 俄罗斯 (Russia) 03 - fish
-  - 🇷🇺 俄罗斯 (Russia) 04 - fish
-  - 🇷🇺 俄罗斯 (Russia) 05 - fish
-  - 🇷🇺 俄罗斯 (Russia) 06 - fish
-  - 🇷🇺 俄罗斯 (Russia) 07 - fish
-  - 🇷🇺 俄罗斯 (Russia) 08 - fish
 rules:
 - MATCH,PROXIES
