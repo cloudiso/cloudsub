@@ -6,14 +6,40 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 MY 01 - fish"
+        "🇲🇾 MY 01 - fish",
+        "🇲🇾 MY 02 - fish",
+        "🇲🇾 MY 03 - fish",
+        "🇲🇾 MY 04 - fish",
+        "🇲🇾 MY 05 - fish",
+        "🇲🇾 MY 06 - fish",
+        "🇲🇾 MY 07 - fish",
+        "🇲🇾 MY 08 - fish",
+        "🇲🇾 MY 09 - fish",
+        "🇲🇾 MY 10 - fish",
+        "🇲🇾 MY 11 - fish",
+        "🇲🇾 MY 12 - fish",
+        "🇲🇾 MY 13 - fish",
+        "🇲🇾 MY 14 - fish"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 MY 01 - fish"
+        "🇲🇾 MY 01 - fish",
+        "🇲🇾 MY 02 - fish",
+        "🇲🇾 MY 03 - fish",
+        "🇲🇾 MY 04 - fish",
+        "🇲🇾 MY 05 - fish",
+        "🇲🇾 MY 06 - fish",
+        "🇲🇾 MY 07 - fish",
+        "🇲🇾 MY 08 - fish",
+        "🇲🇾 MY 09 - fish",
+        "🇲🇾 MY 10 - fish",
+        "🇲🇾 MY 11 - fish",
+        "🇲🇾 MY 12 - fish",
+        "🇲🇾 MY 13 - fish",
+        "🇲🇾 MY 14 - fish"
       ],
       "url": "https://www.google.com/generate_204"
     },
