@@ -6,8 +6,8 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - fish
   type: vless
-  server: 103.71.22.234
-  port: 8443
+  server: 103.71.22.26
+  port: 443
   uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
   udp: true
   tls: true
@@ -19,90 +19,6 @@ proxies:
     headers:
       Host: shephe.dpdns.org
 - name: 🇸🇪 SE 02 - fish
-  type: vless
-  server: 2.26.17.128
-  port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇸🇪 SE 03 - fish
-  type: vless
-  server: 103.71.22.26
-  port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇸🇪 SE 04 - fish
-  type: vless
-  server: 144.31.243.120
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇸🇪 SE 05 - fish
-  type: vless
-  server: 103.71.22.26
-  port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇸🇪 SE 06 - fish
-  type: vless
-  server: 2.26.17.128
-  port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇸🇪 SE 07 - fish
-  type: vless
-  server: 144.31.243.120
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇸🇪 SE 08 - fish
   type: vless
   server: 103.71.22.26
   port: 443
@@ -116,10 +32,10 @@ proxies:
     path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
     headers:
       Host: shephe.dpdns.org
-- name: 🇸🇪 SE 09 - fish
+- name: 🇸🇪 SE 03 - fish
   type: vless
-  server: 2.26.17.128
-  port: 443
+  server: 103.71.22.234
+  port: 8443
   uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
   udp: true
   tls: true
@@ -127,7 +43,7 @@ proxies:
   servername: shephe.dpdns.org
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: shephe.dpdns.org
 proxy-groups:
@@ -138,12 +54,6 @@ proxy-groups:
   - 🇸🇪 SE 01 - fish
   - 🇸🇪 SE 02 - fish
   - 🇸🇪 SE 03 - fish
-  - 🇸🇪 SE 04 - fish
-  - 🇸🇪 SE 05 - fish
-  - 🇸🇪 SE 06 - fish
-  - 🇸🇪 SE 07 - fish
-  - 🇸🇪 SE 08 - fish
-  - 🇸🇪 SE 09 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -152,11 +62,5 @@ proxy-groups:
   - 🇸🇪 SE 01 - fish
   - 🇸🇪 SE 02 - fish
   - 🇸🇪 SE 03 - fish
-  - 🇸🇪 SE 04 - fish
-  - 🇸🇪 SE 05 - fish
-  - 🇸🇪 SE 06 - fish
-  - 🇸🇪 SE 07 - fish
-  - 🇸🇪 SE 08 - fish
-  - 🇸🇪 SE 09 - fish
 rules:
 - MATCH,PROXIES

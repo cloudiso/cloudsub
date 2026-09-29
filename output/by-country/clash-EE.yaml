@@ -47,24 +47,6 @@ proxies:
 - name: 🇪🇪 EE 05 - fish
   type: vless
   server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 06 - fish
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 07 - fish
-  type: vless
-  server: 94.183.170.135
   port: 443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
@@ -75,6 +57,15 @@ proxies:
     path: /
     headers:
       Host: 94.183.170.135
+- name: 🇪🇪 EE 06 - fish
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -86,7 +77,6 @@ proxy-groups:
   - 🇪🇪 EE 04 - fish
   - 🇪🇪 EE 05 - fish
   - 🇪🇪 EE 06 - fish
-  - 🇪🇪 EE 07 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -98,6 +88,5 @@ proxy-groups:
   - 🇪🇪 EE 04 - fish
   - 🇪🇪 EE 05 - fish
   - 🇪🇪 EE 06 - fish
-  - 🇪🇪 EE 07 - fish
 rules:
 - MATCH,PROXIES

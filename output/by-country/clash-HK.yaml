@@ -21,18 +21,6 @@ proxies:
     headers:
       Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - fish
-  type: vless
-  server: 47.238.210.5
-  port: 13779
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-  servername: tesla.com
-  client-fingerprint: qq
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - fish
   type: vmess
   server: 194.99.79.26
   port: 443
@@ -48,7 +36,7 @@ proxies:
     path: /linkvws
     headers:
       Host: aksai.org
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - fish
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - fish
   type: vmess
   server: aksai.org
   port: 443
@@ -64,7 +52,7 @@ proxies:
     path: /linkvws
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - fish
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - fish
   type: vless
   server: 85.149.211.28
   port: 8443
@@ -87,7 +75,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - fish
   - 🇭🇰 中国香港 (Hong Kong) 03 - fish
   - 🇭🇰 中国香港 (Hong Kong) 04 - fish
-  - 🇭🇰 中国香港 (Hong Kong) 05 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -97,6 +84,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - fish
   - 🇭🇰 中国香港 (Hong Kong) 03 - fish
   - 🇭🇰 中国香港 (Hong Kong) 04 - fish
-  - 🇭🇰 中国香港 (Hong Kong) 05 - fish
 rules:
 - MATCH,PROXIES
