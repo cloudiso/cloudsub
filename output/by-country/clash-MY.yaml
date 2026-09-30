@@ -5,32 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - fish
-  type: vless
-  server: platform128.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform128
-    headers:
-      Host: platform128.golnamakcert.top
-- name: 🇲🇾 MY 02 - fish
-  type: vless
-  server: platform128.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform128
-    headers:
-      Host: platform128.halalkhor.info
-- name: 🇲🇾 MY 03 - fish
   type: vmess
   server: 47.250.135.244
   port: 10000
@@ -40,46 +14,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇲🇾 MY 04 - fish
-  type: vless
-  server: platform128.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform128
-    headers:
-      Host: platform128.golnamakcert.top
-- name: 🇲🇾 MY 05 - fish
-  type: vless
-  server: platform128.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform128
-    headers:
-      Host: platform128.halalkhor.info
-- name: 🇲🇾 MY 06 - fish
-  type: vless
-  server: platform128.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform128
-    headers:
-      Host: platform128.halalkhor.info
-- name: 🇲🇾 MY 07 - fish
+- name: 🇲🇾 MY 02 - fish
   type: vmess
   server: 47.250.135.244
   port: 10000
@@ -96,11 +31,6 @@ proxy-groups:
   - AUTO
   - 🇲🇾 MY 01 - fish
   - 🇲🇾 MY 02 - fish
-  - 🇲🇾 MY 03 - fish
-  - 🇲🇾 MY 04 - fish
-  - 🇲🇾 MY 05 - fish
-  - 🇲🇾 MY 06 - fish
-  - 🇲🇾 MY 07 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -108,10 +38,5 @@ proxy-groups:
   proxies:
   - 🇲🇾 MY 01 - fish
   - 🇲🇾 MY 02 - fish
-  - 🇲🇾 MY 03 - fish
-  - 🇲🇾 MY 04 - fish
-  - 🇲🇾 MY 05 - fish
-  - 🇲🇾 MY 06 - fish
-  - 🇲🇾 MY 07 - fish
 rules:
 - MATCH,PROXIES
