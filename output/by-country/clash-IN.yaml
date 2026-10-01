@@ -6,42 +6,6 @@ log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - fish
   type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 02 - fish
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 03 - fish
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 04 - fish
-  type: vless
   server: 139.84.150.190
   port: 8443
   uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
@@ -54,7 +18,19 @@ proxies:
     path: /fp=chrome
     headers:
       Host: shephe.dpdns.org
-- name: 🇮🇳 印度 (India) 05 - fish
+- name: 🇮🇳 印度 (India) 02 - fish
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 03 - fish
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -69,21 +45,61 @@ proxies:
     path: ''
     headers:
       Host: ''
-- name: 🇮🇳 印度 (India) 06 - fish
+- name: 🇮🇳 印度 (India) 04 - fish
   type: vless
-  server: 20.219.46.208
-  port: 8443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shephe.dpdns.org
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 05 - fish
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 06 - fish
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
-      Host: shephe.dpdns.org
+      Host: ''
 - name: 🇮🇳 印度 (India) 07 - fish
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇮🇳 印度 (India) 08 - fish
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -107,6 +123,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 05 - fish
   - 🇮🇳 印度 (India) 06 - fish
   - 🇮🇳 印度 (India) 07 - fish
+  - 🇮🇳 印度 (India) 08 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -119,5 +136,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 05 - fish
   - 🇮🇳 印度 (India) 06 - fish
   - 🇮🇳 印度 (India) 07 - fish
+  - 🇮🇳 印度 (India) 08 - fish
 rules:
 - MATCH,PROXIES
