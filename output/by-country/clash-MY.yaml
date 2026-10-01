@@ -5,15 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - fish
-  type: vmess
-  server: 47.250.135.244
-  port: 10000
-  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: platform101.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.halalkhor.info
 - name: 🇲🇾 MY 02 - fish
   type: vmess
   server: 47.250.135.244
@@ -24,6 +27,134 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇲🇾 MY 03 - fish
+  type: vless
+  server: 156.224.76.205
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vp10.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp10.pages.dev
+- name: 🇲🇾 MY 04 - fish
+  type: vless
+  server: platform107.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform107
+    headers:
+      Host: platform107.halalkhor.info
+- name: 🇲🇾 MY 05 - fish
+  type: vless
+  server: platform115.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform115
+    headers:
+      Host: platform115.halalkhor.info
+- name: 🇲🇾 MY 06 - fish
+  type: vless
+  server: platform103.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.halalkhor.info
+- name: 🇲🇾 MY 07 - fish
+  type: vless
+  server: platform102.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
+- name: 🇲🇾 MY 08 - fish
+  type: vmess
+  server: 47.250.135.244
+  port: 10000
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇲🇾 MY 09 - fish
+  type: vless
+  server: platform106.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: platform106.halalkhor.info
+- name: 🇲🇾 MY 10 - fish
+  type: vless
+  server: platform117.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
+- name: 🇲🇾 MY 11 - fish
+  type: vless
+  server: platform118.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform118
+    headers:
+      Host: platform118.halalkhor.info
+- name: 🇲🇾 MY 12 - fish
+  type: vless
+  server: platform109.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform109
+    headers:
+      Host: platform109.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -31,6 +162,16 @@ proxy-groups:
   - AUTO
   - 🇲🇾 MY 01 - fish
   - 🇲🇾 MY 02 - fish
+  - 🇲🇾 MY 03 - fish
+  - 🇲🇾 MY 04 - fish
+  - 🇲🇾 MY 05 - fish
+  - 🇲🇾 MY 06 - fish
+  - 🇲🇾 MY 07 - fish
+  - 🇲🇾 MY 08 - fish
+  - 🇲🇾 MY 09 - fish
+  - 🇲🇾 MY 10 - fish
+  - 🇲🇾 MY 11 - fish
+  - 🇲🇾 MY 12 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -38,5 +179,15 @@ proxy-groups:
   proxies:
   - 🇲🇾 MY 01 - fish
   - 🇲🇾 MY 02 - fish
+  - 🇲🇾 MY 03 - fish
+  - 🇲🇾 MY 04 - fish
+  - 🇲🇾 MY 05 - fish
+  - 🇲🇾 MY 06 - fish
+  - 🇲🇾 MY 07 - fish
+  - 🇲🇾 MY 08 - fish
+  - 🇲🇾 MY 09 - fish
+  - 🇲🇾 MY 10 - fish
+  - 🇲🇾 MY 11 - fish
+  - 🇲🇾 MY 12 - fish
 rules:
 - MATCH,PROXIES
