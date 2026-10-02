@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇰🇬 KG 01 - fish",
+        "🇰🇬 KG 02 - fish",
+        "🇰🇬 KG 03 - fish",
+        "🇰🇬 KG 04 - fish",
+        "🇰🇬 KG 05 - fish",
+        "🇰🇬 KG 06 - fish",
+        "🇰🇬 KG 07 - fish",
+        "🇰🇬 KG 08 - fish",
+        "🇰🇬 KG 09 - fish",
+        "🇰🇬 KG 10 - fish",
+        "🇰🇬 KG 11 - fish",
+        "🇰🇬 KG 12 - fish",
+        "🇰🇬 KG 13 - fish",
+        "🇰🇬 KG 14 - fish",
+        "🇰🇬 KG 15 - fish",
+        "🇰🇬 KG 16 - fish"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇰🇬 KG 01 - fish",
+        "🇰🇬 KG 02 - fish",
+        "🇰🇬 KG 03 - fish",
+        "🇰🇬 KG 04 - fish",
+        "🇰🇬 KG 05 - fish",
+        "🇰🇬 KG 06 - fish",
+        "🇰🇬 KG 07 - fish",
+        "🇰🇬 KG 08 - fish",
+        "🇰🇬 KG 09 - fish",
+        "🇰🇬 KG 10 - fish",
+        "🇰🇬 KG 11 - fish",
+        "🇰🇬 KG 12 - fish",
+        "🇰🇬 KG 13 - fish",
+        "🇰🇬 KG 14 - fish",
+        "🇰🇬 KG 15 - fish",
+        "🇰🇬 KG 16 - fish"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
