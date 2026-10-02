@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇦 加拿大 (Canada) 01 (家宽) - fish"
+        "🇮🇶 IQ 01 - fish",
+        "🇮🇶 IQ 02 - fish"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇦 加拿大 (Canada) 01 (家宽) - fish"
+        "🇮🇶 IQ 01 - fish",
+        "🇮🇶 IQ 02 - fish"
       ],
       "url": "https://www.google.com/generate_204"
     },

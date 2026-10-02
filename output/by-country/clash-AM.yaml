@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇴 CO 01 - fish
+- name: 🇦🇲 AM 01 - fish
   type: ss
-  server: 149.104.107.41
-  port: 8090
+  server: 86.107.50.160
+  port: 20998
   cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
+  password: 78235e7dc55e9ad1
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇴 CO 01 - fish
+  - 🇦🇲 AM 01 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 CO 01 - fish
+  - 🇦🇲 AM 01 - fish
 rules:
 - MATCH,PROXIES
