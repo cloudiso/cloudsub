@@ -5,84 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - fish
-  type: vless
-  server: 162.159.48.32
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  type: ss
+  server: u5c9wb.5tencent.asia
+  port: 22033
+  cipher: aes-256-gcm
+  password: ce2205df-f330-4779-a584-13f6bfc6adb6
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇨 SC 02 - fish
-  type: vless
-  server: 172.64.229.2
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 03 - fish
-  type: vless
-  server: 162.159.38.127
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 04 - fish
-  type: vless
-  server: 104.18.39.218
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 05 - fish
-  type: vless
-  server: 172.64.158.146
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 06 - fish
-  type: vless
-  server: 162.159.38.127
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls+
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 07 - fish
   type: ss
   server: 45.207.207.25
   port: 443
@@ -96,11 +25,6 @@ proxy-groups:
   - AUTO
   - 🇸🇨 SC 01 - fish
   - 🇸🇨 SC 02 - fish
-  - 🇸🇨 SC 03 - fish
-  - 🇸🇨 SC 04 - fish
-  - 🇸🇨 SC 05 - fish
-  - 🇸🇨 SC 06 - fish
-  - 🇸🇨 SC 07 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -108,10 +32,5 @@ proxy-groups:
   proxies:
   - 🇸🇨 SC 01 - fish
   - 🇸🇨 SC 02 - fish
-  - 🇸🇨 SC 03 - fish
-  - 🇸🇨 SC 04 - fish
-  - 🇸🇨 SC 05 - fish
-  - 🇸🇨 SC 06 - fish
-  - 🇸🇨 SC 07 - fish
 rules:
 - MATCH,PROXIES

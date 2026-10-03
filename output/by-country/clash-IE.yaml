@@ -16,14 +16,14 @@ proxies:
   server: 20.238.125.195
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: jUg9wluj5iOiY9sI
+  password: Qr3RLHJLngbplPWd
   udp: true
 - name: 🇮🇪 IE 03 - fish
   type: ss
   server: 20.238.125.195
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: Qr3RLHJLngbplPWd
+  password: jUg9wluj5iOiY9sI
   udp: true
 proxy-groups:
 - name: PROXIES
