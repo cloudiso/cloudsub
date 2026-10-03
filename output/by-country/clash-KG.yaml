@@ -6,8 +6,8 @@ log-level: info
 proxies:
 - name: 🇰🇬 KG 01 - fish
   type: vless
-  server: 172.64.42.85
-  port: 80
+  server: 172.64.32.103
+  port: 2086
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -19,8 +19,8 @@ proxies:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇰🇬 KG 02 - fish
   type: vless
-  server: 162.159.38.127
-  port: 2095
+  server: 172.64.158.146
+  port: 8080
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -32,21 +32,22 @@ proxies:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇰🇬 KG 03 - fish
   type: vless
-  server: 172.64.229.2
-  port: 8080
+  server: 104.17.142.212
+  port: 443
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: wlyhc.c0mn.hvu.hh.vavava.kdns.fr
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /?ed=2560
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: wlyhc.c0mn.hvu.hh.vavava.kdns.fr
 - name: 🇰🇬 KG 04 - fish
   type: vless
-  server: 104.18.46.234
-  port: 2052
+  server: 162.159.0.169
+  port: 2082
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -58,7 +59,7 @@ proxies:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇰🇬 KG 05 - fish
   type: vless
-  server: 172.64.154.8
+  server: 162.159.0.53
   port: 8080
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
@@ -66,20 +67,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇰🇬 KG 06 - fish
-  type: vless
-  server: 162.159.0.169
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
+    path: /?ed=2560security=tls+
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
@@ -92,7 +80,6 @@ proxy-groups:
   - 🇰🇬 KG 03 - fish
   - 🇰🇬 KG 04 - fish
   - 🇰🇬 KG 05 - fish
-  - 🇰🇬 KG 06 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -103,6 +90,5 @@ proxy-groups:
   - 🇰🇬 KG 03 - fish
   - 🇰🇬 KG 04 - fish
   - 🇰🇬 KG 05 - fish
-  - 🇰🇬 KG 06 - fish
 rules:
 - MATCH,PROXIES
