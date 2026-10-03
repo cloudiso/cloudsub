@@ -24,42 +24,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇲🇾 MY 03 - fish
-  type: vless
-  server: platform118.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform118
-    headers:
-      Host: platform118.halalkhor.info
-- name: 🇲🇾 MY 04 - fish
-  type: vless
-  server: platform115.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: platform115.halalkhor.info
-- name: 🇲🇾 MY 05 - fish
-  type: vmess
-  server: 47.250.135.244
-  port: 10000
-  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,9 +31,6 @@ proxy-groups:
   - AUTO
   - 🇲🇾 MY 01 - fish
   - 🇲🇾 MY 02 - fish
-  - 🇲🇾 MY 03 - fish
-  - 🇲🇾 MY 04 - fish
-  - 🇲🇾 MY 05 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,8 +38,5 @@ proxy-groups:
   proxies:
   - 🇲🇾 MY 01 - fish
   - 🇲🇾 MY 02 - fish
-  - 🇲🇾 MY 03 - fish
-  - 🇲🇾 MY 04 - fish
-  - 🇲🇾 MY 05 - fish
 rules:
 - MATCH,PROXIES
