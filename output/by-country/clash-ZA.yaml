@@ -29,13 +29,32 @@ proxies:
   reality-opts:
     public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: qq
 - name: 🇿🇦 ZA 04 - fish
+  type: vless
+  server: 34.35.58.153
+  port: 443
+  uuid: 8d65c8a7-4876-4556-bb6a-feccfb46ee81
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
+  servername: www.cloudflare.com
+  client-fingerprint: safari
+- name: 🇿🇦 ZA 05 - fish
   type: ss
   server: 102.37.156.224
   port: 443
   cipher: chacha20-ietf-poly1305
   password: aduB9HGxQHjA2SBMRjkHX6
+  udp: true
+- name: 🇿🇦 ZA 06 - fish
+  type: ss
+  server: 4.168.234.190
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: SBw5b6E9noHolBdA
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -46,6 +65,8 @@ proxy-groups:
   - 🇿🇦 ZA 02 - fish
   - 🇿🇦 ZA 03 - fish
   - 🇿🇦 ZA 04 - fish
+  - 🇿🇦 ZA 05 - fish
+  - 🇿🇦 ZA 06 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -55,5 +76,7 @@ proxy-groups:
   - 🇿🇦 ZA 02 - fish
   - 🇿🇦 ZA 03 - fish
   - 🇿🇦 ZA 04 - fish
+  - 🇿🇦 ZA 05 - fish
+  - 🇿🇦 ZA 06 - fish
 rules:
 - MATCH,PROXIES

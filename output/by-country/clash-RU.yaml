@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - fish
   type: vless
-  server: 81.94.148.214
+  server: 217.19.122.200
   port: 443
   uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   udp: true
@@ -25,27 +25,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: mhXYDvaSfHzHZXBswC/zo/o8VqdU3XSBpwWx050Y6MU=
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - fish
-  type: vless
-  server: 217.19.122.200
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fbsv6.guardora.pro
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 04 - fish
-  type: ss
-  server: 90.156.203.62
-  port: 5112
-  cipher: chacha20-ietf-poly1305
-  password: VVlAff77CnAU43Aoc5j15Y
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,8 +32,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - fish
   - 🇷🇺 俄罗斯 (Russia) 02 - fish
-  - 🇷🇺 俄罗斯 (Russia) 03 - fish
-  - 🇷🇺 俄罗斯 (Russia) 04 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,7 +39,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - fish
   - 🇷🇺 俄罗斯 (Russia) 02 - fish
-  - 🇷🇺 俄罗斯 (Russia) 03 - fish
-  - 🇷🇺 俄罗斯 (Russia) 04 - fish
 rules:
 - MATCH,PROXIES
