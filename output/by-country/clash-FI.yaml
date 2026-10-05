@@ -13,17 +13,16 @@ proxies:
   udp: true
 - name: 🇫🇮 FI 02 - fish
   type: vless
-  server: mainline.proxy.rlwy.net
-  port: 44242
-  uuid: ff07a00f-0592-41dc-b0e1-b41b4732aad0
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: mainline.proxy.rlwy.net
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 03 - fish
   type: vless
   server: 95.216.27.15
@@ -35,14 +34,19 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 04 - fish
-  type: ss
-  server: 185.103.110.68
-  port: 18283
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 05 - fish
   type: ss
   server: 185.103.110.68
