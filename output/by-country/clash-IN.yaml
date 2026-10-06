@@ -5,20 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - fish
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.67.8.205
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 02 - fish
   type: vless
   server: 194.61.31.126
@@ -30,35 +27,8 @@ proxies:
   reality-opts:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 03 - fish
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: None
-- name: 🇮🇳 印度 (India) 04 - fish
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
   client-fingerprint: random
-- name: 🇮🇳 印度 (India) 05 - fish
+- name: 🇮🇳 印度 (India) 03 - fish
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -70,18 +40,22 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 06 - fish
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+- name: 🇮🇳 印度 (India) 04 - fish
+  type: vmess
+  server: aksai.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
-  client-fingerprint: chrome
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -91,8 +65,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - fish
   - 🇮🇳 印度 (India) 03 - fish
   - 🇮🇳 印度 (India) 04 - fish
-  - 🇮🇳 印度 (India) 05 - fish
-  - 🇮🇳 印度 (India) 06 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -102,7 +74,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - fish
   - 🇮🇳 印度 (India) 03 - fish
   - 🇮🇳 印度 (India) 04 - fish
-  - 🇮🇳 印度 (India) 05 - fish
-  - 🇮🇳 印度 (India) 06 - fish
 rules:
 - MATCH,PROXIES
