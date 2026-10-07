@@ -20,20 +20,6 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇨🇿 CZ 02 - fish
   type: vless
-  server: 172.67.167.77
-  port: 443
-  uuid: cc08d2d0-8a7a-4469-81d2-c43704451271
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/6871nrbnl9WsdAiOUInt
-    headers:
-      Host: 9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev
-- name: 🇨🇿 CZ 03 - fish
-  type: vless
   server: 95.182.95.178
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -53,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - fish
   - 🇨🇿 CZ 02 - fish
-  - 🇨🇿 CZ 03 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - fish
   - 🇨🇿 CZ 02 - fish
-  - 🇨🇿 CZ 03 - fish
 rules:
 - MATCH,PROXIES

@@ -5,22 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - fish
-  type: vmess
-  server: aksai.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aksai.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aksai.org
-- name: 🇧🇷 BR 02 - fish
   type: ss
   server: 216.128.168.190
   port: 8388
@@ -33,13 +17,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇧🇷 BR 01 - fish
-  - 🇧🇷 BR 02 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 BR 01 - fish
-  - 🇧🇷 BR 02 - fish
 rules:
 - MATCH,PROXIES
