@@ -5,20 +5,85 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - fish
-  type: vless
-  server: 43.129.80.179
-  port: 8443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  type: vmess
+  server: lcv8v9l7oyamxxfz.v.3dns.vip
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: lcv8v9l7oyamxxfz.v.3dns.vip
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /ws-vmess
     headers:
-      Host: jp3.yohototo.top
+      Host: lcv8v9l7oyamxxfz.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - fish
+  type: vmess
+  server: 47.243.65.243
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lcv8v9l7oyamxxfz.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: lcv8v9l7oyamxxfz.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - fish
+  type: vmess
+  server: yg1.ygkkk.dpdns.org
+  port: 443
+  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jmp1.907737.xyz
+  network: ws
+  ws-opts:
+    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
+    headers:
+      Host: jmp1.907737.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - fish
+  type: vmess
+  server: 47.243.65.243
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lcv8v9l7oyamxxfz.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: lcv8v9l7oyamxxfz.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - fish
+  type: vmess
+  server: 47.244.120.197
+  port: 23026
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - fish
   type: vmess
   server: 156.245.232.239
   port: 35043
@@ -33,9 +98,9 @@ proxies:
     path: /
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - fish
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - fish
   type: vmess
-  server: lcv8v9l7oyamxxfz.v.3dns.vip
+  server: 47.243.153.153
   port: 443
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
@@ -43,15 +108,30 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lcv8v9l7oyamxxfz.v.3dns.vip
+  servername: i2psm3knof5qjjix.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: lcv8v9l7oyamxxfz.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - fish
+      Host: i2psm3knof5qjjix.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - fish
   type: vmess
-  server: lcv8v9l7oyamxxfz.v.3dns.vip
+  server: 47.244.120.197
+  port: 23026
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 47.244.120.197
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - fish
+  type: vmess
+  server: 8.218.195.61
   port: 443
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
@@ -59,12 +139,74 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lcv8v9l7oyamxxfz.v.3dns.vip
+  servername: EX1oGt73NzPQKAc2.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: lcv8v9l7oyamxxfz.v.3dns.vip
+      Host: EX1oGt73NzPQKAc2.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - fish
+  type: vmess
+  server: 8.217.13.103
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: qtkdr8jxe3wefxjm.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: qtkdr8jxe3wefxjm.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - fish
+  type: vmess
+  server: i2psm3knof5qjjix.v.3dns.vip
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: i2psm3knof5qjjix.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: i2psm3knof5qjjix.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - fish
+  type: vmess
+  server: 47.76.44.32
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 93ucrn4i0pffuabk.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 93ucrn4i0pffuabk.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - fish
+  type: ss
+  server: telegram.khp25.com
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: pno0e2keji2gsfea
+  udp: true
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - fish
+  type: ss
+  server: telegramx.khp25.com
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: m5nsedvdczx6x06e
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,6 +216,16 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - fish
   - 🇭🇰 中国香港 (Hong Kong) 03 - fish
   - 🇭🇰 中国香港 (Hong Kong) 04 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 05 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 06 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 07 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 08 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 09 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 10 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 11 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 12 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 13 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 14 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -83,5 +235,15 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - fish
   - 🇭🇰 中国香港 (Hong Kong) 03 - fish
   - 🇭🇰 中国香港 (Hong Kong) 04 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 05 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 06 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 07 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 08 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 09 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 10 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 11 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 12 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 13 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 14 - fish
 rules:
 - MATCH,PROXIES
