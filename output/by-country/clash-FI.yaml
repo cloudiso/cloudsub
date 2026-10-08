@@ -6,10 +6,10 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - fish
   type: ss
-  server: 185.103.110.68
-  port: 18283
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  server: 45.149.114.171
+  port: 777
+  cipher: chacha20-ietf-poly1305
+  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
   udp: true
 - name: 🇫🇮 FI 02 - fish
   type: vless
@@ -27,10 +27,10 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇫🇮 FI 03 - fish
   type: ss
-  server: 45.149.114.171
-  port: 777
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+  server: 185.103.110.68
+  port: 18283
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
   udp: true
 proxy-groups:
 - name: PROXIES
