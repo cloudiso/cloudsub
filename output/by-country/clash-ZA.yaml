@@ -25,13 +25,6 @@ proxies:
   client-fingerprint: chrome
 - name: 🇿🇦 ZA 03 - fish
   type: ss
-  server: 102.37.156.224
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
-  udp: true
-- name: 🇿🇦 ZA 04 - fish
-  type: ss
   server: 102.133.165.160
   port: 16233
   cipher: chacha20-ietf-poly1305
@@ -45,7 +38,6 @@ proxy-groups:
   - 🇿🇦 ZA 01 - fish
   - 🇿🇦 ZA 02 - fish
   - 🇿🇦 ZA 03 - fish
-  - 🇿🇦 ZA 04 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,6 +46,5 @@ proxy-groups:
   - 🇿🇦 ZA 01 - fish
   - 🇿🇦 ZA 02 - fish
   - 🇿🇦 ZA 03 - fish
-  - 🇿🇦 ZA 04 - fish
 rules:
 - MATCH,PROXIES

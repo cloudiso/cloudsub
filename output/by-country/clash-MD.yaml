@@ -1,0 +1,290 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇲🇩 MD 01 - fish
+  type: vless
+  server: 87.228.71.195
+  port: 443
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ap2.directly.chat
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
+- name: 🇲🇩 MD 02 - fish
+  type: vless
+  server: 185.147.27.130
+  port: 443
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ap2.directly.chat
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
+- name: 🇲🇩 MD 03 - fish
+  type: vless
+  server: 185.147.27.116
+  port: 443
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ap2.directly.chat
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
+- name: 🇲🇩 MD 04 - fish
+  type: vless
+  server: 185.147.27.105
+  port: 443
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ap2.directly.chat
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
+- name: 🇲🇩 MD 05 - fish
+  type: vless
+  server: 87.228.71.197
+  port: 443
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ap2.directly.chat
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
+- name: 🇲🇩 MD 06 - fish
+  type: vless
+  server: 185.147.27.217
+  port: 443
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ap2.directly.chat
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
+- name: 🇲🇩 MD 07 - fish
+  type: vless
+  server: 87.228.71.198
+  port: 443
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ap2.directly.chat
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
+- name: 🇲🇩 MD 08 - fish
+  type: vless
+  server: 185.147.27.131
+  port: 443
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ap2.directly.chat
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
+- name: 🇲🇩 MD 09 - fish
+  type: vless
+  server: 185.147.27.196
+  port: 443
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ap2.directly.chat
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
+- name: 🇲🇩 MD 10 - fish
+  type: vless
+  server: 87.228.71.196
+  port: 443
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ap2.directly.chat
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
+- name: 🇲🇩 MD 11 - fish
+  type: vless
+  server: 185.147.27.100
+  port: 443
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ap2.directly.chat
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
+- name: 🇲🇩 MD 12 - fish
+  type: vless
+  server: 185.147.27.115
+  port: 443
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ap2.directly.chat
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
+- name: 🇲🇩 MD 13 - fish
+  type: vless
+  server: 185.147.27.128
+  port: 443
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ap2.directly.chat
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
+- name: 🇲🇩 MD 14 - fish
+  type: vless
+  server: 45.139.24.28
+  port: 443
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ap2.directly.chat
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
+- name: 🇲🇩 MD 15 - fish
+  type: vless
+  server: 185.147.27.216
+  port: 443
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ap2.directly.chat
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
+- name: 🇲🇩 MD 16 - fish
+  type: vless
+  server: 185.147.27.68
+  port: 443
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ap2.directly.chat
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
+- name: 🇲🇩 MD 17 - fish
+  type: vless
+  server: 185.147.27.215
+  port: 443
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ap2.directly.chat
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇲🇩 MD 01 - fish
+  - 🇲🇩 MD 02 - fish
+  - 🇲🇩 MD 03 - fish
+  - 🇲🇩 MD 04 - fish
+  - 🇲🇩 MD 05 - fish
+  - 🇲🇩 MD 06 - fish
+  - 🇲🇩 MD 07 - fish
+  - 🇲🇩 MD 08 - fish
+  - 🇲🇩 MD 09 - fish
+  - 🇲🇩 MD 10 - fish
+  - 🇲🇩 MD 11 - fish
+  - 🇲🇩 MD 12 - fish
+  - 🇲🇩 MD 13 - fish
+  - 🇲🇩 MD 14 - fish
+  - 🇲🇩 MD 15 - fish
+  - 🇲🇩 MD 16 - fish
+  - 🇲🇩 MD 17 - fish
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇲🇩 MD 01 - fish
+  - 🇲🇩 MD 02 - fish
+  - 🇲🇩 MD 03 - fish
+  - 🇲🇩 MD 04 - fish
+  - 🇲🇩 MD 05 - fish
+  - 🇲🇩 MD 06 - fish
+  - 🇲🇩 MD 07 - fish
+  - 🇲🇩 MD 08 - fish
+  - 🇲🇩 MD 09 - fish
+  - 🇲🇩 MD 10 - fish
+  - 🇲🇩 MD 11 - fish
+  - 🇲🇩 MD 12 - fish
+  - 🇲🇩 MD 13 - fish
+  - 🇲🇩 MD 14 - fish
+  - 🇲🇩 MD 15 - fish
+  - 🇲🇩 MD 16 - fish
+  - 🇲🇩 MD 17 - fish
+rules:
+- MATCH,PROXIES
