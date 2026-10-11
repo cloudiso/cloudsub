@@ -5,6 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - fish
+  type: ss
+  server: 45.149.114.171
+  port: 777
+  cipher: chacha20-ietf-poly1305
+  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+  udp: true
+- name: 🇫🇮 FI 02 - fish
+  type: ss
+  server: 185.103.110.66
+  port: 18280
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
+- name: 🇫🇮 FI 03 - fish
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 04 - fish
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -12,54 +38,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇫🇮 FI 02 - fish
-  type: vless
-  server: 146.75.119.82
-  port: 80
-  uuid: 83914feb-8d46-45d5-9683-132ff1d86d80
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
-    headers:
-      Host: rb24.ir
-- name: 🇫🇮 FI 03 - fish
-  type: vless
-  server: gadfather.zovip2.ir
-  port: 443
-  uuid: 9f9b66ba-e964-4e0e-be38-293134868a67
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: gadfather.zovip2.ir
-  network: ws
-  ws-opts:
-    path: /gropcdn?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: gadfather.zovip2.ir
-- name: 🇫🇮 FI 04 - fish
-  type: ss
-  server: 185.103.110.66
-  port: 18280
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
-- name: 🇫🇮 FI 05 - fish
-  type: ss
-  server: 185.103.110.68
-  port: 18283
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
-- name: 🇫🇮 FI 06 - fish
-  type: ss
-  server: 185.103.110.66
-  port: 18280
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,8 +47,6 @@ proxy-groups:
   - 🇫🇮 FI 02 - fish
   - 🇫🇮 FI 03 - fish
   - 🇫🇮 FI 04 - fish
-  - 🇫🇮 FI 05 - fish
-  - 🇫🇮 FI 06 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -80,7 +56,5 @@ proxy-groups:
   - 🇫🇮 FI 02 - fish
   - 🇫🇮 FI 03 - fish
   - 🇫🇮 FI 04 - fish
-  - 🇫🇮 FI 05 - fish
-  - 🇫🇮 FI 06 - fish
 rules:
 - MATCH,PROXIES

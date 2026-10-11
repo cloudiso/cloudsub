@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇪 SE 01 - fish
+- name: 🇦🇱 AL 01 - fish
   type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  server: best.valaiqm.ir
+  port: 3037
+  uuid: a1fb63f7-a942-4010-a830-bc395703a9a4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
+  reality-opts:
+    public-key: cYQAluLQY4m0yBUkvqWo3LEXTp-_9In3gJUDoEMmn1U
+  servername: telewebion.ir
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇪 SE 01 - fish
+  - 🇦🇱 AL 01 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇪 SE 01 - fish
+  - 🇦🇱 AL 01 - fish
 rules:
 - MATCH,PROXIES
