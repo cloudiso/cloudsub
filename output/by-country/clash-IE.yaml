@@ -12,13 +12,27 @@ proxies:
   password: YF329KNGVTUZ1qrH
   udp: true
 - name: 🇮🇪 IE 02 - fish
+  type: vless
+  server: 23.95.225.10
+  port: 8443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇮🇪 IE 03 - fish
   type: ss
-  server: 20.123.1.55
+  server: 20.234.97.18
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: YF329KNGVTUZ1qrH
+  password: GayYa2V7pUbJBfKu
   udp: true
-- name: 🇮🇪 IE 03 - fish
+- name: 🇮🇪 IE 04 - fish
   type: ss
   server: 20.123.1.55
   port: 443
@@ -33,6 +47,7 @@ proxy-groups:
   - 🇮🇪 IE 01 - fish
   - 🇮🇪 IE 02 - fish
   - 🇮🇪 IE 03 - fish
+  - 🇮🇪 IE 04 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -41,5 +56,6 @@ proxy-groups:
   - 🇮🇪 IE 01 - fish
   - 🇮🇪 IE 02 - fish
   - 🇮🇪 IE 03 - fish
+  - 🇮🇪 IE 04 - fish
 rules:
 - MATCH,PROXIES
