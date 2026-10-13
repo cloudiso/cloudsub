@@ -13,48 +13,10 @@ proxies:
   udp: true
 - name: 🇿🇦 ZA 02 - fish
   type: ss
-  server: 102.37.103.137
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: f0wxc3RUYwxIzKSf
-  udp: true
-- name: 🇿🇦 ZA 03 - fish
-  type: vless
-  server: 34.35.186.228
-  port: 443
-  uuid: 8d65c8a7-4876-4556-bb6a-feccfb46ee81
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇿🇦 ZA 04 - fish
-  type: ss
   server: 102.37.156.224
   port: 443
   cipher: chacha20-ietf-poly1305
   password: aduB9HGxQHjA2SBMRjkHX6
-  udp: true
-- name: 🇿🇦 ZA 05 - fish
-  type: vless
-  server: 34.35.186.228
-  port: 443
-  uuid: 8d65c8a7-4876-4556-bb6a-feccfb46ee81
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇿🇦 ZA 06 - fish
-  type: ss
-  server: 102.37.103.137
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: f0wxc3RUYwxIzKSf
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -63,10 +25,6 @@ proxy-groups:
   - AUTO
   - 🇿🇦 ZA 01 - fish
   - 🇿🇦 ZA 02 - fish
-  - 🇿🇦 ZA 03 - fish
-  - 🇿🇦 ZA 04 - fish
-  - 🇿🇦 ZA 05 - fish
-  - 🇿🇦 ZA 06 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,9 +32,5 @@ proxy-groups:
   proxies:
   - 🇿🇦 ZA 01 - fish
   - 🇿🇦 ZA 02 - fish
-  - 🇿🇦 ZA 03 - fish
-  - 🇿🇦 ZA 04 - fish
-  - 🇿🇦 ZA 05 - fish
-  - 🇿🇦 ZA 06 - fish
 rules:
 - MATCH,PROXIES

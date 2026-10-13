@@ -6,32 +6,30 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - fish
   type: vless
-  server: 31.57.190.17
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
+    path: /
     headers:
-      Host: lucasjow.us.ci
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - fish
   type: vless
-  server: 31.57.190.49
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
+    path: /
     headers:
-      Host: lucasjow.us.ci
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 03 - fish
   type: vless
   server: uae.unixzone.us
@@ -58,6 +56,59 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - fish
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - fish
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - fish
+  type: vless
+  server: 31.57.190.49
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇦🇪 阿联酋 (UAE) 08 - fish
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,6 +118,10 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - fish
   - 🇦🇪 阿联酋 (UAE) 03 - fish
   - 🇦🇪 阿联酋 (UAE) 04 - fish
+  - 🇦🇪 阿联酋 (UAE) 05 - fish
+  - 🇦🇪 阿联酋 (UAE) 06 - fish
+  - 🇦🇪 阿联酋 (UAE) 07 - fish
+  - 🇦🇪 阿联酋 (UAE) 08 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,5 +131,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - fish
   - 🇦🇪 阿联酋 (UAE) 03 - fish
   - 🇦🇪 阿联酋 (UAE) 04 - fish
+  - 🇦🇪 阿联酋 (UAE) 05 - fish
+  - 🇦🇪 阿联酋 (UAE) 06 - fish
+  - 🇦🇪 阿联酋 (UAE) 07 - fish
+  - 🇦🇪 阿联酋 (UAE) 08 - fish
 rules:
 - MATCH,PROXIES
