@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇶 IQ 01 - fish
+- name: 🇨🇿 CZ 01 - fish
   type: vless
-  server: 172.67.215.39
+  server: 104.21.69.37
   port: 443
-  uuid: 532a9115-aee7-4d39-9638-1e5146de075b
+  uuid: 911b84e1-d046-4fbf-bfc0-c168791115ef
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: muddy-math-c1fc.tmpnriqueau89.workers.dev
+  servername: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /vl/uWq9DFRgj8BwQiSXmZ46
     headers:
-      Host: muddy-math-c1fc.tmpnriqueau89.workers.dev
+      Host: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇶 IQ 01 - fish
+  - 🇨🇿 CZ 01 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇶 IQ 01 - fish
+  - 🇨🇿 CZ 01 - fish
 rules:
 - MATCH,PROXIES
