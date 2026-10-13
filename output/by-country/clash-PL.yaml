@@ -6,14 +6,33 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - fish
   type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  server: 188.114.97.6
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: lucasjow.us.ci
 - name: 🇵🇱 PL 02 - fish
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?@EVAY_VPN
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇵🇱 PL 03 - fish
   type: vless
   server: 2.26.225.89
   port: 8443
@@ -22,6 +41,29 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 04 - fish
+  type: vless
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 05 - fish
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?Telegram---DailyConfigs---DailyConfigs---DailyConfigs
+    headers:
+      Host: lucasjow.us.ci
 proxy-groups:
 - name: PROXIES
   type: select
@@ -29,6 +71,9 @@ proxy-groups:
   - AUTO
   - 🇵🇱 PL 01 - fish
   - 🇵🇱 PL 02 - fish
+  - 🇵🇱 PL 03 - fish
+  - 🇵🇱 PL 04 - fish
+  - 🇵🇱 PL 05 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -36,5 +81,8 @@ proxy-groups:
   proxies:
   - 🇵🇱 PL 01 - fish
   - 🇵🇱 PL 02 - fish
+  - 🇵🇱 PL 03 - fish
+  - 🇵🇱 PL 04 - fish
+  - 🇵🇱 PL 05 - fish
 rules:
 - MATCH,PROXIES
