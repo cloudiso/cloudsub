@@ -5,53 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - fish
-  type: vmess
-  server: 145.239.55.210
-  port: 80
-  uuid: 067fcd63-b215-4abd-8529-ae929a9971a9
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 02 - fish
-  type: ss
-  server: pl140.vpnbook.com
+  type: vless
+  server: 188.114.98.0
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: e5c65ph
-  udp: true
-- name: 🇫🇷 法国 (France) 03 - fish
-  type: ss
-  server: 51.255.13.232
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-  udp: true
-- name: 🇫🇷 法国 (France) 04 - fish
-  type: ss
-  server: 51.83.192.80
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇫🇷 法国 (France) 05 - fish
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 06 - fish
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM-TOOTFFARANGI
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇫🇷 法国 (France) 02 - fish
   type: vmess
   server: 54.37.131.126
   port: 80
@@ -66,9 +33,30 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇫🇷 法国 (France) 07 - fish
+- name: 🇫🇷 法国 (France) 03 - fish
+  type: ss
+  server: 54.36.174.134
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: e5c65ph
+  udp: true
+- name: 🇫🇷 法国 (France) 04 - fish
   type: vless
-  server: 31.57.190.17
+  server: cf1.w3bschool.ir
+  port: 2083
+  uuid: 7684d613-0ae9-41d2-9a38-66752ae680b4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ch.topdigit.ir
+  network: ws
+  ws-opts:
+    path: /path
+    headers:
+      Host: ch.topdigit.ir
+- name: 🇫🇷 法国 (France) 05 - fish
+  type: vless
+  server: 188.114.98.0
   port: 443
   uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
@@ -77,51 +65,71 @@ proxies:
   servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /
+    path: '3'
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇫🇷 法国 (France) 06 - fish
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 07 - fish
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?Telegram---DailyConfigs---DailyConfigs---DailyConfigs#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
       Host: lucasjow.us.ci
 - name: 🇫🇷 法国 (France) 08 - fish
-  type: ss
-  server: 54.36.174.134
+  type: vless
+  server: 188.114.97.6
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: e5c65ph
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
-- name: 🇫🇷 法国 (France) 09 - fish
-  type: vmess
-  server: 145.239.55.210
-  port: 80
-  uuid: 067fcd63-b215-4abd-8529-ae929a9971a9
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /
+    path: /?@EVAY_VPN
     headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+      Host: lucasjow.us.ci
+- name: 🇫🇷 法国 (France) 09 - fish
+  type: ss
+  server: 51.83.192.80
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
 - name: 🇫🇷 法国 (France) 10 - fish
   type: vmess
-  server: 145.239.55.210
-  port: 80
-  uuid: 067fcd63-b215-4abd-8529-ae929a9971a9
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+  servername: ''
 - name: 🇫🇷 法国 (France) 11 - fish
   type: vmess
-  server: 145.239.55.210
+  server: 54.37.131.126
   port: 80
-  uuid: 067fcd63-b215-4abd-8529-ae929a9971a9
+  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
   alterId: 0
   cipher: auto
   udp: true
@@ -131,15 +139,124 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇫🇷 法国 (France) 12 - fish
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 13 - fish
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?Telegram---Vpney
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇫🇷 法国 (France) 14 - fish
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM---MARAMBASHI---MARAMBASHI---MARAMBASHI---MARAMBASHI
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇫🇷 法国 (France) 15 - fish
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇫🇷 法国 (France) 16 - fish
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇫🇷 法国 (France) 17 - fish
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇫🇷 法国 (France) 18 - fish
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM---MARAMBASHI---MARAMBASHI---MARAMBASHI---MARAMBASHI
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇫🇷 法国 (France) 19 - fish
   type: ss
-  server: 54.36.174.140
+  server: pl140.vpnbook.com
   port: 443
   cipher: chacha20-ietf-poly1305
   password: e5c65ph
   udp: true
-- name: 🇫🇷 法国 (France) 13 - fish
+- name: 🇫🇷 法国 (France) 20 - fish
+  type: vless
+  server: 199.232.78.170
+  port: 443
+  uuid: XpnTeam-4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: Speedtest.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+- name: 🇫🇷 法国 (France) 21 - fish
   type: vless
   server: 79.174.92.222
   port: 443
@@ -151,6 +268,21 @@ proxies:
     public-key: _PYBo3dyZRpGC44vADqcmlBCSeAVh1X8l3mulghVsTI
   servername: m.vk.com
   client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 22 - fish
+  type: vmess
+  server: 145.239.55.210
+  port: 80
+  uuid: 067fcd63-b215-4abd-8529-ae929a9971a9
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
 proxy-groups:
 - name: PROXIES
   type: select
@@ -169,6 +301,15 @@ proxy-groups:
   - 🇫🇷 法国 (France) 11 - fish
   - 🇫🇷 法国 (France) 12 - fish
   - 🇫🇷 法国 (France) 13 - fish
+  - 🇫🇷 法国 (France) 14 - fish
+  - 🇫🇷 法国 (France) 15 - fish
+  - 🇫🇷 法国 (France) 16 - fish
+  - 🇫🇷 法国 (France) 17 - fish
+  - 🇫🇷 法国 (France) 18 - fish
+  - 🇫🇷 法国 (France) 19 - fish
+  - 🇫🇷 法国 (France) 20 - fish
+  - 🇫🇷 法国 (France) 21 - fish
+  - 🇫🇷 法国 (France) 22 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -187,5 +328,14 @@ proxy-groups:
   - 🇫🇷 法国 (France) 11 - fish
   - 🇫🇷 法国 (France) 12 - fish
   - 🇫🇷 法国 (France) 13 - fish
+  - 🇫🇷 法国 (France) 14 - fish
+  - 🇫🇷 法国 (France) 15 - fish
+  - 🇫🇷 法国 (France) 16 - fish
+  - 🇫🇷 法国 (France) 17 - fish
+  - 🇫🇷 法国 (France) 18 - fish
+  - 🇫🇷 法国 (France) 19 - fish
+  - 🇫🇷 法国 (France) 20 - fish
+  - 🇫🇷 法国 (France) 21 - fish
+  - 🇫🇷 法国 (France) 22 - fish
 rules:
 - MATCH,PROXIES
