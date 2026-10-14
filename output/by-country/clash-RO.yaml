@@ -4,27 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - fish
-  type: vmess
-  server: 188.121.120.86
-  port: 13830
-  uuid: 874a6b6d-d569-4b64-b9a6-32d594e61325
-  alterId: 0
-  cipher: auto
+- name: 🇷🇴 RO 01 - fish
+  type: ss
+  server: 154.46.31.106
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - fish
+  - 🇷🇴 RO 01 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - fish
+  - 🇷🇴 RO 01 - fish
 rules:
 - MATCH,PROXIES
