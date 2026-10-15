@@ -6,32 +6,17 @@ log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - fish
   type: vless
-  server: 109.248.170.119
-  port: 13447
-  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
+  server: 91.217.10.26
+  port: 443
+  uuid: 244d9eab-3311-40c7-b47f-4968dc3088a6
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
-  servername: yahoo.com
-  client-fingerprint: chrome
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+  servername: tcpkz1.figurapn.ru
+  client-fingerprint: firefox
 - name: 🇰🇿 KZ 02 - fish
-  type: vmess
-  server: 3h-kazakhstan1.09vpn.com
-  port: 80
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-- name: 🇰🇿 KZ 03 - fish
   type: vless
   server: 109.248.170.119
   port: 13447
@@ -43,7 +28,7 @@ proxies:
     public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
   servername: yahoo.com
   client-fingerprint: firefox
-- name: 🇰🇿 KZ 04 - fish
+- name: 🇰🇿 KZ 03 - fish
   type: vless
   server: 109.248.170.119
   port: 13447
@@ -55,34 +40,7 @@ proxies:
     public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 KZ 05 - fish
-  type: vless
-  server: 83.222.23.81
-  port: 38065
-  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇰🇿 KZ 06 - fish
-  type: vmess
-  server: 38.107.234.57
-  port: 80
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: ''
-- name: 🇰🇿 KZ 07 - fish
+- name: 🇰🇿 KZ 04 - fish
   type: vless
   server: 178.236.16.98
   port: 35728
@@ -94,21 +52,18 @@ proxies:
     public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 KZ 08 - fish
-  type: vmess
-  server: 38.107.234.57
-  port: 80
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
+- name: 🇰🇿 KZ 05 - fish
+  type: vless
+  server: 109.248.170.119
+  port: 13447
+  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: ''
+  reality-opts:
+    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
+  servername: yahoo.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -119,9 +74,6 @@ proxy-groups:
   - 🇰🇿 KZ 03 - fish
   - 🇰🇿 KZ 04 - fish
   - 🇰🇿 KZ 05 - fish
-  - 🇰🇿 KZ 06 - fish
-  - 🇰🇿 KZ 07 - fish
-  - 🇰🇿 KZ 08 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -132,8 +84,5 @@ proxy-groups:
   - 🇰🇿 KZ 03 - fish
   - 🇰🇿 KZ 04 - fish
   - 🇰🇿 KZ 05 - fish
-  - 🇰🇿 KZ 06 - fish
-  - 🇰🇿 KZ 07 - fish
-  - 🇰🇿 KZ 08 - fish
 rules:
 - MATCH,PROXIES
