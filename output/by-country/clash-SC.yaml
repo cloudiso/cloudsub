@@ -7,12 +7,46 @@ proxies:
 - name: 🇸🇨 SC 01 - fish
   type: vless
   server: 45.137.43.168
+  port: 14430
+  uuid: b4cc503a-c352-4775-85ad-fc982086884a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.137.43.168
+- name: 🇸🇨 SC 02 - fish
+  type: vless
+  server: 45.137.43.168
+  port: 14430
+  uuid: b4cc503a-c352-4775-85ad-fc982086884a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.137.43.168
+- name: 🇸🇨 SC 03 - fish
+  type: vless
+  server: 45.137.43.168
   port: 10443
   uuid: b4cc503a-c352-4775-85ad-fc982086884a
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇨 SC 02 - fish
+- name: 🇸🇨 SC 04 - fish
+  type: vless
+  server: 45.137.43.168
+  port: 10443
+  uuid: b4cc503a-c352-4775-85ad-fc982086884a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇨 SC 05 - fish
   type: vless
   server: 45.137.43.168
   port: 10443
@@ -27,6 +61,9 @@ proxy-groups:
   - AUTO
   - 🇸🇨 SC 01 - fish
   - 🇸🇨 SC 02 - fish
+  - 🇸🇨 SC 03 - fish
+  - 🇸🇨 SC 04 - fish
+  - 🇸🇨 SC 05 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -34,5 +71,8 @@ proxy-groups:
   proxies:
   - 🇸🇨 SC 01 - fish
   - 🇸🇨 SC 02 - fish
+  - 🇸🇨 SC 03 - fish
+  - 🇸🇨 SC 04 - fish
+  - 🇸🇨 SC 05 - fish
 rules:
 - MATCH,PROXIES
