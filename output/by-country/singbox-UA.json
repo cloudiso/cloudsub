@@ -6,14 +6,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 UA 01 - fish"
+        "🇺🇦 UA 01 - fish",
+        "🇺🇦 UA 02 - fish",
+        "🇺🇦 UA 03 - fish",
+        "🇺🇦 UA 04 - fish",
+        "🇺🇦 UA 05 - fish"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 UA 01 - fish"
+        "🇺🇦 UA 01 - fish",
+        "🇺🇦 UA 02 - fish",
+        "🇺🇦 UA 03 - fish",
+        "🇺🇦 UA 04 - fish",
+        "🇺🇦 UA 05 - fish"
       ],
       "url": "https://www.google.com/generate_204"
     },
