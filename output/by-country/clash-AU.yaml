@@ -4,31 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇻 LV 01 - fish
-  type: vless
-  server: cdn.topingr.ir
+- name: 🇦🇺 澳大利亚 (Australia) 01 - fish
+  type: vmess
+  server: 172.67.195.146
   port: 443
-  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
+  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn.topingr.ir
+  servername: aus.lovehk.xyz
   network: ws
   ws-opts:
-    path: /gropcdn
+    path: /Sydney3
     headers:
-      Host: cdn.topingr.ir
+      Host: aus.lovehk.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇻 LV 01 - fish
+  - 🇦🇺 澳大利亚 (Australia) 01 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇻 LV 01 - fish
+  - 🇦🇺 澳大利亚 (Australia) 01 - fish
 rules:
 - MATCH,PROXIES
