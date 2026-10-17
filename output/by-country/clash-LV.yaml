@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇷 GR 01 - fish
+- name: 🇱🇻 LV 01 - fish
   type: vless
-  server: 85.90.197.156
+  server: cdn.topingr.ir
   port: 443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: free.cndyw.ggff.net
+  servername: cdn.topingr.ir
   network: ws
   ws-opts:
-    path: pyip=bpb.yousef.isegaro.comfp=random
+    path: /gropcdn
     headers:
-      Host: free.cndyw.ggff.net
+      Host: cdn.topingr.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇷 GR 01 - fish
+  - 🇱🇻 LV 01 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇷 GR 01 - fish
+  - 🇱🇻 LV 01 - fish
 rules:
 - MATCH,PROXIES
