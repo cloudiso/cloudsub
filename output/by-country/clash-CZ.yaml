@@ -13,7 +13,7 @@ proxies:
   udp: true
 - name: 🇨🇿 CZ 02 - fish
   type: vless
-  server: 81.28.12.12
+  server: cl-glb6e059ee.gcdn.co
   port: 443
   uuid: 6206cb76-491d-4237-baf1-8c29eea4eafb
   udp: true
@@ -26,6 +26,20 @@ proxies:
     headers:
       Host: node-3.wt419.site
 - name: 🇨🇿 CZ 03 - fish
+  type: vless
+  server: 81.28.12.12
+  port: 443
+  uuid: 6206cb76-491d-4237-baf1-8c29eea4eafb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: node-3.wt419.site
+  network: ws
+  ws-opts:
+    path: /qVnRkTxmLwBzHjYpFaDgUcSeNrKxMtVbWqZhPcLsJfGy
+    headers:
+      Host: node-3.wt419.site
+- name: 🇨🇿 CZ 04 - fish
   type: ss
   server: 67.159.18.34
   port: 17001
@@ -40,6 +54,7 @@ proxy-groups:
   - 🇨🇿 CZ 01 - fish
   - 🇨🇿 CZ 02 - fish
   - 🇨🇿 CZ 03 - fish
+  - 🇨🇿 CZ 04 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -48,5 +63,6 @@ proxy-groups:
   - 🇨🇿 CZ 01 - fish
   - 🇨🇿 CZ 02 - fish
   - 🇨🇿 CZ 03 - fish
+  - 🇨🇿 CZ 04 - fish
 rules:
 - MATCH,PROXIES
