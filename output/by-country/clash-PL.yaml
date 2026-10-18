@@ -5,12 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - fish
-  type: ss
-  server: 200.181.82.91
-  port: 21818
-  cipher: aes-256-gcm
-  password: 0dad9116-eb88-47b6-98dd-67c9ed43afa6
+  type: vless
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 02 - fish
   type: vless
   server: 2.26.225.89
@@ -21,14 +23,12 @@ proxies:
   skip-cert-verify: true
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 03 - fish
-  type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  type: ss
+  server: 200.181.82.91
+  port: 21818
+  cipher: aes-256-gcm
+  password: 0dad9116-eb88-47b6-98dd-67c9ed43afa6
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 04 - fish
   type: vless
   server: 2.26.225.89
@@ -48,13 +48,20 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 PL 06 - fish
   type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 07 - fish
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,6 +73,7 @@ proxy-groups:
   - 🇵🇱 PL 04 - fish
   - 🇵🇱 PL 05 - fish
   - 🇵🇱 PL 06 - fish
+  - 🇵🇱 PL 07 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,5 +85,6 @@ proxy-groups:
   - 🇵🇱 PL 04 - fish
   - 🇵🇱 PL 05 - fish
   - 🇵🇱 PL 06 - fish
+  - 🇵🇱 PL 07 - fish
 rules:
 - MATCH,PROXIES
