@@ -6,40 +6,19 @@ log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - fish
   type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  server: 162.159.152.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sino.bestsellers1.site
+  servername: rayan-007.maxima.dpdns.org
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: sino.bestsellers1.site
+      Host: rayan-007.maxima.dpdns.org
 - name: 🇩🇪 德国 (Germany) 02 - fish
-  type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 03 - fish
-  type: ss
-  server: 209.46.102.22
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
-  udp: true
-- name: 🇩🇪 德国 (Germany) 04 - fish
   type: vless
   server: 157.230.101.36
   port: 443
@@ -53,7 +32,42 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
+- name: 🇩🇪 德国 (Germany) 03 - fish
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 04 - fish
+  type: vless
+  server: 46.101.253.244
+  port: 2083
+  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edge.yzkvm.top
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edge.yzkvm.top
 - name: 🇩🇪 德国 (Germany) 05 - fish
+  type: ss
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+  udp: true
+- name: 🇩🇪 德国 (Germany) 06 - fish
+  type: ss
+  server: 213.202.208.199
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇩🇪 德国 (Germany) 07 - fish
   type: vless
   server: hoert1rert.localip.ir
   port: 2087
@@ -67,19 +81,7 @@ proxies:
     path: /hokm
     headers:
       Host: hoert1rert.localip.ir
-- name: 🇩🇪 德国 (Germany) 06 - fish
-  type: vless
-  server: p1tun0.greewebservices.ir
-  port: 38820
-  uuid: b374647d-7516-4d1e-8c85-544c7d734c1f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 07 - fish
+- name: 🇩🇪 德国 (Germany) 08 - fish
   type: vless
   server: 91.107.247.173
   port: 2083
@@ -92,56 +94,107 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 08 - fish
+      Host: 91.107.247.173
+- name: 🇩🇪 德国 (Germany) 09 - fish
   type: vless
-  server: 172.64.150.43
-  port: 2052
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  server: 162.159.153.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
+- name: 🇩🇪 德国 (Germany) 10 - fish
+  type: vless
+  server: 167.172.165.106
+  port: 2083
+  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edge.yzkvm.top
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edge.yzkvm.top
+- name: 🇩🇪 德国 (Germany) 11 - fish
+  type: vless
+  server: 157.230.101.36
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇩🇪 德国 (Germany) 12 - fish
+  type: vless
+  server: connect.wecantos.site
+  port: 10000
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 13 - fish
+  type: vless
+  server: sdcdethyerft.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sdcdethyerft.localip.ir
   network: ws
   ws-opts:
-    path: /rain1226
+    path: /hokm
     headers:
-      Host: eu02.123450908.xyz
-- name: 🇩🇪 德国 (Germany) 09 - fish
+      Host: sdcdethyerft.localip.ir
+- name: 🇩🇪 德国 (Germany) 14 - fish
+  type: vless
+  server: 94.103.168.125
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sdcdethyerft.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: sdcdethyerft.localip.ir
+- name: 🇩🇪 德国 (Germany) 15 - fish
+  type: vless
+  server: sdcdethyerft.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sdcdethyerft.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: sdcdethyerft.localip.ir
+- name: 🇩🇪 德国 (Germany) 16 - fish
   type: ss
-  server: 57.129.113.16
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: NcAXc0UZI6yQJE1p8QmOv8
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
   udp: true
-- name: 🇩🇪 德国 (Germany) 10 - fish
-  type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 11 - fish
-  type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 12 - fish
+- name: 🇩🇪 德国 (Germany) 17 - fish
   type: vless
   server: 46.225.46.136
   port: 2087
@@ -155,45 +208,49 @@ proxies:
     path: /hokm
     headers:
       Host: hoert1rert.localip.ir
-- name: 🇩🇪 德国 (Germany) 13 - fish
+- name: 🇩🇪 德国 (Germany) 18 - fish
   type: vless
-  server: 162.55.242.208
-  port: 2053
-  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 14 - fish
-  type: vless
-  server: 162.55.242.208
-  port: 2053
-  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 15 - fish
-  type: vless
-  server: hoert1rert.localip.ir
+  server: 94.103.168.125
   port: 2087
   uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hoert1rert.localip.ir
+  servername: sdcdethyerft.localip.ir
   network: ws
   ws-opts:
     path: /hokm
     headers:
-      Host: hoert1rert.localip.ir
-- name: 🇩🇪 德国 (Germany) 16 - fish
+      Host: sdcdethyerft.localip.ir
+- name: 🇩🇪 德国 (Germany) 19 - fish
+  type: vless
+  server: ops4asfseretuiyk.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ops4asfseretuiyk.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: ops4asfseretuiyk.localip.ir
+- name: 🇩🇪 德国 (Germany) 20 - fish
+  type: vless
+  server: 94.103.168.125
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sdcdethyerft.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: sdcdethyerft.localip.ir
+- name: 🇩🇪 德国 (Germany) 21 - fish
   type: vless
   server: 91.107.247.173
   port: 2083
@@ -207,41 +264,21 @@ proxies:
     path: /
     headers:
       Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 17 - fish
+- name: 🇩🇪 德国 (Germany) 22 - fish
   type: vless
-  server: hoert1rert.localip.ir
+  server: ops5788tugfuy.localip.ir
   port: 2087
   uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hoert1rert.localip.ir
+  servername: ops5788tugfuy.localip.ir
   network: ws
   ws-opts:
     path: /hokm
     headers:
-      Host: hoert1rert.localip.ir
-- name: 🇩🇪 德国 (Germany) 18 - fish
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 19 - fish
-  type: vless
-  server: freesocks.work
-  port: 2052
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 20 - fish
+      Host: ops5788tugfuy.localip.ir
+- name: 🇩🇪 德国 (Germany) 23 - fish
   type: vless
   server: 91.107.247.173
   port: 2083
@@ -255,137 +292,7 @@ proxies:
     path: /
     headers:
       Host: 91.107.247.173
-- name: 🇩🇪 德国 (Germany) 21 - fish
-  type: vless
-  server: hoert1rert.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hoert1rert.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: hoert1rert.localip.ir
-- name: 🇩🇪 德国 (Germany) 22 - fish
-  type: ss
-  server: 213.202.208.199
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇩🇪 德国 (Germany) 23 - fish
-  type: vless
-  server: p1tun01.greewebservices.ir
-  port: 38830
-  uuid: b374647d-7516-4d1e-8c85-544c7d734c1f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-  servername: play.google.com
-  client-fingerprint: ios
 - name: 🇩🇪 德国 (Germany) 24 - fish
-  type: vless
-  server: fert1qswdfegrthy.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fert1qswdfegrthy.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: fert1qswdfegrthy.localip.ir
-- name: 🇩🇪 德国 (Germany) 25 - fish
-  type: vless
-  server: fert1qswdfegrthy.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fert1qswdfegrthy.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: fert1qswdfegrthy.localip.ir
-- name: 🇩🇪 德国 (Germany) 26 - fish
-  type: vless
-  server: 85.133.244.214
-  port: 443
-  uuid: fb5c43f4-bd23-453d-a3cf-45ad5b9c020b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 85.133.244.214
-- name: 🇩🇪 德国 (Germany) 27 - fish
-  type: vless
-  server: fert6.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fert6.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: fert6.localip.ir
-- name: 🇩🇪 德国 (Germany) 28 - fish
-  type: vless
-  server: fert6.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fert6.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: fert6.localip.ir
-- name: 🇩🇪 德国 (Germany) 29 - fish
-  type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 30 - fish
-  type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 31 - fish
   type: vless
   server: 57.129.41.216
   port: 80
@@ -398,42 +305,21 @@ proxies:
     path: /vless/
     headers:
       Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 32 - fish
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 33 - fish
+- name: 🇩🇪 德国 (Germany) 25 - fish
   type: vless
-  server: 94.103.168.125
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  server: 172.66.44.124
+  port: 8443
+  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sdcdethyerft.localip.ir
+  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
   network: ws
   ws-opts:
-    path: /hokm
+    path: /
     headers:
-      Host: sdcdethyerft.localip.ir
-- name: 🇩🇪 德国 (Germany) 34 - fish
-  type: vless
-  server: 94.103.168.125
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sdcdethyerft.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: sdcdethyerft.localip.ir
-- name: 🇩🇪 德国 (Germany) 35 - fish
+      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+- name: 🇩🇪 德国 (Germany) 26 - fish
   type: vless
   server: sdcdethyerft.localip.ir
   port: 2087
@@ -447,147 +333,7 @@ proxies:
     path: /hokm
     headers:
       Host: sdcdethyerft.localip.ir
-- name: 🇩🇪 德国 (Germany) 36 - fish
-  type: vless
-  server: sdcdethyerft.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sdcdethyerft.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: sdcdethyerft.localip.ir
-- name: 🇩🇪 德国 (Germany) 37 - fish
-  type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 38 - fish
-  type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 39 - fish
-  type: vless
-  server: ops4asfseretuiyk.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ops4asfseretuiyk.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: ops4asfseretuiyk.localip.ir
-- name: 🇩🇪 德国 (Germany) 40 - fish
-  type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 91.107.247.173
-- name: 🇩🇪 德国 (Germany) 41 - fish
-  type: ss
-  server: 8.209.74.72
-  port: 20001
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
-  udp: true
-- name: 🇩🇪 德国 (Germany) 42 - fish
-  type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 43 - fish
-  type: vless
-  server: 157.230.101.36
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇩🇪 德国 (Germany) 44 - fish
-  type: vless
-  server: sub.merky.top
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇩🇪 德国 (Germany) 45 - fish
-  type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 46 - fish
-  type: ss
-  server: 31.76.11.83
-  port: 15731
-  cipher: chacha20-ietf-poly1305
-  password: xAYXtB+XMdfWWOlmL8PWcOZEPfKHKVv7NcTY6jpcL/A=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 47 - fish
+- name: 🇩🇪 德国 (Germany) 27 - fish
   type: vmess
   server: 31.76.11.83
   port: 22366
@@ -597,56 +343,20 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 48 - fish
+- name: 🇩🇪 德国 (Germany) 28 - fish
   type: vless
-  server: connect.wecantos.site
-  port: 10000
-  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 49 - fish
-  type: vless
-  server: ops4asfseretuiyk.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  server: 188.114.96.9
+  port: 443
+  uuid: 2e305ebe-f6e6-4689-b32f-cd04ab5ff541
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ops4asfseretuiyk.localip.ir
+  servername: IdB8ONMVbntuYT5t7t6cEJfw8vLrb.paGEs.DeV
   network: ws
   ws-opts:
-    path: /hokm
+    path: /vl/9yvcoLdzdOXLUYfH7r5gwJhu1CHrjfp=chrome
     headers:
-      Host: ops4asfseretuiyk.localip.ir
-- name: 🇩🇪 德国 (Germany) 50 - fish
-  type: vless
-  server: ops5788tugfuy.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ops5788tugfuy.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: ops5788tugfuy.localip.ir
-- name: 🇩🇪 德国 (Germany) 51 - fish
-  type: vless
-  server: ops5788tugfuy.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ops5788tugfuy.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: ops5788tugfuy.localip.ir
+      Host: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -680,29 +390,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 26 - fish
   - 🇩🇪 德国 (Germany) 27 - fish
   - 🇩🇪 德国 (Germany) 28 - fish
-  - 🇩🇪 德国 (Germany) 29 - fish
-  - 🇩🇪 德国 (Germany) 30 - fish
-  - 🇩🇪 德国 (Germany) 31 - fish
-  - 🇩🇪 德国 (Germany) 32 - fish
-  - 🇩🇪 德国 (Germany) 33 - fish
-  - 🇩🇪 德国 (Germany) 34 - fish
-  - 🇩🇪 德国 (Germany) 35 - fish
-  - 🇩🇪 德国 (Germany) 36 - fish
-  - 🇩🇪 德国 (Germany) 37 - fish
-  - 🇩🇪 德国 (Germany) 38 - fish
-  - 🇩🇪 德国 (Germany) 39 - fish
-  - 🇩🇪 德国 (Germany) 40 - fish
-  - 🇩🇪 德国 (Germany) 41 - fish
-  - 🇩🇪 德国 (Germany) 42 - fish
-  - 🇩🇪 德国 (Germany) 43 - fish
-  - 🇩🇪 德国 (Germany) 44 - fish
-  - 🇩🇪 德国 (Germany) 45 - fish
-  - 🇩🇪 德国 (Germany) 46 - fish
-  - 🇩🇪 德国 (Germany) 47 - fish
-  - 🇩🇪 德国 (Germany) 48 - fish
-  - 🇩🇪 德国 (Germany) 49 - fish
-  - 🇩🇪 德国 (Germany) 50 - fish
-  - 🇩🇪 德国 (Germany) 51 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -736,28 +423,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 26 - fish
   - 🇩🇪 德国 (Germany) 27 - fish
   - 🇩🇪 德国 (Germany) 28 - fish
-  - 🇩🇪 德国 (Germany) 29 - fish
-  - 🇩🇪 德国 (Germany) 30 - fish
-  - 🇩🇪 德国 (Germany) 31 - fish
-  - 🇩🇪 德国 (Germany) 32 - fish
-  - 🇩🇪 德国 (Germany) 33 - fish
-  - 🇩🇪 德国 (Germany) 34 - fish
-  - 🇩🇪 德国 (Germany) 35 - fish
-  - 🇩🇪 德国 (Germany) 36 - fish
-  - 🇩🇪 德国 (Germany) 37 - fish
-  - 🇩🇪 德国 (Germany) 38 - fish
-  - 🇩🇪 德国 (Germany) 39 - fish
-  - 🇩🇪 德国 (Germany) 40 - fish
-  - 🇩🇪 德国 (Germany) 41 - fish
-  - 🇩🇪 德国 (Germany) 42 - fish
-  - 🇩🇪 德国 (Germany) 43 - fish
-  - 🇩🇪 德国 (Germany) 44 - fish
-  - 🇩🇪 德国 (Germany) 45 - fish
-  - 🇩🇪 德国 (Germany) 46 - fish
-  - 🇩🇪 德国 (Germany) 47 - fish
-  - 🇩🇪 德国 (Germany) 48 - fish
-  - 🇩🇪 德国 (Germany) 49 - fish
-  - 🇩🇪 德国 (Germany) 50 - fish
-  - 🇩🇪 德国 (Germany) 51 - fish
 rules:
 - MATCH,PROXIES
