@@ -6,69 +6,18 @@ log-level: info
 proxies:
 - name: 🇨🇾 CY 01 - fish
   type: vless
-  server: 213.111.177.107
-  port: 443
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  server: 5.253.29.254
+  port: 14430
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: vlso5.1d.mom
   network: ws
   ws-opts:
-    path: /socks5=888:888@hkip.1d.mom:1080fp=chrome
+    path: /vless
     headers:
-      Host: vlso5.1d.mom
+      Host: 5.253.29.254
 - name: 🇨🇾 CY 02 - fish
-  type: vless
-  server: 5.253.29.254
-  port: 10443
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇾 CY 03 - fish
-  type: vless
-  server: 5.253.29.254
-  port: 10443
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇾 CY 04 - fish
-  type: vless
-  server: 5.253.29.254
-  port: 14430
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.253.29.254
-- name: 🇨🇾 CY 05 - fish
-  type: vless
-  server: 5.253.29.254
-  port: 10443
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇾 CY 06 - fish
-  type: vless
-  server: 5.253.29.254
-  port: 14430
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.253.29.254
-- name: 🇨🇾 CY 07 - fish
   type: vless
   server: 5.253.29.254
   port: 14430
@@ -88,11 +37,6 @@ proxy-groups:
   - AUTO
   - 🇨🇾 CY 01 - fish
   - 🇨🇾 CY 02 - fish
-  - 🇨🇾 CY 03 - fish
-  - 🇨🇾 CY 04 - fish
-  - 🇨🇾 CY 05 - fish
-  - 🇨🇾 CY 06 - fish
-  - 🇨🇾 CY 07 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -100,10 +44,5 @@ proxy-groups:
   proxies:
   - 🇨🇾 CY 01 - fish
   - 🇨🇾 CY 02 - fish
-  - 🇨🇾 CY 03 - fish
-  - 🇨🇾 CY 04 - fish
-  - 🇨🇾 CY 05 - fish
-  - 🇨🇾 CY 06 - fish
-  - 🇨🇾 CY 07 - fish
 rules:
 - MATCH,PROXIES
