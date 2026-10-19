@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01 - fish"
+        "🇦🇺 澳大利亚 (Australia) 01 - fish",
+        "🇦🇺 澳大利亚 (Australia) 02 - fish"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01 - fish"
+        "🇦🇺 澳大利亚 (Australia) 01 - fish",
+        "🇦🇺 澳大利亚 (Australia) 02 - fish"
       ],
       "url": "https://www.google.com/generate_204"
     },
