@@ -6,54 +6,29 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - fish
   type: vless
-  server: 185.141.227.223
-  port: 443
-  uuid: a443d7bf-f506-46ce-b64d-cf8891c0a9f7
+  server: vip3.kaixincloud.top
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
+  servername: newwk1.f1w.de5.net
   network: ws
   ws-opts:
-    path: /useraction/events/b892639b7195/
+    path: /?ed=2560
     headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-- name: 🇷🇺 俄罗斯 (Russia) 02 - fish
-  type: vless
-  server: 185.141.227.223
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  network: ws
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-- name: 🇷🇺 俄罗斯 (Russia) 03 - fish
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: MYkM/b5ww6KhyHjBKB6OZifqzcXEnDT2jDIBWywYAws=
-  udp: true
+      Host: newwk1.f1w.de5.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - fish
-  - 🇷🇺 俄罗斯 (Russia) 02 - fish
-  - 🇷🇺 俄罗斯 (Russia) 03 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - fish
-  - 🇷🇺 俄罗斯 (Russia) 02 - fish
-  - 🇷🇺 俄罗斯 (Russia) 03 - fish
 rules:
 - MATCH,PROXIES

@@ -28,6 +28,48 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇷🇴 RO 04 - fish
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇷🇴 RO 05 - fish
+  type: vless
+  server: ksbemdmd.color-shop.ir
+  port: 443
+  uuid: e3026ffb-cde6-4cfe-b4b7-f76d5264e969
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 9Wh7M-tz9D_1WBaQhz2wIJian960Ffcx66NH8HAidDI
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇷🇴 RO 06 - fish
+  type: ss
+  server: 194.68.44.42
+  port: 64546
+  cipher: chacha20-ietf-poly1305
+  password: U83u9OGpvSatIUW7LsWffr
+  udp: true
+- name: 🇷🇴 RO 07 - fish
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇷🇴 RO 08 - fish
+  type: ss
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +78,11 @@ proxy-groups:
   - 🇷🇴 RO 01 - fish
   - 🇷🇴 RO 02 - fish
   - 🇷🇴 RO 03 - fish
+  - 🇷🇴 RO 04 - fish
+  - 🇷🇴 RO 05 - fish
+  - 🇷🇴 RO 06 - fish
+  - 🇷🇴 RO 07 - fish
+  - 🇷🇴 RO 08 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +91,10 @@ proxy-groups:
   - 🇷🇴 RO 01 - fish
   - 🇷🇴 RO 02 - fish
   - 🇷🇴 RO 03 - fish
+  - 🇷🇴 RO 04 - fish
+  - 🇷🇴 RO 05 - fish
+  - 🇷🇴 RO 06 - fish
+  - 🇷🇴 RO 07 - fish
+  - 🇷🇴 RO 08 - fish
 rules:
 - MATCH,PROXIES
