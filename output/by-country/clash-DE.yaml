@@ -5,655 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - fish
-  type: ss
-  server: 213.202.208.199
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+  type: vless
+  server: sino.bestsellers1.site
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sino.bestsellers1.site
 - name: 🇩🇪 德国 (Germany) 02 - fish
-  type: ss
-  server: 8.209.74.72
-  port: 20001
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
-  udp: true
-- name: 🇩🇪 德国 (Germany) 03 - fish
-  type: vless
-  server: wwww.qarvian.ir
-  port: 443
-  uuid: dc7d45c9-c942-41e3-b880-9a7fd5b64e2f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: firefox.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: copy_az_channel_NUFiLTER_4i.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 04 - fish
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 05 - fish
-  type: ss
-  server: 209.46.102.22
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
-  udp: true
-- name: 🇩🇪 德国 (Germany) 06 - fish
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 07 - fish
-  type: vless
-  server: 45.135.194.193
-  port: 80
-  uuid: 28b983d7-f532-4eb7-b3e7-75aa60290c76
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 08 - fish
-  type: vless
-  server: 146.75.59.186
-  port: 443
-  uuid: dc7d45c9-c942-41e3-b880-9a7fd5b64e2f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: firefox.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: copy_az_channel_NUFiLTER_3i.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 09 - fish
-  type: ss
-  server: 209.46.102.22
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
-  udp: true
-- name: 🇩🇪 德国 (Germany) 10 - fish
-  type: vless
-  server: 146.75.59.186
-  port: 443
-  uuid: dc7d45c9-c942-41e3-b880-9a7fd5b64e2f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: firefox.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: copy_az_channel_NUFiLTER_3i.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 11 - fish
-  type: vless
-  server: 185.171.202.232
-  port: 2096
-  uuid: b30f3c95-104c-4c4b-92fe-d96602d61f3a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: hsndXIwexxE5l2h1DUNjc349cgNIL9g9e9jLN5YdAQo
-  servername: tgju.org
-  client-fingerprint: edge
-- name: 🇩🇪 德国 (Germany) 12 - fish
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: dc7d45c9-c942-41e3-b880-9a7fd5b64e2f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: firefox.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: copy_az_channel_NUFiLTER_5i.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 13 - fish
-  type: vless
-  server: 157.230.101.36
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇩🇪 德国 (Germany) 14 - fish
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?Telegram---V2ray_confiig?ed=2560
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇩🇪 德国 (Germany) 15 - fish
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇩🇪 德国 (Germany) 16 - fish
-  type: vmess
-  server: de-d21e56c13c.shamanapp.online
-  port: 33744
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ShamanVMESS2026
-    headers:
-      Host: de-d21e56c13c.shamanapp.online:33744
-- name: 🇩🇪 德国 (Germany) 17 - fish
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM-TOOTFFARANGI
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇩🇪 德国 (Germany) 18 - fish
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: T
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇩🇪 德国 (Germany) 19 - fish
-  type: vless
-  server: connect.wecantos.site
-  port: 10000
-  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 20 - fish
-  type: vless
-  server: p2real33.greewebservices.ir
-  port: 1330
-  uuid: 45da91b7-14f7-46e0-a4a2-a66c1dbd7543
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-  servername: play.googleapis.com
-  client-fingerprint: ios
-- name: 🇩🇪 德国 (Germany) 21 - fish
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyipfp=chrome
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇩🇪 德国 (Germany) 22 - fish
-  type: vless
-  server: 188.114.97.6
-  port: 2053
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---fp=chrome
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇩🇪 德国 (Germany) 23 - fish
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?Telegram---bored_vpn?ed=2560
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇩🇪 德国 (Germany) 24 - fish
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--v2ray_configs_pools?ed
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇩🇪 德国 (Germany) 25 - fish
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇩🇪 德国 (Germany) 26 - fish
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM-TOOTFFARANGI
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇩🇪 德国 (Germany) 27 - fish
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: dc7d45c9-c942-41e3-b880-9a7fd5b64e2f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: firefox.com
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM-TOOTFFARANGI
-    headers:
-      Host: copy_az_channel_NUFiLTER_5i.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 28 - fish
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: '3'
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇩🇪 德国 (Germany) 29 - fish
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?DailyConfigs---DailyConfigs---DailyConfigs?ed=2056
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇩🇪 德国 (Germany) 30 - fish
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇩🇪 德国 (Germany) 31 - fish
-  type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 32 - fish
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇩🇪 德国 (Germany) 33 - fish
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇩🇪 德国 (Germany) 34 - fish
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 35 - fish
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇩🇪 德国 (Germany) 36 - fish
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?Telegram---Vpney
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇩🇪 德国 (Germany) 37 - fish
-  type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 38 - fish
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?Telegram---V2ray_confiig?edfp=chrome
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇩🇪 德国 (Germany) 39 - fish
-  type: vless
-  server: 146.75.59.186
-  port: 443
-  uuid: dc7d45c9-c942-41e3-b880-9a7fd5b64e2f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: firefox.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: copy_az_channel_NUFiLTER_3i.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 40 - fish
-  type: vless
-  server: 104.21.91.244
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇩🇪 德国 (Germany) 41 - fish
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: '3'
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇩🇪 德国 (Germany) 42 - fish
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM-TOOTFFARANGIfp=chrome
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇩🇪 德国 (Germany) 43 - fish
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?SAFEWEBS_SAFEWEBS_SAFEWEBS_SAFEWEBSfp=chrome
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇩🇪 德国 (Germany) 44 - fish
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--i10VPN?ed
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇩🇪 德国 (Germany) 45 - fish
-  type: vless
-  server: cf.090227.xyz
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇩🇪 德国 (Germany) 46 - fish
-  type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 47 - fish
-  type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 91.107.247.173
-- name: 🇩🇪 德国 (Germany) 48 - fish
-  type: ss
-  server: 31.76.11.83
-  port: 15731
-  cipher: chacha20-ietf-poly1305
-  password: xAYXtB+XMdfWWOlmL8PWcOZEPfKHKVv7NcTY6jpcL/A=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 49 - fish
-  type: vmess
-  server: 31.76.11.83
-  port: 22366
-  uuid: 632cfa69-ae00-49d1-81e0-554979d1e9fa
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 50 - fish
-  type: vmess
-  server: 31.76.11.83
-  port: 22366
-  uuid: 632cfa69-ae00-49d1-81e0-554979d1e9fa
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 51 - fish
-  type: vless
-  server: wwww.qarvian.ir
-  port: 443
-  uuid: dc7d45c9-c942-41e3-b880-9a7fd5b64e2f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: firefox.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: copy_az_channel_NUFiLTER_4i.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 52 - fish
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 53 - fish
   type: vless
   server: 46.225.46.136
   port: 2087
@@ -667,7 +32,84 @@ proxies:
     path: /hokm
     headers:
       Host: hoert1rert.localip.ir
-- name: 🇩🇪 德国 (Germany) 54 - fish
+- name: 🇩🇪 德国 (Germany) 03 - fish
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 04 - fish
+  type: vless
+  server: andikurdi07.global.ssl.fastly.net
+  port: 443
+  uuid: 75df10cc-f745-4aae-aa74-400082f02682
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wtqrycyqafndeba.global.ssl.fastly.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wtqrycyqafndeba.global.ssl.fastly.net
+- name: 🇩🇪 德国 (Germany) 05 - fish
+  type: vless
+  server: 45.135.194.193
+  port: 80
+  uuid: 28b983d7-f532-4eb7-b3e7-75aa60290c76
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 06 - fish
+  type: vless
+  server: 91.107.247.173
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 91.107.247.173
+- name: 🇩🇪 德国 (Germany) 07 - fish
+  type: vless
+  server: 46.225.46.136
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hoert1rert.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: hoert1rert.localip.ir
+- name: 🇩🇪 德国 (Germany) 08 - fish
+  type: ss
+  server: 213.202.208.199
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇩🇪 德国 (Germany) 09 - fish
+  type: ss
+  server: 8.209.74.72
+  port: 20001
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+  udp: true
+- name: 🇩🇪 德国 (Germany) 10 - fish
   type: vless
   server: 91.107.247.173
   port: 2083
@@ -681,25 +123,82 @@ proxies:
     path: /
     headers:
       Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 55 - fish
-  type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+- name: 🇩🇪 德国 (Germany) 11 - fish
+  type: vmess
+  server: 31.76.11.83
+  port: 22366
+  uuid: 632cfa69-ae00-49d1-81e0-554979d1e9fa
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 56 - fish
+- name: 🇩🇪 德国 (Germany) 12 - fish
+  type: ss
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+  udp: true
+- name: 🇩🇪 德国 (Germany) 13 - fish
   type: vless
   server: 206.1.103.26
   port: 443
   uuid: 0ad58d97-922c-4e85-b820-9d04dab5b8ec
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 14 - fish
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 15 - fish
+  type: ss
+  server: 31.76.11.83
+  port: 15731
+  cipher: chacha20-ietf-poly1305
+  password: xAYXtB+XMdfWWOlmL8PWcOZEPfKHKVv7NcTY6jpcL/A=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 16 - fish
+  type: vless
+  server: test.wecantos.site
+  port: 20000
+  uuid: ca59a503-db23-44af-9879-49747d8da98f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 17 - fish
+  type: vless
+  server: 157.230.101.36
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇩🇪 德国 (Germany) 18 - fish
+  type: vmess
+  server: 31.76.11.83
+  port: 22366
+  uuid: 632cfa69-ae00-49d1-81e0-554979d1e9fa
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 19 - fish
+  type: vless
+  server: connect.wecantos.site
+  port: 10000
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
   udp: true
   tls: false
   skip-cert-verify: true
@@ -727,43 +226,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 17 - fish
   - 🇩🇪 德国 (Germany) 18 - fish
   - 🇩🇪 德国 (Germany) 19 - fish
-  - 🇩🇪 德国 (Germany) 20 - fish
-  - 🇩🇪 德国 (Germany) 21 - fish
-  - 🇩🇪 德国 (Germany) 22 - fish
-  - 🇩🇪 德国 (Germany) 23 - fish
-  - 🇩🇪 德国 (Germany) 24 - fish
-  - 🇩🇪 德国 (Germany) 25 - fish
-  - 🇩🇪 德国 (Germany) 26 - fish
-  - 🇩🇪 德国 (Germany) 27 - fish
-  - 🇩🇪 德国 (Germany) 28 - fish
-  - 🇩🇪 德国 (Germany) 29 - fish
-  - 🇩🇪 德国 (Germany) 30 - fish
-  - 🇩🇪 德国 (Germany) 31 - fish
-  - 🇩🇪 德国 (Germany) 32 - fish
-  - 🇩🇪 德国 (Germany) 33 - fish
-  - 🇩🇪 德国 (Germany) 34 - fish
-  - 🇩🇪 德国 (Germany) 35 - fish
-  - 🇩🇪 德国 (Germany) 36 - fish
-  - 🇩🇪 德国 (Germany) 37 - fish
-  - 🇩🇪 德国 (Germany) 38 - fish
-  - 🇩🇪 德国 (Germany) 39 - fish
-  - 🇩🇪 德国 (Germany) 40 - fish
-  - 🇩🇪 德国 (Germany) 41 - fish
-  - 🇩🇪 德国 (Germany) 42 - fish
-  - 🇩🇪 德国 (Germany) 43 - fish
-  - 🇩🇪 德国 (Germany) 44 - fish
-  - 🇩🇪 德国 (Germany) 45 - fish
-  - 🇩🇪 德国 (Germany) 46 - fish
-  - 🇩🇪 德国 (Germany) 47 - fish
-  - 🇩🇪 德国 (Germany) 48 - fish
-  - 🇩🇪 德国 (Germany) 49 - fish
-  - 🇩🇪 德国 (Germany) 50 - fish
-  - 🇩🇪 德国 (Germany) 51 - fish
-  - 🇩🇪 德国 (Germany) 52 - fish
-  - 🇩🇪 德国 (Germany) 53 - fish
-  - 🇩🇪 德国 (Germany) 54 - fish
-  - 🇩🇪 德国 (Germany) 55 - fish
-  - 🇩🇪 德国 (Germany) 56 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -788,42 +250,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 17 - fish
   - 🇩🇪 德国 (Germany) 18 - fish
   - 🇩🇪 德国 (Germany) 19 - fish
-  - 🇩🇪 德国 (Germany) 20 - fish
-  - 🇩🇪 德国 (Germany) 21 - fish
-  - 🇩🇪 德国 (Germany) 22 - fish
-  - 🇩🇪 德国 (Germany) 23 - fish
-  - 🇩🇪 德国 (Germany) 24 - fish
-  - 🇩🇪 德国 (Germany) 25 - fish
-  - 🇩🇪 德国 (Germany) 26 - fish
-  - 🇩🇪 德国 (Germany) 27 - fish
-  - 🇩🇪 德国 (Germany) 28 - fish
-  - 🇩🇪 德国 (Germany) 29 - fish
-  - 🇩🇪 德国 (Germany) 30 - fish
-  - 🇩🇪 德国 (Germany) 31 - fish
-  - 🇩🇪 德国 (Germany) 32 - fish
-  - 🇩🇪 德国 (Germany) 33 - fish
-  - 🇩🇪 德国 (Germany) 34 - fish
-  - 🇩🇪 德国 (Germany) 35 - fish
-  - 🇩🇪 德国 (Germany) 36 - fish
-  - 🇩🇪 德国 (Germany) 37 - fish
-  - 🇩🇪 德国 (Germany) 38 - fish
-  - 🇩🇪 德国 (Germany) 39 - fish
-  - 🇩🇪 德国 (Germany) 40 - fish
-  - 🇩🇪 德国 (Germany) 41 - fish
-  - 🇩🇪 德国 (Germany) 42 - fish
-  - 🇩🇪 德国 (Germany) 43 - fish
-  - 🇩🇪 德国 (Germany) 44 - fish
-  - 🇩🇪 德国 (Germany) 45 - fish
-  - 🇩🇪 德国 (Germany) 46 - fish
-  - 🇩🇪 德国 (Germany) 47 - fish
-  - 🇩🇪 德国 (Germany) 48 - fish
-  - 🇩🇪 德国 (Germany) 49 - fish
-  - 🇩🇪 德国 (Germany) 50 - fish
-  - 🇩🇪 德国 (Germany) 51 - fish
-  - 🇩🇪 德国 (Germany) 52 - fish
-  - 🇩🇪 德国 (Germany) 53 - fish
-  - 🇩🇪 德国 (Germany) 54 - fish
-  - 🇩🇪 德国 (Germany) 55 - fish
-  - 🇩🇪 德国 (Germany) 56 - fish
 rules:
 - MATCH,PROXIES
