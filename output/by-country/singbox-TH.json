@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - fish"
+        "🇹🇭 TH 01 - fish",
+        "🇹🇭 TH 02 - fish"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - fish"
+        "🇹🇭 TH 01 - fish",
+        "🇹🇭 TH 02 - fish"
       ],
       "url": "https://www.google.com/generate_204"
     },
