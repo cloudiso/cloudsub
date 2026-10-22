@@ -7,7 +7,7 @@ proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - fish
   type: vless
   server: 526.150333.xyz
-  port: 21001
+  port: 21003
   uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
   udp: true
   tls: true
@@ -19,7 +19,19 @@ proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - fish
   type: vless
   server: 526.150333.xyz
-  port: 21002
+  port: 21004
+  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - fish
+  type: vless
+  server: 526.150333.xyz
+  port: 21001
   uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
   udp: true
   tls: true
@@ -28,18 +40,6 @@ proxies:
     public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
   servername: www.cloudflare.com
   client-fingerprint: safari
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - fish
-  type: vless
-  server: 526.150333.xyz
-  port: 21002
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - fish
   type: vless
   server: 526.150333.xyz
@@ -51,23 +51,19 @@ proxies:
   reality-opts:
     public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
   servername: www.cloudflare.com
-  client-fingerprint: qq
+  client-fingerprint: edge
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - fish
-  type: vmess
-  server: 8.210.24.181
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 526.150333.xyz
+  port: 21003
+  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 6jdvarazgu3qqr6q.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 6jdvarazgu3qqr6q.v.3dns.vip
+  reality-opts:
+    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
+  servername: www.cloudflare.com
+  client-fingerprint: ios
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - fish
   type: vmess
   server: 8.210.24.181
@@ -85,31 +81,37 @@ proxies:
     headers:
       Host: 6jdvarazgu3qqr6q.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - fish
-  type: vless
-  server: 526.150333.xyz
-  port: 21002
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
+  type: vmess
+  server: 47.243.153.153
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-  servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - fish
-  type: vless
-  server: 103.148.73.173
-  port: 8443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
+  servername: i2psm3knof5qjjix.v.3dns.vip
   network: ws
   ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    path: /ws-vmess
     headers:
-      Host: 103.148.73.173
+      Host: i2psm3knof5qjjix.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - fish
+  type: vmess
+  server: 8.218.195.61
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ex1ogt73nzpqkac2.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: ex1ogt73nzpqkac2.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 09 - fish
   type: vless
   server: 526.150333.xyz
@@ -125,7 +127,7 @@ proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 10 - fish
   type: vless
   server: 526.150333.xyz
-  port: 21003
+  port: 21001
   uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
   udp: true
   tls: true
@@ -135,22 +137,44 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 11 - fish
-  type: vmess
-  server: 47.243.153.153
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 103.148.73.173
+  port: 8443
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: i2psm3knof5qjjix.v.3dns.vip
+  servername: ty986gfazs.cainiaohub.xyz
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: i2psm3knof5qjjix.v.3dns.vip
+      Host: ty986gfazs.cainiaohub.xyz
 - name: 🇭🇰 中国香港 (Hong Kong) 12 - fish
+  type: vless
+  server: 526.150333.xyz
+  port: 21002
+  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - fish
+  type: vless
+  server: 526.150333.xyz
+  port: 21003
+  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
+  servername: www.cloudflare.com
+  client-fingerprint: edge
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - fish
   type: vless
   server: 526.150333.xyz
   port: 21001
@@ -162,7 +186,7 @@ proxies:
     public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
   servername: www.cloudflare.com
   client-fingerprint: qq
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - fish
+- name: 🇭🇰 中国香港 (Hong Kong) 15 - fish
   type: vless
   server: 526.150333.xyz
   port: 21002
@@ -173,31 +197,7 @@ proxies:
   reality-opts:
     public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - fish
-  type: vless
-  server: 526.150333.xyz
-  port: 21004
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 15 - fish
-  type: vless
-  server: 526.150333.xyz
-  port: 21003
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-  servername: www.cloudflare.com
-  client-fingerprint: edge
+  client-fingerprint: ios
 - name: 🇭🇰 中国香港 (Hong Kong) 16 - fish
   type: vless
   server: 526.150333.xyz
@@ -209,7 +209,7 @@ proxies:
   reality-opts:
     public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
   servername: www.cloudflare.com
-  client-fingerprint: edge
+  client-fingerprint: qq
 - name: 🇭🇰 中国香港 (Hong Kong) 17 - fish
   type: vless
   server: 526.150333.xyz
@@ -223,21 +223,29 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 18 - fish
-  type: vmess
-  server: 47.243.153.153
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 526.150333.xyz
+  port: 21002
+  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: i2psm3knof5qjjix.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: i2psm3knof5qjjix.v.3dns.vip
+  reality-opts:
+    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 19 - fish
+  type: vless
+  server: 526.150333.xyz
+  port: 21002
+  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
+  servername: www.cloudflare.com
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -261,6 +269,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 16 - fish
   - 🇭🇰 中国香港 (Hong Kong) 17 - fish
   - 🇭🇰 中国香港 (Hong Kong) 18 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 19 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -284,5 +293,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 16 - fish
   - 🇭🇰 中国香港 (Hong Kong) 17 - fish
   - 🇭🇰 中国香港 (Hong Kong) 18 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 19 - fish
 rules:
 - MATCH,PROXIES
