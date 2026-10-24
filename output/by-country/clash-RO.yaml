@@ -13,13 +13,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇷🇴 RO 02 - fish
-  type: ss
-  server: 154.46.31.106
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
-- name: 🇷🇴 RO 03 - fish
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -27,13 +20,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇷🇴 RO 04 - fish
-  type: ss
-  server: 194.68.44.42
-  port: 64546
-  cipher: chacha20-ietf-poly1305
-  password: U83u9OGpvSatIUW7LsWffr
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,8 +27,6 @@ proxy-groups:
   - AUTO
   - 🇷🇴 RO 01 - fish
   - 🇷🇴 RO 02 - fish
-  - 🇷🇴 RO 03 - fish
-  - 🇷🇴 RO 04 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,7 +34,5 @@ proxy-groups:
   proxies:
   - 🇷🇴 RO 01 - fish
   - 🇷🇴 RO 02 - fish
-  - 🇷🇴 RO 03 - fish
-  - 🇷🇴 RO 04 - fish
 rules:
 - MATCH,PROXIES

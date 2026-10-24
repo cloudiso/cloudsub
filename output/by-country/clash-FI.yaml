@@ -20,6 +20,46 @@ proxies:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 FI 02 - fish
   type: vless
+  server: hw3.divarkhaghazi.com.
+  port: 465
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw3.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 FI 03 - fish
+  type: vless
+  server: hw3.divarkhaghazi.com
+  port: 465
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw3.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 FI 04 - fish
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 05 - fish
+  type: vless
   server: 45.144.234.157
   port: 14430
   uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
@@ -31,6 +71,20 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 FI 06 - fish
+  type: vless
+  server: finp2g.yandex-api.store
+  port: 8443
+  uuid: 78559873-84ef-4cab-a0b2-46d4cd20de4a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: finp2g.yandex-api.store
+  network: ws
+  ws-opts:
+    path: /assets
+    headers:
+      Host: finp2g.yandex-api.store
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,6 +92,10 @@ proxy-groups:
   - AUTO
   - 🇫🇮 FI 01 - fish
   - 🇫🇮 FI 02 - fish
+  - 🇫🇮 FI 03 - fish
+  - 🇫🇮 FI 04 - fish
+  - 🇫🇮 FI 05 - fish
+  - 🇫🇮 FI 06 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -45,5 +103,9 @@ proxy-groups:
   proxies:
   - 🇫🇮 FI 01 - fish
   - 🇫🇮 FI 02 - fish
+  - 🇫🇮 FI 03 - fish
+  - 🇫🇮 FI 04 - fish
+  - 🇫🇮 FI 05 - fish
+  - 🇫🇮 FI 06 - fish
 rules:
 - MATCH,PROXIES
