@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇳 印度 (India) 01 (家宽) - fish
+- name: 🇮🇱 IL 01 - fish
   type: vless
-  server: 122.176.216.52
+  server: 177.3.208.65
   port: 443
-  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: app-6ada5023.deploy.meerasolution.com
+  servername: tgmansion.site
   network: ws
   ws-opts:
-    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
+    path: /vless-il
     headers:
-      Host: app-6ada5023.deploy.meerasolution.com
+      Host: tgmansion.site
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇳 印度 (India) 01 (家宽) - fish
+  - 🇮🇱 IL 01 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇳 印度 (India) 01 (家宽) - fish
+  - 🇮🇱 IL 01 - fish
 rules:
 - MATCH,PROXIES
