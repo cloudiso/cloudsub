@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇱 IL 01 - fish
+- name: 🇱🇰 LK 01 - fish
   type: vless
-  server: 177.3.208.65
-  port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  server: support.zoom.us
+  port: 8080
+  uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: tgmansion.site
   network: ws
   ws-opts:
-    path: /vless-il
+    path: /
     headers:
-      Host: tgmansion.site
+      Host: Free.nadun.store
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇱 IL 01 - fish
+  - 🇱🇰 LK 01 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇱 IL 01 - fish
+  - 🇱🇰 LK 01 - fish
 rules:
 - MATCH,PROXIES
