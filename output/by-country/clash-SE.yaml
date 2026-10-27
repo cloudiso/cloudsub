@@ -5,52 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - fish
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
+  type: vless
+  server: 193.188.21.253
+  port: 14430
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
 - name: 🇸🇪 SE 02 - fish
-  type: vless
-  server: 193.188.21.253
-  port: 14430
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
-- name: 🇸🇪 SE 03 - fish
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 04 - fish
-  type: vless
-  server: 193.188.21.253
-  port: 14430
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
-- name: 🇸🇪 SE 05 - fish
   type: vless
   server: 77.110.97.245
   port: 443
@@ -64,6 +31,19 @@ proxies:
     path: /fp=chromefp=chrome
     headers:
       Host: ccc.010304.xyz
+- name: 🇸🇪 SE 03 - fish
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,8 +52,6 @@ proxy-groups:
   - 🇸🇪 SE 01 - fish
   - 🇸🇪 SE 02 - fish
   - 🇸🇪 SE 03 - fish
-  - 🇸🇪 SE 04 - fish
-  - 🇸🇪 SE 05 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -82,7 +60,5 @@ proxy-groups:
   - 🇸🇪 SE 01 - fish
   - 🇸🇪 SE 02 - fish
   - 🇸🇪 SE 03 - fish
-  - 🇸🇪 SE 04 - fish
-  - 🇸🇪 SE 05 - fish
 rules:
 - MATCH,PROXIES
