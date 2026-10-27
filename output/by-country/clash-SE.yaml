@@ -19,46 +19,6 @@ proxies:
       Host: 193.188.21.253
 - name: 🇸🇪 SE 02 - fish
   type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 03 - fish
-  type: vless
-  server: 193.188.21.253
-  port: 14430
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
-- name: 🇸🇪 SE 04 - fish
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 1450b9fa-aa7e-4ccd-b2a7-956aec6a1ec4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: firefox.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: swedish.global.ssl.fastly.net.
-- name: 🇸🇪 SE 05 - fish
-  type: vless
   server: 77.110.97.245
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -71,7 +31,20 @@ proxies:
     path: /fp=chromefp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇸🇪 SE 06 - fish
+- name: 🇸🇪 SE 03 - fish
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 SE 04 - fish
   type: vless
   server: 191.44.114.179
   port: 2096
@@ -85,6 +58,19 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: st33614.rumedia-cdn.com
+- name: 🇸🇪 SE 05 - fish
+  type: vless
+  server: 193.188.21.253
+  port: 14430
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
 proxy-groups:
 - name: PROXIES
   type: select
@@ -95,7 +81,6 @@ proxy-groups:
   - 🇸🇪 SE 03 - fish
   - 🇸🇪 SE 04 - fish
   - 🇸🇪 SE 05 - fish
-  - 🇸🇪 SE 06 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -106,6 +91,5 @@ proxy-groups:
   - 🇸🇪 SE 03 - fish
   - 🇸🇪 SE 04 - fish
   - 🇸🇪 SE 05 - fish
-  - 🇸🇪 SE 06 - fish
 rules:
 - MATCH,PROXIES
