@@ -6,31 +6,19 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - fish
   type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 02 - fish
-  type: vless
-  server: 177.3.208.65
+  server: 155.103.71.142
   port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: tgmansion.site
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /vless-tr
+    path: /fp=chrome
     headers:
-      Host: 177.3.208.65
-- name: 🇹🇷 土耳其 (Turkey) 03 - fish
+      Host: ccc.010304.xyz
+- name: 🇹🇷 土耳其 (Turkey) 02 - fish
   type: vless
   server: 155.103.71.142
   port: 443
@@ -44,20 +32,80 @@ proxies:
     path: /fp=chromefp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 04 - fish
+- name: 🇹🇷 土耳其 (Turkey) 03 - fish
   type: vless
-  server: 155.103.71.142
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 04 - fish
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 05 - fish
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 06 - fish
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 07 - fish
+  type: vless
+  server: 146.75.56.210
+  port: 443
+  uuid: 2c665ae0-9611-4a12-83e1-47a3ce9468b5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn.akamai.steamstatic.com
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
-      Host: ccc.010304.xyz
+      Host: Rastgubash-tarast-shi.global.ssl.fastly.net
+- name: 🇹🇷 土耳其 (Turkey) 08 - fish
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,6 +115,10 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - fish
   - 🇹🇷 土耳其 (Turkey) 03 - fish
   - 🇹🇷 土耳其 (Turkey) 04 - fish
+  - 🇹🇷 土耳其 (Turkey) 05 - fish
+  - 🇹🇷 土耳其 (Turkey) 06 - fish
+  - 🇹🇷 土耳其 (Turkey) 07 - fish
+  - 🇹🇷 土耳其 (Turkey) 08 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,5 +128,9 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - fish
   - 🇹🇷 土耳其 (Turkey) 03 - fish
   - 🇹🇷 土耳其 (Turkey) 04 - fish
+  - 🇹🇷 土耳其 (Turkey) 05 - fish
+  - 🇹🇷 土耳其 (Turkey) 06 - fish
+  - 🇹🇷 土耳其 (Turkey) 07 - fish
+  - 🇹🇷 土耳其 (Turkey) 08 - fish
 rules:
 - MATCH,PROXIES
