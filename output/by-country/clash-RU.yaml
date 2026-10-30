@@ -5,18 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - fish
+  type: vless
+  server: 194.87.143.165
+  port: 8443
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wsru1.wba-pn.ru
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 194.87.143.165
+- name: 🇷🇺 俄罗斯 (Russia) 02 - fish
   type: ss
   server: 159.194.251.76
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: MODziWLa9qMuW-4yPa0rfw
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - fish
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: cZGr8nLHdf+FE5ZAw0Y/Rzsml4AyikGL481Pg7eBpsI=
   udp: true
 proxy-groups:
 - name: PROXIES
