@@ -15,15 +15,8 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇭 CH 02 - fish
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-  udp: true
-- name: 🇨🇭 CH 03 - fish
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -35,6 +28,18 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇨🇭 CH 03 - fish
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: random
 - name: 🇨🇭 CH 04 - fish
   type: vless
   server: 208.69.78.217
@@ -48,14 +53,12 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇨🇭 CH 05 - fish
-  type: vless
-  server: 149.33.15.213
-  port: 443
-  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: swz.proxyplankton.ru
 - name: 🇨🇭 CH 06 - fish
   type: vless
   server: 208.69.78.217
@@ -67,7 +70,7 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇨🇭 CH 07 - fish
   type: vless
   server: 208.69.78.217
@@ -79,28 +82,7 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇨🇭 CH 08 - fish
-  type: vless
-  server: 156.229.163.237
-  port: 10238
-  uuid: 17f9b0bf-f8e5-4b6a-8c51-564ee29d0048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇨🇭 CH 09 - fish
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-  udp: true
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -113,8 +95,6 @@ proxy-groups:
   - 🇨🇭 CH 05 - fish
   - 🇨🇭 CH 06 - fish
   - 🇨🇭 CH 07 - fish
-  - 🇨🇭 CH 08 - fish
-  - 🇨🇭 CH 09 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -127,7 +107,5 @@ proxy-groups:
   - 🇨🇭 CH 05 - fish
   - 🇨🇭 CH 06 - fish
   - 🇨🇭 CH 07 - fish
-  - 🇨🇭 CH 08 - fish
-  - 🇨🇭 CH 09 - fish
 rules:
 - MATCH,PROXIES
