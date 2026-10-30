@@ -6,14 +6,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR 01 - fish"
+        "🇨🇳 CN 01 - fish",
+        "🇨🇳 CN 02 - fish",
+        "🇨🇳 CN 03 - fish",
+        "🇨🇳 CN 04 - fish",
+        "🇨🇳 CN 05 - fish",
+        "🇨🇳 CN 06 - fish"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR 01 - fish"
+        "🇨🇳 CN 01 - fish",
+        "🇨🇳 CN 02 - fish",
+        "🇨🇳 CN 03 - fish",
+        "🇨🇳 CN 04 - fish",
+        "🇨🇳 CN 05 - fish",
+        "🇨🇳 CN 06 - fish"
       ],
       "url": "https://www.google.com/generate_204"
     },

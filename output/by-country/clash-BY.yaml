@@ -7,16 +7,11 @@ proxies:
 - name: 🇧🇾 BY 01 - fish
   type: vless
   server: 178.172.227.124
-  port: 14430
+  port: 10443
   uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 178.172.227.124
 - name: 🇧🇾 BY 02 - fish
   type: vless
   server: 178.172.227.124
@@ -27,9 +22,9 @@ proxies:
   skip-cert-verify: true
 - name: 🇧🇾 BY 03 - fish
   type: vless
-  server: 178.172.227.124
+  server: 178.172.227.228
   port: 14430
-  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
   udp: true
   tls: false
   skip-cert-verify: true
@@ -37,7 +32,7 @@ proxies:
   ws-opts:
     path: /vless
     headers:
-      Host: 178.172.227.124
+      Host: 178.172.227.228
 - name: 🇧🇾 BY 04 - fish
   type: vless
   server: 95.128.71.79
@@ -53,39 +48,18 @@ proxies:
       Host: 95.128.71.79
 - name: 🇧🇾 BY 05 - fish
   type: vless
-  server: 178.172.227.228
-  port: 14430
-  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 178.172.227.228
-- name: 🇧🇾 BY 06 - fish
-  type: vless
-  server: 178.172.227.228
-  port: 14430
-  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 178.172.227.228
-- name: 🇧🇾 BY 07 - fish
-  type: vless
   server: 178.172.227.124
-  port: 10443
+  port: 14430
   uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇧🇾 BY 08 - fish
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 178.172.227.124
+- name: 🇧🇾 BY 06 - fish
   type: vless
   server: 178.172.227.124
   port: 14430
@@ -98,6 +72,32 @@ proxies:
     path: /vless
     headers:
       Host: 178.172.227.124
+- name: 🇧🇾 BY 07 - fish
+  type: vless
+  server: 178.172.227.124
+  port: 14430
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 178.172.227.124
+- name: 🇧🇾 BY 08 - fish
+  type: vless
+  server: 178.172.227.228
+  port: 14430
+  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 178.172.227.228
 proxy-groups:
 - name: PROXIES
   type: select
