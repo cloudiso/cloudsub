@@ -6,19 +6,6 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - fish
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 02 - fish
-  type: vless
   server: 65.109.211.81
   port: 465
   uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
@@ -31,7 +18,48 @@ proxies:
     path: /
     headers:
       Host: hw6.divarkhaghazi.com.
+- name: 🇫🇮 FI 02 - fish
+  type: vless
+  server: hw6.divarkhaghazi.com
+  port: 465
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw6.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw6.divarkhaghazi.com.
 - name: 🇫🇮 FI 03 - fish
+  type: vless
+  server: 65.109.211.81
+  port: 465
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw6.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw6.divarkhaghazi.com.
+- name: 🇫🇮 FI 04 - fish
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 05 - fish
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -52,6 +80,8 @@ proxy-groups:
   - 🇫🇮 FI 01 - fish
   - 🇫🇮 FI 02 - fish
   - 🇫🇮 FI 03 - fish
+  - 🇫🇮 FI 04 - fish
+  - 🇫🇮 FI 05 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,5 +90,7 @@ proxy-groups:
   - 🇫🇮 FI 01 - fish
   - 🇫🇮 FI 02 - fish
   - 🇫🇮 FI 03 - fish
+  - 🇫🇮 FI 04 - fish
+  - 🇫🇮 FI 05 - fish
 rules:
 - MATCH,PROXIES
