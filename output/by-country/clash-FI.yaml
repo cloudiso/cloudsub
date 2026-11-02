@@ -6,13 +6,13 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - fish
   type: vless
-  server: 65.109.211.81
+  server: hw6.divarkhaghazi.com
   port: 465
   uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hw6.divarkhaghazi.com
+  servername: hw6.divarkhaghazi.com.
   network: ws
   ws-opts:
     path: /
@@ -20,7 +20,7 @@ proxies:
       Host: hw6.divarkhaghazi.com.
 - name: 🇫🇮 FI 02 - fish
   type: vless
-  server: hw6.divarkhaghazi.com
+  server: 65.109.211.81
   port: 465
   uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
   udp: true
@@ -40,7 +40,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hw6.divarkhaghazi.com.
+  servername: hw6.divarkhaghazi.com
   network: ws
   ws-opts:
     path: /
