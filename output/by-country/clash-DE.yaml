@@ -6,47 +6,39 @@ log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - fish
   type: vless
-  server: 104.17.70.206
+  server: hw5.roghanmo.com
+  port: 465
+  uuid: a356fa77-7199-417a-80dd-0c0925789161
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw5.roghanmo.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw5.roghanmo.com
+- name: 🇩🇪 德国 (Germany) 02 - fish
+  type: vless
+  server: free.sahanwickramasinghe.com
   port: 8443
   uuid: 5f704d93-7e7f-45b5-81f5-08db4a946220
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: free.sahanwickramasinghe.com
+  servername: zoom.us
   network: ws
   ws-opts:
     path: /
     headers:
       Host: free.sahanwickramasinghe.com
-- name: 🇩🇪 德国 (Germany) 02 - fish
-  type: vmess
-  server: 93.93.89.99
-  port: 443
-  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: renderer-stream-2-129.mirra.now
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-2-129.mirra.now
 - name: 🇩🇪 德国 (Germany) 03 - fish
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
 - name: 🇩🇪 德国 (Germany) 04 - fish
   type: vless
   server: 903.rtgpu.com
@@ -70,19 +62,88 @@ proxies:
   udp: true
 - name: 🇩🇪 德国 (Germany) 06 - fish
   type: vless
-  server: 91.107.243.131
+  server: 91.107.244.35
+  port: 465
+  uuid: a356fa77-7199-417a-80dd-0c0925789161
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw5.roghanmo.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 91.107.244.35
+- name: 🇩🇪 德国 (Germany) 07 - fish
+  type: vless
+  server: news.zoom.us
+  port: 2083
+  uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: site.check-looks.space
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: site.check-looks.space
+- name: 🇩🇪 德国 (Germany) 08 - fish
+  type: vless
+  server: 141.193.213.21
+  port: 2083
+  uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: site.check-looks.space
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: site.check-looks.space
+- name: 🇩🇪 德国 (Germany) 09 - fish
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 10 - fish
+  type: vless
+  server: hw14.roghanmo.com
   port: 465
   uuid: 98aa35fc-7d2f-4744-a91b-7e33b4fdd9c8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hw14.roghanmo.com
+  servername: hw14.roghanmo.com.
   network: ws
   ws-opts:
     path: /
     headers:
       Host: hw14.roghanmo.com
-- name: 🇩🇪 德国 (Germany) 07 - fish
+- name: 🇩🇪 德国 (Germany) 11 - fish
+  type: vless
+  server: 104.17.70.206
+  port: 8443
+  uuid: 5f704d93-7e7f-45b5-81f5-08db4a946220
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.sahanwickramasinghe.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.com
+- name: 🇩🇪 德国 (Germany) 12 - fish
   type: vless
   server: 91.107.244.35
   port: 465
@@ -96,14 +157,21 @@ proxies:
     path: /
     headers:
       Host: 91.107.244.35
-- name: 🇩🇪 德国 (Germany) 08 - fish
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
+- name: 🇩🇪 德国 (Germany) 13 - fish
+  type: vless
+  server: 104.17.70.206
+  port: 8443
+  uuid: 5f704d93-7e7f-45b5-81f5-08db4a946220
   udp: true
-- name: 🇩🇪 德国 (Germany) 09 - fish
+  tls: true
+  skip-cert-verify: true
+  servername: free.sahanwickramasinghe.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.com
+- name: 🇩🇪 德国 (Germany) 14 - fish
   type: vless
   server: 91.107.243.131
   port: 465
@@ -117,7 +185,7 @@ proxies:
     path: /
     headers:
       Host: hw14.roghanmo.com
-- name: 🇩🇪 德国 (Germany) 10 - fish
+- name: 🇩🇪 德国 (Germany) 15 - fish
   type: vless
   server: 141.193.213.21
   port: 2083
@@ -146,6 +214,11 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 08 - fish
   - 🇩🇪 德国 (Germany) 09 - fish
   - 🇩🇪 德国 (Germany) 10 - fish
+  - 🇩🇪 德国 (Germany) 11 - fish
+  - 🇩🇪 德国 (Germany) 12 - fish
+  - 🇩🇪 德国 (Germany) 13 - fish
+  - 🇩🇪 德国 (Germany) 14 - fish
+  - 🇩🇪 德国 (Germany) 15 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -161,5 +234,10 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 08 - fish
   - 🇩🇪 德国 (Germany) 09 - fish
   - 🇩🇪 德国 (Germany) 10 - fish
+  - 🇩🇪 德国 (Germany) 11 - fish
+  - 🇩🇪 德国 (Germany) 12 - fish
+  - 🇩🇪 德国 (Germany) 13 - fish
+  - 🇩🇪 德国 (Germany) 14 - fish
+  - 🇩🇪 德国 (Germany) 15 - fish
 rules:
 - MATCH,PROXIES
