@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 AT 01 - fish"
+        "🇦🇹 AT 01 - fish",
+        "🇦🇹 AT 02 - fish",
+        "🇦🇹 AT 03 - fish"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 AT 01 - fish"
+        "🇦🇹 AT 01 - fish",
+        "🇦🇹 AT 02 - fish",
+        "🇦🇹 AT 03 - fish"
       ],
       "url": "https://www.google.com/generate_204"
     },
