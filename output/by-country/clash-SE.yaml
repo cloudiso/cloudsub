@@ -19,7 +19,7 @@ proxies:
       Host: 5.178.109.174
 - name: 🇸🇪 SE 02 - fish
   type: vless
-  server: 194.104.94.141
+  server: se3.shtil.io
   port: 443
   uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
   udp: true
@@ -28,7 +28,16 @@ proxies:
   servername: se3.shtil.io
 - name: 🇸🇪 SE 03 - fish
   type: vless
-  server: se3.shtil.io
+  server: 194.104.94.141
+  port: 443
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: se3.shtil.io
+- name: 🇸🇪 SE 04 - fish
+  type: vless
+  server: 194.104.94.141
   port: 443
   uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
   udp: true
@@ -43,6 +52,7 @@ proxy-groups:
   - 🇸🇪 SE 01 - fish
   - 🇸🇪 SE 02 - fish
   - 🇸🇪 SE 03 - fish
+  - 🇸🇪 SE 04 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -51,5 +61,6 @@ proxy-groups:
   - 🇸🇪 SE 01 - fish
   - 🇸🇪 SE 02 - fish
   - 🇸🇪 SE 03 - fish
+  - 🇸🇪 SE 04 - fish
 rules:
 - MATCH,PROXIES
