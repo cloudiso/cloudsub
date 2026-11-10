@@ -5,13 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - fish
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
+  type: vless
+  server: 193.188.21.253
+  port: 14430
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
 - name: 🇸🇪 SE 02 - fish
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇸🇪 SE 03 - fish
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -24,40 +37,20 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 03 - fish
-  type: vless
-  server: 194.104.94.141
-  port: 443
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: se3.shtil.io
 - name: 🇸🇪 SE 04 - fish
   type: vless
-  server: 194.104.94.141
+  server: 109.120.134.181
   port: 443
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: se3.shtil.io
-- name: 🇸🇪 SE 05 - fish
-  type: ss
-  server: 138.199.55.243
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇸🇪 SE 06 - fish
-  type: vless
-  server: se3.shtil.io
-  port: 443
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: se3.shtil.io
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: fs.qicai99.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,8 +60,6 @@ proxy-groups:
   - 🇸🇪 SE 02 - fish
   - 🇸🇪 SE 03 - fish
   - 🇸🇪 SE 04 - fish
-  - 🇸🇪 SE 05 - fish
-  - 🇸🇪 SE 06 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -78,7 +69,5 @@ proxy-groups:
   - 🇸🇪 SE 02 - fish
   - 🇸🇪 SE 03 - fish
   - 🇸🇪 SE 04 - fish
-  - 🇸🇪 SE 05 - fish
-  - 🇸🇪 SE 06 - fish
 rules:
 - MATCH,PROXIES
