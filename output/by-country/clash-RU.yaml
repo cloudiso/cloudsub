@@ -6,26 +6,12 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - fish
   type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+  server: 185.22.153.117
+  port: 18443
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - fish
-  type: vless
-  server: 185.178.208.167
-  port: 443
-  uuid: 4662bf2b-af58-0001-ae5f-ef3d7d3a624f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mbr.rkn-pediki.site
-  network: ws
-  ws-opts:
-    path: /session
-    headers:
-      Host: mbr.rkn-pediki.site
-- name: 🇷🇺 俄罗斯 (Russia) 03 - fish
   type: vless
   server: 176.108.245.237
   port: 443
@@ -34,12 +20,19 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: tfusq-ru-40sb.fade.mom
-- name: 🇷🇺 俄罗斯 (Russia) 04 - fish
+- name: 🇷🇺 俄罗斯 (Russia) 03 - fish
   type: ss
   server: 46.17.47.58
   port: 18443
   cipher: aes-256-gcm
   password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - fish
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 05 - fish
   type: ss
