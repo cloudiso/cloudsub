@@ -25,13 +25,6 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇸🇪 SE 03 - fish
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
-- name: 🇸🇪 SE 04 - fish
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -52,7 +45,6 @@ proxy-groups:
   - 🇸🇪 SE 01 - fish
   - 🇸🇪 SE 02 - fish
   - 🇸🇪 SE 03 - fish
-  - 🇸🇪 SE 04 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +53,5 @@ proxy-groups:
   - 🇸🇪 SE 01 - fish
   - 🇸🇪 SE 02 - fish
   - 🇸🇪 SE 03 - fish
-  - 🇸🇪 SE 04 - fish
 rules:
 - MATCH,PROXIES
