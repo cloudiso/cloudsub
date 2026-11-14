@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - fish
+  type: ss
+  server: 62.182.193.228
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2e555e46dbc421452416834962fd014f
+  udp: true
+- name: 🇸🇪 SE 02 - fish
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+  udp: true
+- name: 🇸🇪 SE 03 - fish
   type: vless
   server: 193.188.21.253
   port: 14430
@@ -17,14 +31,14 @@ proxies:
     path: /vless
     headers:
       Host: 193.188.21.253
-- name: 🇸🇪 SE 02 - fish
+- name: 🇸🇪 SE 04 - fish
   type: ss
   server: 138.199.55.243
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇸🇪 SE 03 - fish
+- name: 🇸🇪 SE 05 - fish
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -45,6 +59,8 @@ proxy-groups:
   - 🇸🇪 SE 01 - fish
   - 🇸🇪 SE 02 - fish
   - 🇸🇪 SE 03 - fish
+  - 🇸🇪 SE 04 - fish
+  - 🇸🇪 SE 05 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -53,5 +69,7 @@ proxy-groups:
   - 🇸🇪 SE 01 - fish
   - 🇸🇪 SE 02 - fish
   - 🇸🇪 SE 03 - fish
+  - 🇸🇪 SE 04 - fish
+  - 🇸🇪 SE 05 - fish
 rules:
 - MATCH,PROXIES
