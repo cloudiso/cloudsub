@@ -5,34 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - fish
-  type: vless
-  server: 89.22.224.146
-  port: 43788
-  uuid: 6fbd9bd1-ccd4-4e2f-a918-a0f871965763
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇸🇪 SE 02 - fish
   type: ss
-  server: 62.182.193.228
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 2e555e46dbc421452416834962fd014f
-  udp: true
-- name: 🇸🇪 SE 03 - fish
-  type: ss
-  server: 70.34.212.124
-  port: 8388
+  server: 138.199.55.243
+  port: 19999
   cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇸🇪 SE 04 - fish
+- name: 🇸🇪 SE 02 - fish
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -45,12 +24,19 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 05 - fish
+- name: 🇸🇪 SE 03 - fish
   type: ss
-  server: 138.199.55.243
-  port: 19999
+  server: 62.182.193.228
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2e555e46dbc421452416834962fd014f
+  udp: true
+- name: 🇸🇪 SE 04 - fish
+  type: ss
+  server: 70.34.212.124
+  port: 8388
   cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  password: AxIYWtskJWIIaefW
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -61,7 +47,6 @@ proxy-groups:
   - 🇸🇪 SE 02 - fish
   - 🇸🇪 SE 03 - fish
   - 🇸🇪 SE 04 - fish
-  - 🇸🇪 SE 05 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -71,6 +56,5 @@ proxy-groups:
   - 🇸🇪 SE 02 - fish
   - 🇸🇪 SE 03 - fish
   - 🇸🇪 SE 04 - fish
-  - 🇸🇪 SE 05 - fish
 rules:
 - MATCH,PROXIES
