@@ -30,84 +30,6 @@ proxies:
   client-fingerprint: random
 - name: 🇰🇷 韩国 (South Korea) 03 - fish
   type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 04 - fish
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 05 - fish
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 06 - fish
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 07 - fish
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 08 - fish
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 09 - fish
-  type: vless
   server: 151.245.106.49
   port: 2053
   uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
@@ -126,12 +48,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 01 - fish
   - 🇰🇷 韩国 (South Korea) 02 - fish
   - 🇰🇷 韩国 (South Korea) 03 - fish
-  - 🇰🇷 韩国 (South Korea) 04 - fish
-  - 🇰🇷 韩国 (South Korea) 05 - fish
-  - 🇰🇷 韩国 (South Korea) 06 - fish
-  - 🇰🇷 韩国 (South Korea) 07 - fish
-  - 🇰🇷 韩国 (South Korea) 08 - fish
-  - 🇰🇷 韩国 (South Korea) 09 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -140,11 +56,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 01 - fish
   - 🇰🇷 韩国 (South Korea) 02 - fish
   - 🇰🇷 韩国 (South Korea) 03 - fish
-  - 🇰🇷 韩国 (South Korea) 04 - fish
-  - 🇰🇷 韩国 (South Korea) 05 - fish
-  - 🇰🇷 韩国 (South Korea) 06 - fish
-  - 🇰🇷 韩国 (South Korea) 07 - fish
-  - 🇰🇷 韩国 (South Korea) 08 - fish
-  - 🇰🇷 韩国 (South Korea) 09 - fish
 rules:
 - MATCH,PROXIES
