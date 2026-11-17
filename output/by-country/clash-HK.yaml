@@ -5,34 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - fish
-  type: vless
-  server: fb00fe3d-toq2o0-tpkogt-1ryup.hk2.hyhuawei.com
-  port: 443
-  uuid: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d
+  type: ss
+  server: 213.176.92.148
+  port: 40647
+  cipher: aes-256-gcm
+  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
-  servername: download.windowsupdate.com
-  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - fish
-  type: vmess
-  server: cdns.doon.eu.org
-  port: 443
-  uuid: 8614bde7-34cf-4413-8360-e96f1b960528
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: consisting-hosted-memphis-tee.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: /vmess-argo?ed=2560
-    headers:
-      Host: consisting-hosted-memphis-tee.trycloudflare.com
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - fish
   type: vmess
   server: 156.245.232.239
   port: 35043
@@ -47,28 +26,18 @@ proxies:
     path: /
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - fish
-  type: ss
-  server: 213.176.92.148
-  port: 40647
-  cipher: aes-256-gcm
-  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - fish
+  type: vless
+  server: 9e5f5c4b-tomdc0-tpolhi-1rgxu.hk2.hyhuawei.com
+  port: 443
+  uuid: ea93064c-176c-11f0-885d-f23c91cfbbc9
   udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - fish
-  type: vmess
-  server: 47.244.120.197
-  port: 23026
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: 47.244.120.197
+  reality-opts:
+    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
+  servername: download.windowsupdate.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -77,8 +46,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - fish
   - 🇭🇰 中国香港 (Hong Kong) 02 - fish
   - 🇭🇰 中国香港 (Hong Kong) 03 - fish
-  - 🇭🇰 中国香港 (Hong Kong) 04 - fish
-  - 🇭🇰 中国香港 (Hong Kong) 05 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -87,7 +54,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - fish
   - 🇭🇰 中国香港 (Hong Kong) 02 - fish
   - 🇭🇰 中国香港 (Hong Kong) 03 - fish
-  - 🇭🇰 中国香港 (Hong Kong) 04 - fish
-  - 🇭🇰 中国香港 (Hong Kong) 05 - fish
 rules:
 - MATCH,PROXIES
