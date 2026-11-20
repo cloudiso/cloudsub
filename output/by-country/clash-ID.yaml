@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇺 LU 01 - fish
+- name: 🇮🇩 ID 01 - fish
   type: vless
-  server: subgift.gcorecdn.com
+  server: 104.17.3.81
   port: 443
-  uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
+  uuid: 12d67d2b-ae5c-4d56-9f14-d71d96f7826f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: subgift.gcorecdn.com
+  servername: natan.srpcom.cloud
   network: ws
   ws-opts:
-    path: /t.me-SubGift
+    path: /vlessws
     headers:
-      Host: subgift.gcorecdn.com
+      Host: natan.srpcom.cloud
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇺 LU 01 - fish
+  - 🇮🇩 ID 01 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇺 LU 01 - fish
+  - 🇮🇩 ID 01 - fish
 rules:
 - MATCH,PROXIES

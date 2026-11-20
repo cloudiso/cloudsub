@@ -14,7 +14,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: None
 - name: 🇧🇷 BR 02 - fish
   type: vmess
   server: 103.88.232.55
@@ -25,7 +25,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: None
+  servername: ''
 proxy-groups:
 - name: PROXIES
   type: select

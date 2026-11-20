@@ -50,7 +50,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xmfhlpy.com
+  servername: ''
 - name: 🇦🇹 AT 06 - fish
   type: vmess
   server: 154.47.19.225
