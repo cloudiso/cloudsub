@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - fish
-  type: vless
-  server: 172.66.47.56
-  port: 443
-  uuid: 3dc83518-4002-485e-a066-d3bbcaaa2b2e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: k9-85j.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: k9-85j.pages.dev
-- name: 🇨🇿 CZ 02 - fish
   type: ss
   server: 194.87.233.93
   port: 46190
@@ -31,13 +17,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 CZ 01 - fish
-  - 🇨🇿 CZ 02 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 CZ 01 - fish
-  - 🇨🇿 CZ 02 - fish
 rules:
 - MATCH,PROXIES
