@@ -20,6 +20,20 @@ proxies:
     headers:
       Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - fish
+  type: vless
+  server: 104.21.89.181
+  port: 443
+  uuid: a25a71d1-10ed-4383-855a-f269a34ca691
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ave-qualifications-choices-populations.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: /a8b8606819ef
+    headers:
+      Host: ave-qualifications-choices-populations.trycloudflare.com
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - fish
   type: ss
   server: 213.176.92.148
   port: 40647
@@ -33,6 +47,7 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 - fish
   - 🇭🇰 中国香港 (Hong Kong) 02 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 03 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -40,5 +55,6 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 - fish
   - 🇭🇰 中国香港 (Hong Kong) 02 - fish
+  - 🇭🇰 中国香港 (Hong Kong) 03 - fish
 rules:
 - MATCH,PROXIES

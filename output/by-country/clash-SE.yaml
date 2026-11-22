@@ -6,9 +6,9 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - fish
   type: vless
-  server: sonau.yaremonta.loc.cc
-  port: 8080
-  uuid: c5468915-f60c-4134-b4d3-eb24501d7c65
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   udp: true
   tls: false
   skip-cert-verify: true
@@ -16,7 +16,7 @@ proxies:
   ws-opts:
     path: /vless
     headers:
-      Host: sonau.yaremonta.loc.cc
+      Host: 5.178.109.174
 - name: 🇸🇪 SE 02 - fish
   type: vmess
   server: 62.93.166.184
@@ -29,48 +29,6 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 🇸🇪 SE 03 - fish
-  type: vless
-  server: 77.232.143.142
-  port: 443
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: volumestyle.komediyatorg.net
-  network: ws
-  ws-opts:
-    path: /media/ws/
-    headers:
-      Host: 77.232.143.142
-- name: 🇸🇪 SE 04 - fish
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 05 - fish
-  type: vmess
-  server: sonau.yaremonta.loc.cc
-  port: 8081
-  uuid: c5468915-f60c-4134-b4d3-eb24501d7c65
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess
-    headers:
-      Host: ''
-- name: 🇸🇪 SE 06 - fish
   type: ss
   server: 138.199.55.243
   port: 19999
@@ -85,9 +43,6 @@ proxy-groups:
   - 🇸🇪 SE 01 - fish
   - 🇸🇪 SE 02 - fish
   - 🇸🇪 SE 03 - fish
-  - 🇸🇪 SE 04 - fish
-  - 🇸🇪 SE 05 - fish
-  - 🇸🇪 SE 06 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -96,8 +51,5 @@ proxy-groups:
   - 🇸🇪 SE 01 - fish
   - 🇸🇪 SE 02 - fish
   - 🇸🇪 SE 03 - fish
-  - 🇸🇪 SE 04 - fish
-  - 🇸🇪 SE 05 - fish
-  - 🇸🇪 SE 06 - fish
 rules:
 - MATCH,PROXIES

@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇪 IE 01 - fish
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - fish
   type: ss
-  server: 20.223.233.64
-  port: 443
+  server: 115.161.136.145
+  port: 10099
   cipher: chacha20-ietf-poly1305
-  password: wb1pAoZ9Q354JdSs
+  password: '12242'
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇪 IE 01 - fish
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇪 IE 01 - fish
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - fish
 rules:
 - MATCH,PROXIES
