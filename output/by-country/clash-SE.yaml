@@ -13,6 +13,20 @@ proxies:
   udp: true
 - name: 🇸🇪 SE 02 - fish
   type: vless
+  server: 77.232.143.142
+  port: 443
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: volumestyle.komediyatorg.net
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: 77.232.143.142
+- name: 🇸🇪 SE 03 - fish
+  type: vless
   server: 5.178.109.174
   port: 14430
   uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
@@ -24,20 +38,45 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 03 - fish
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 16f63796-3e98-5a7b-b016-540ce6e79007
+- name: 🇸🇪 SE 04 - fish
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: se1.v2less.site
+  servername: xmfhlpy.com
+- name: 🇸🇪 SE 05 - fish
+  type: vless
+  server: 92.223.84.254
+  port: 443
+  uuid: 63242a2a-7bdb-4775-bc3f-65c2f260f224
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: subgift.gcorecdn.com
   network: ws
   ws-opts:
-    path: /vless
+    path: /t.me-SubGift
     headers:
-      Host: se1.v2less.site
+      Host: subgift.gcorecdn.com
+- name: 🇸🇪 SE 06 - fish
+  type: vless
+  server: 77.232.143.142
+  port: 443
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: volumestyle.komediyatorg.net
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: 77.232.143.142
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +85,9 @@ proxy-groups:
   - 🇸🇪 SE 01 - fish
   - 🇸🇪 SE 02 - fish
   - 🇸🇪 SE 03 - fish
+  - 🇸🇪 SE 04 - fish
+  - 🇸🇪 SE 05 - fish
+  - 🇸🇪 SE 06 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,5 +96,8 @@ proxy-groups:
   - 🇸🇪 SE 01 - fish
   - 🇸🇪 SE 02 - fish
   - 🇸🇪 SE 03 - fish
+  - 🇸🇪 SE 04 - fish
+  - 🇸🇪 SE 05 - fish
+  - 🇸🇪 SE 06 - fish
 rules:
 - MATCH,PROXIES
