@@ -7,7 +7,9 @@
       "outbounds": [
         "auto",
         "🇧🇷 BR 01 - fish",
-        "🇧🇷 BR 02 - fish"
+        "🇧🇷 BR 02 - fish",
+        "🇧🇷 BR 03 - fish",
+        "🇧🇷 BR 04 - fish"
       ]
     },
     {
@@ -15,7 +17,9 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇷 BR 01 - fish",
-        "🇧🇷 BR 02 - fish"
+        "🇧🇷 BR 02 - fish",
+        "🇧🇷 BR 03 - fish",
+        "🇧🇷 BR 04 - fish"
       ],
       "url": "https://www.google.com/generate_204"
     },
