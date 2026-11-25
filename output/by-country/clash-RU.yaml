@@ -6,18 +6,13 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - fish
   type: vless
-  server: 147.45.175.81
+  server: 136.148.83.69
   port: 443
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xsru2.freeddns.org
-  network: ws
-  ws-opts:
-    path: /wsru
-    headers:
-      Host: xsru2.freeddns.org
+  servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 02 - fish
   type: vless
   server: 136.148.83.70
@@ -29,6 +24,29 @@ proxies:
   servername: aszbk-ru-78dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 03 - fish
   type: vless
+  server: 72.56.1.44
+  port: 443
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: paperbirch.merlano.monster
+  network: ws
+  ws-opts:
+    path: /api/de1/stream
+    headers:
+      Host: paperbirch.merlano.monster
+- name: 🇷🇺 俄罗斯 (Russia) 04 - fish
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 05 - fish
+  type: vless
   server: 136.148.83.70
   port: 443
   uuid: 00000000-0000-0001-0000-000000000000
@@ -36,16 +54,25 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: aszbk-ru-78dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 04 - fish
+- name: 🇷🇺 俄罗斯 (Russia) 06 - fish
   type: vless
-  server: 136.148.83.69
+  server: 136.148.83.70
   port: 443
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
+  uuid: 00000000-0000-0001-0000-000000000000
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 05 - fish
+  servername: aszbk-ru-78dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 07 - fish
+  type: vless
+  server: 136.148.83.71
+  port: 443
+  uuid: 00000000-0000-0001-0000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wccfu-ru-79dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 08 - fish
   type: vless
   server: 147.45.221.225
   port: 443
@@ -59,22 +86,20 @@ proxies:
     path: /media/ws/
     headers:
       Host: 147.45.221.225
-- name: 🇷🇺 俄罗斯 (Russia) 06 - fish
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 07 - fish
+- name: 🇷🇺 俄罗斯 (Russia) 09 - fish
   type: vless
-  server: 136.148.83.69
+  server: 147.45.221.225
   port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
+  servername: nl.lucheeebezlimitnoekino.stream
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: 147.45.221.225
 proxy-groups:
 - name: PROXIES
   type: select
@@ -87,6 +112,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - fish
   - 🇷🇺 俄罗斯 (Russia) 06 - fish
   - 🇷🇺 俄罗斯 (Russia) 07 - fish
+  - 🇷🇺 俄罗斯 (Russia) 08 - fish
+  - 🇷🇺 俄罗斯 (Russia) 09 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -99,5 +126,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - fish
   - 🇷🇺 俄罗斯 (Russia) 06 - fish
   - 🇷🇺 俄罗斯 (Russia) 07 - fish
+  - 🇷🇺 俄罗斯 (Russia) 08 - fish
+  - 🇷🇺 俄罗斯 (Russia) 09 - fish
 rules:
 - MATCH,PROXIES
