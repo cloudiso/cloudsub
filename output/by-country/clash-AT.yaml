@@ -28,7 +28,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: xmfhlpy.com
 - name: 🇦🇹 AT 04 - fish
   type: vmess
   server: 154.47.19.225
@@ -41,28 +41,20 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 🇦🇹 AT 05 - fish
-  type: vmess
-  server: 154.47.19.225
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 104.21.44.113
+  port: 443
+  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xmfhlpy.com
+  servername: ancient-haze-d203.vpnetwork3567.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ancient-haze-d203.vpnetwork3567.workers.dev
 - name: 🇦🇹 AT 06 - fish
-  type: vmess
-  server: leviko-at3530.shopingggg.ir
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇦🇹 AT 07 - fish
   type: ss
   server: 82.110.60.9
   port: 19999
@@ -80,7 +72,6 @@ proxy-groups:
   - 🇦🇹 AT 04 - fish
   - 🇦🇹 AT 05 - fish
   - 🇦🇹 AT 06 - fish
-  - 🇦🇹 AT 07 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -92,6 +83,5 @@ proxy-groups:
   - 🇦🇹 AT 04 - fish
   - 🇦🇹 AT 05 - fish
   - 🇦🇹 AT 06 - fish
-  - 🇦🇹 AT 07 - fish
 rules:
 - MATCH,PROXIES

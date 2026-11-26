@@ -6,29 +6,45 @@ log-level: info
 proxies:
 - name: 🇮🇩 ID 01 - fish
   type: vless
-  server: kozel.cc.cd
+  server: 162.159.254.201
   port: 443
-  uuid: 3b01a777-55e7-49f6-8637-d94ee69607c6
+  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: kozel.cc.cd
+  servername: freeceshi6.frii.site
   network: ws
   ws-opts:
-    path: /118.151.222.66=17317fp=chrome
+    path: /?TELEGRAM---MARAMBASHI---MARAMBASHI---MARAMBASHI---MARAMBASHI
     headers:
-      Host: kozel.cc.cd
+      Host: freeceshi6.frii.site
+- name: 🇮🇩 ID 02 - fish
+  type: vless
+  server: 162.159.254.201
+  port: 443
+  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: freeceshi6.frii.site
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM---MARAMBASHI---MARAMBASHI---MARAMBASHI---MARAMBASHI
+    headers:
+      Host: freeceshi6.frii.site
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇩 ID 01 - fish
+  - 🇮🇩 ID 02 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇩 ID 01 - fish
+  - 🇮🇩 ID 02 - fish
 rules:
 - MATCH,PROXIES
