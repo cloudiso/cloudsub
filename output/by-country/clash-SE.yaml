@@ -5,28 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - fish
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: xmfhlpy.com
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 - name: 🇸🇪 SE 02 - fish
-  type: vmess
-  server: 138.199.55.230
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇸🇪 SE 03 - fish
   type: ss
   server: 138.199.55.243
   port: 19999
@@ -40,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 SE 01 - fish
   - 🇸🇪 SE 02 - fish
-  - 🇸🇪 SE 03 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -48,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 SE 01 - fish
   - 🇸🇪 SE 02 - fish
-  - 🇸🇪 SE 03 - fish
 rules:
 - MATCH,PROXIES

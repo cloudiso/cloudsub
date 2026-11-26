@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 EE 01 - fish
+- name: 🇩🇪 德国 (Germany) 01 (家宽) - fish
   type: vless
-  server: 188.214.37.231
+  server: 172.64.88.98
   port: 443
-  uuid: 83706ae4-be2f-4b2b-8079-c3eb4e0b2e3e
+  uuid: afa524de-2b93-4be9-b846-6bc88d8a2ce1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lagoon.gerqix.online
+  servername: 1v5Vp5jsQ611A5dsm.PAges.dEV
   network: ws
   ws-opts:
-    path: /api/de5/stream
+    path: /vl/fbo164EXEqNcjQ9WdWcK?ed=2560
     headers:
-      Host: lagoon.gerqix.online
+      Host: 1v5Vp5jsQ611A5dsm.PAges.dEV
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇪🇪 EE 01 - fish
+  - 🇩🇪 德国 (Germany) 01 (家宽) - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 EE 01 - fish
+  - 🇩🇪 德国 (Germany) 01 (家宽) - fish
 rules:
 - MATCH,PROXIES
