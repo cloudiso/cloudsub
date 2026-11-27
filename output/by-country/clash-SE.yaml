@@ -13,7 +13,7 @@ proxies:
   udp: true
 - name: 🇸🇪 SE 02 - fish
   type: vmess
-  server: 62.93.166.184
+  server: leviko-se3307.shopingggg.ir
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -23,6 +23,39 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 🇸🇪 SE 03 - fish
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇸🇪 SE 04 - fish
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇸🇪 SE 05 - fish
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇸🇪 SE 06 - fish
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -35,17 +68,6 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 04 - fish
-  type: vmess
-  server: leviko-se3307.shopingggg.ir
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,6 +77,8 @@ proxy-groups:
   - 🇸🇪 SE 02 - fish
   - 🇸🇪 SE 03 - fish
   - 🇸🇪 SE 04 - fish
+  - 🇸🇪 SE 05 - fish
+  - 🇸🇪 SE 06 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -64,5 +88,7 @@ proxy-groups:
   - 🇸🇪 SE 02 - fish
   - 🇸🇪 SE 03 - fish
   - 🇸🇪 SE 04 - fish
+  - 🇸🇪 SE 05 - fish
+  - 🇸🇪 SE 06 - fish
 rules:
 - MATCH,PROXIES
