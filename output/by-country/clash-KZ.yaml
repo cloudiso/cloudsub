@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - fish
   type: vless
-  server: 3h-kazakhstan1.09vpn.com
+  server: 38.107.234.57
   port: 8443
   uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
   udp: true
@@ -17,7 +17,7 @@ proxies:
   ws-opts:
     path: /vless/?TELEGRAM--B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub--TELEGRAM
     headers:
-      Host: 3h-kazakhstan1.09vpn.com
+      Host: 38.107.234.57
 - name: 🇰🇿 KZ 02 - fish
   type: vless
   server: 38.107.234.57
@@ -33,20 +33,6 @@ proxies:
     headers:
       Host: 38.107.234.57
 - name: 🇰🇿 KZ 03 - fish
-  type: vless
-  server: 38.107.234.57
-  port: 8443
-  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3h-kazakhstan1.09vpn.com
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 38.107.234.57
-- name: 🇰🇿 KZ 04 - fish
   type: vmess
   server: 38.107.234.57
   port: 80
@@ -61,7 +47,7 @@ proxies:
     path: /vmess/
     headers:
       Host: ''
-- name: 🇰🇿 KZ 05 - fish
+- name: 🇰🇿 KZ 04 - fish
   type: vless
   server: 38.107.234.57
   port: 8443
@@ -72,7 +58,7 @@ proxies:
   servername: 3h-kazakhstan1.09vpn.com
   network: ws
   ws-opts:
-    path: /vless/?TELEGRAM--B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub--TELEGRAM
+    path: /vless/
     headers:
       Host: 38.107.234.57
 proxy-groups:
@@ -84,7 +70,6 @@ proxy-groups:
   - 🇰🇿 KZ 02 - fish
   - 🇰🇿 KZ 03 - fish
   - 🇰🇿 KZ 04 - fish
-  - 🇰🇿 KZ 05 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -94,6 +79,5 @@ proxy-groups:
   - 🇰🇿 KZ 02 - fish
   - 🇰🇿 KZ 03 - fish
   - 🇰🇿 KZ 04 - fish
-  - 🇰🇿 KZ 05 - fish
 rules:
 - MATCH,PROXIES
