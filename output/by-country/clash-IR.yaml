@@ -4,24 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇪 IE 01 - fish
-  type: ss
-  server: 20.166.121.63
+- name: 🇮🇷 IR 01 - fish
+  type: vless
+  server: ns2.irts.lol
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: RoARJLTlMJOFVIuQ
+  uuid: ff1906a5-a446-44e4-8e72-4e2d61775fa0
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ns2.irts.lol
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇪 IE 01 - fish
+  - 🇮🇷 IR 01 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇪 IE 01 - fish
+  - 🇮🇷 IR 01 - fish
 rules:
 - MATCH,PROXIES

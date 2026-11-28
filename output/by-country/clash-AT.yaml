@@ -12,27 +12,13 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇦🇹 AT 02 - fish
-  type: vless
-  server: 172.67.199.12
-  port: 443
-  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ancient-haze-d203.vpnetwork3567.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ancient-haze-d203.vpnetwork3567.workers.dev
-- name: 🇦🇹 AT 03 - fish
   type: ss
   server: 152.53.1.57
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
   udp: true
-- name: 🇦🇹 AT 04 - fish
+- name: 🇦🇹 AT 03 - fish
   type: ss
   server: 82.110.60.9
   port: 19999
@@ -47,7 +33,6 @@ proxy-groups:
   - 🇦🇹 AT 01 - fish
   - 🇦🇹 AT 02 - fish
   - 🇦🇹 AT 03 - fish
-  - 🇦🇹 AT 04 - fish
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -56,6 +41,5 @@ proxy-groups:
   - 🇦🇹 AT 01 - fish
   - 🇦🇹 AT 02 - fish
   - 🇦🇹 AT 03 - fish
-  - 🇦🇹 AT 04 - fish
 rules:
 - MATCH,PROXIES
